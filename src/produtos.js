@@ -256,6 +256,71 @@ const produtos = [
     ),
   },
   {
+    id: "bruxa_nada_conveniente",
+    referencia: "UNI-013",
+    nome: "Bruxa — Nada Conveniente",
+    tipo: "unitario",
+    palavrasChave:
+      "bruxa bruxinha bruxaria magia místico witch witchy aesthetic fantasia halloween chapéu mulher silhueta gato preto gatinho cobra serpente lua crescente estrelas folhas folhagem natureza bege creme vinho bordô vermelho laranja verde preto frase eu não vim ao mundo pra ser conveniente atitude personalidade",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/bruxa_nada_conveniente/${arquivo}`,
+    ),
+  },
+  {
+    id: "doflamingo_rei_de_dressrosa",
+    referencia: "UNI-014",
+    nome: "Doflamingo — Rei de Dressrosa",
+    tipo: "unitario",
+    palavrasChave:
+      "doflamingo donquixote one piece onepiece joker dressrosa rei vilão pirata shichibukai anime mangá manga otaku geek rosa pink vermelho red lilás roxo purple amarelo yellow preto black branco white penas casaco óculos escuros cabelo loiro sentado trono mãos sorriso quadrinhos",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/doflamingo_rei_de_dressrosa/${arquivo}`,
+    ),
+  },
+  {
+    id: "ryuk_sombra_lunar",
+    referencia: "UNI-015",
+    nome: "Ryuk — Sombra Lunar",
+    tipo: "unitario",
+    palavrasChave:
+      "ryuk ryuuk death note deathnote shinigami anime mangá manga otaku geek roxo purple violeta preto black lua cheia lunar noite noturno sombra silhueta asas penas fios postes céu dark gótico goth sombrio mistério sobrenatural aesthetic",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/ryuk_sombra_lunar/${arquivo}`,
+    ),
+  },
+  {
+    id: "sorriso_nas_sombras",
+    referencia: "UNI-016",
+    nome: "Sorriso nas Sombras",
+    tipo: "unitario",
+    palavrasChave:
+      "terror horror assustador sombrio sombra sombras dark gótico goth gothic alternativo aesthetic halloween sobrenatural mistério criatura monstro sorriso dentes olhos brilhantes rosto mãos cabeça cabelo longo preto black branco white bege creme monocromático ilustração hachuras",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sorriso_nas_sombras/${arquivo}`,
+    ),
+  },
+  {
+    id: "entre_luz_e_sombra",
+    referencia: "UNI-017",
+    nome: "Entre Luz e Sombra",
+    tipo: "unitario",
+    palavrasChave:
+      "mão mãos dedos toque encontro conexão luz sombra contraste preto black branco white bege sépia marrom dark aesthetic arte criação de adão michelangelo releitura renascimento clássico mão escura mão clara minimalista dramático",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/entre_luz_e_sombra/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

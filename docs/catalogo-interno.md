@@ -29,6 +29,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-010 | Naruto — Legado dos Mestres | Botton individual | naruto_legado_dos_mestres |
 | UNI-011 | Ace — Chama Livre | Botton individual | ace_chama_livre |
 | UNI-012 | Gatinho — Nuvem de Amor | Botton individual | gatinho_nuvem_de_amor |
+| UNI-013 | Bruxa — Nada Conveniente | Botton individual | bruxa_nada_conveniente |
+| UNI-014 | Doflamingo — Rei de Dressrosa | Botton individual | doflamingo_rei_de_dressrosa |
+| UNI-015 | Ryuk — Sombra Lunar | Botton individual | ryuk_sombra_lunar |
+| UNI-016 | Sorriso nas Sombras | Botton individual | sorriso_nas_sombras |
+| UNI-017 | Entre Luz e Sombra | Botton individual | entre_luz_e_sombra |
 | PER-001 | Seu artista, sua música | Personalizado | personalizado_musical |
 
 ## Tamanhos dos individuais
