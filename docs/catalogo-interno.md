@@ -1,0 +1,39 @@
+# Catálogo interno LumaLab
+
+Referências permanentes para organização interna. Renomear ou reordenar produtos não altera seus códigos. Os códigos não aparecem nos cards ou na mensagem do WhatsApp. Não reutilize a referência de um produto descontinuado. Para novos produtos, use o próximo número disponível da categoria.
+
+| Referência | Nome | Categoria | Identificador / pasta |
+| --- | --- | --- | --- |
+| KIT-001 | BLACKPINK — Pink Venom | Kit com 4 bottons | kit_blackpink |
+| KIT-002 | Maré Lunar | Kit com 4 bottons | kit_blue |
+| KIT-003 | Jardim de Afetos | Kit com 4 bottons | kit_coquette |
+| KIT-004 | Entre Sombras | Kit com 4 bottons | kit_dark |
+| KIT-005 | Death Note — Pacto Sombrio | Kit com 4 bottons | kit_deathnote |
+| KIT-006 | Doce Devaneio | Kit com 4 bottons | kit_girly |
+| KIT-007 | Galeria — Poemas Visuais | Kit com 4 bottons | kit_artecollection1 |
+| KIT-008 | Galeria — Céu em Flor | Kit com 4 bottons | kit_artecollection2 |
+| KIT-009 | Galeria — Ecos do Tempo | Kit com 4 bottons | kit_artecollection3 |
+| KIT-010 | Café em Paris | Kit com 4 bottons | kit_brownaesthetic |
+| KIT-011 | Rosa Elétrico | Kit com 4 bottons | kit_darkpink |
+| KIT-012 | Cartas em Lavanda | Kit com 4 bottons | kit_lightpurple |
+| KIT-013 | Feitiço Violeta | Kit com 4 bottons | kit_magicpurple |
+| UNI-001 | Cansada de ser adulta | Botton individual | cansada_de_ser_adulta |
+| UNI-002 | Zoro — One Piece | Botton individual | zoro_one_piece |
+| UNI-003 | Gojo — Jujutsu Kaisen | Botton individual | gojo_jujutsu_kaisen |
+| UNI-004 | Itachi — Olhar do Corvo | Botton individual | itachi_olhar_do_corvo |
+| UNI-005 | Doflamingo — Sorriso do Caos | Botton individual | doflamingo_sorriso_do_caos |
+| UNI-006 | Luffy — Espírito Livre | Botton individual | luffy_espirito_livre |
+| UNI-007 | Snoopy — Eu Posso, Eu Consigo | Botton individual | snoopy_eu_posso |
+| PER-001 | Seu artista, sua música | Personalizado | personalizado_musical |
+
+## Tamanhos dos individuais
+
+O código base identifica a arte. Para distinguir o tamanho internamente, acrescente o sufixo: `UNI-001-32`, `UNI-001-44` ou `UNI-001-55`. A função `referenciaProduto` retorna essa referência para um produto com tamanho selecionado. A cesta mantém suas chaves existentes.
+
+| Tamanho | Preço por unidade |
+| --- | --- |
+| 32 mm • 3,2 cm | R$ 5,50 |
+| 44 mm • 4,4 cm | R$ 7,50 |
+| 55 mm • 5,5 cm | R$ 9,00 |
+
+Os kits custam R$ 23,50 e usam quatro bottons de 44 mm • 4,4 cm. O personalizado musical custa R$ 8,00; seu tamanho ainda precisa ser confirmado. Suas fotos ficam em `public/imagens/personalizados/anavitoriasong/`.

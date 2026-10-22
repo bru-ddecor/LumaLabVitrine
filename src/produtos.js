@@ -1,85 +1,109 @@
-const kit = (id, arquivos, palavrasChave) => ({
+// Referências são explícitas e permanentes: não dependem da ordem do catálogo.
+const kit = (id, nome, referencia, arquivos, palavrasChave) => ({
   id,
-  // O nome inicial vem da pasta; edite aqui quando quiser personalizá-lo.
-  nome: id
-    .replace(/^kit_/, "")
-    .split("_")
-    .map((palavra) => palavra[0].toUpperCase() + palavra.slice(1))
-    .join(" "),
+  nome,
+  referencia,
   tipo: "kit",
   // Cores, estilos, temas e detalhes presentes nas artes dos bottons.
-  palavrasChave,
+  palavrasChave: `${id.replace(/^kit_/, "").replaceAll("_", " ")} ${palavrasChave}`,
   imagens: arquivos.map((arquivo) => `/imagens/kits/${id}/${arquivo}.png`),
 });
 
 const produtos = [
   kit(
     "kit_blackpink",
+    "BLACKPINK — Pink Venom",
+    "KIT-001",
     ["kit_blckpnk_deco", "blckpnk2", "blckpnk3"],
     "blackpink black pink preto rosa k-pop kpop pop música coreano girl group jennie jisoo lisa rosé rose blink",
   ),
   kit(
     "kit_blue",
+    "Maré Lunar",
+    "KIT-002",
     ["kitblue", "kitblue2", "kitblue3"],
     "azul blue preto black aesthetic lua lunar noite noturno céu estrelas mar oceano água ondas mãos anime garota monocromático",
   ),
   kit(
     "kit_coquette",
+    "Jardim de Afetos",
+    "KIT-003",
     ["cqttdeco", "cqtt2", "cqtt3"],
     "rosa pink bege creme marrom pastel coquette aesthetic delicado romântico fofo cute kawaii ursinho urso laço lacinho flores floral xadrez patchwork cervo veado bambi animais vintage cottagecore",
   ),
   kit(
     "kit_dark",
+    "Entre Sombras",
+    "KIT-004",
     ["darkdeco", "dark2", "dark3"],
     "preto black branco bege dark gótico goth gothic alternativo aesthetic sombrio terror horror caveira crânio esqueleto ossos cruz morcego halloween",
   ),
   kit(
     "kit_deathnote",
+    "Death Note — Pacto Sombrio",
+    "KIT-005",
     ["deathnotedeco", "deathnote2", "deathnote3"],
     "death note deathnote anime mangá manga otaku geek preto branco vermelho light yagami kira ryuk misa amane l lawliet shinigami maçã suspense",
   ),
   kit(
     "kit_girly",
+    "Doce Devaneio",
+    "KIT-006",
     ["grly_deco", "grly2", "grly3"],
     "rosa pink preto branco girly feminino aesthetic anime mangá manga kawaii fofo cute garota olhos olho coração patinha gato gatinho neko",
   ),
   kit(
     "kit_artecollection1",
+    "Galeria — Poemas Visuais",
+    "KIT-007",
     ["arte1_deco", "arte1_2", "arte1_3"],
     "arte art collection coleção pintura clássico retrato mulher renascentista aesthetic vintage azul verde dourado bege laranja ruivo flores margaridas cerejeira sakura monte fuji japão paisagem montanha carpas koi peixe mosaico lago",
   ),
   kit(
     "kit_artecollection2",
+    "Galeria — Céu em Flor",
+    "KIT-008",
     ["arte2_deco", "arte2_2", "arte2_3"],
     "arte art collection coleção pintura clássico aesthetic mona lisa monalisa leonardo da vinci renascimento van gogh amendoeira flores floral céu nuvens paisagem campo pôr do sol azul verde turquesa lilás lavanda",
   ),
   kit(
     "kit_artecollection3",
+    "Galeria — Ecos do Tempo",
+    "KIT-009",
     ["arte3_deco", "arte3_2", "arte3_3"],
     "arte art collection coleção pintura clássico aesthetic renascimento criação de adão michelangelo mãos anjo querubim música instrumento alaúde carpas koi peixes lago água céu nuvens verde azul laranja vermelho dourado",
   ),
   kit(
     "kit_brownaesthetic",
+    "Café em Paris",
+    "KIT-010",
     ["brwndeco", "brwn2", "brwn3"],
     "marrom brown bege caramelo terracota sépia tons terrosos aesthetic vintage outono paris frança torre eiffel arquitetura viagem leopardo onça felino animal print vogue moda fashion xadrez",
   ),
   kit(
     "kit_darkpink",
+    "Rosa Elétrico",
+    "KIT-011",
     ["drkpnkdeco", "drkpnk2", "drkpnk3"],
     "rosa pink preto black dark pink darkpink aesthetic alternativo neon brilho estrelas olho olhos mãos esqueleto ossos silhueta",
   ),
   kit(
     "kit_lightpurple",
+    "Cartas em Lavanda",
+    "KIT-012",
     ["lp_deco", "lp2", "lp3"],
     "lilás roxo purple lavanda branco pastel light purple lightpurple aesthetic delicado fofo cute kawaii coração digital impressão digital amor romance livro leitura frase happier coelho coelhinho flor",
   ),
   kit(
     "kit_magicpurple",
+    "Feitiço Violeta",
+    "KIT-013",
     ["mp_deco", "mp2", "mp3"],
     "lilás roxo purple lavanda violeta pastel magic purple magicpurple aesthetic mágico místico magia fantasia olho olhos velas chama fogo espiral hipnose borboleta asas fada fairycore",
   ),
   {
     id: "cansada_de_ser_adulta",
+    referencia: "UNI-001",
     nome: "Cansada de ser adulta",
     tipo: "unitario",
     palavrasChave:
@@ -92,6 +116,7 @@ const produtos = [
   },
   {
     id: "zoro_one_piece",
+    referencia: "UNI-002",
     nome: "Zoro — One Piece",
     tipo: "unitario",
     palavrasChave:
@@ -103,7 +128,73 @@ const produtos = [
     ),
   },
   {
+    id: "gojo_jujutsu_kaisen",
+    referencia: "UNI-003",
+    nome: "Gojo — Jujutsu Kaisen",
+    tipo: "unitario",
+    palavrasChave:
+      "gojo satoru jujutsu kaisen jjk anime mangá manga otaku geek feiticeiro professor azul blue branco white preto black cabelo branco olhos azuis óculos escuros",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gojo_jujutsu_kaisen/${arquivo}`,
+    ),
+  },
+  {
+    id: "itachi_olhar_do_corvo",
+    referencia: "UNI-004",
+    nome: "Itachi — Olhar do Corvo",
+    tipo: "unitario",
+    palavrasChave:
+      "itachi uchiha naruto shippuden akatsuki sharingan ninja shinobi aldeia folha konoha corvo corvos olho olhos vermelho preto black red anime mangá manga otaku geek",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/itachi_olhar_do_corvo/${arquivo}`,
+    ),
+  },
+  {
+    id: "doflamingo_sorriso_do_caos",
+    referencia: "UNI-005",
+    nome: "Doflamingo — Sorriso do Caos",
+    tipo: "unitario",
+    palavrasChave:
+      "doflamingo donquixote one piece onepiece joker dressrosa vilão pirata anime mangá manga otaku geek rosa pink vermelho red preto black óculos escuros penas sorriso caos",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/doflamingo_sorriso_do_caos/${arquivo}`,
+    ),
+  },
+  {
+    id: "luffy_espirito_livre",
+    referencia: "UNI-006",
+    nome: "Luffy — Espírito Livre",
+    tipo: "unitario",
+    palavrasChave:
+      "luffy monkey d one piece onepiece chapéu palha pirata mugiwara anime mangá manga otaku geek vermelho red amarelo yellow preto black branco white sorriso divertido aventura liberdade",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/luffy_espirito_livre/${arquivo}`,
+    ),
+  },
+  {
+    id: "snoopy_eu_posso",
+    referencia: "UNI-007",
+    nome: "Snoopy — Eu Posso, Eu Consigo",
+    tipo: "unitario",
+    palavrasChave:
+      "snoopy peanuts charlie brown cachorro cachorrinho cão beagle desenho quadrinhos cartoon preto black branco white bege creme minimalista monocromático fofo cute frase eu podo eu posso eu consigo motivação motivacional confiança incentivo positivo humor",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/snoopy_eu_posso/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
+    referencia: "PER-001",
     nome: "Seu artista, sua música",
     tipo: "personalizado",
     precoCentavos: 800,
@@ -175,8 +266,15 @@ function resolverItemCesta(chave) {
   const selecionado = { ...produto, tamanhoSelecionado: Number(tamanho) };
   return precoProduto(selecionado) !== null ? selecionado : null;
 }
+// Uso interno: a medida diferencia as variantes sem alterar o código da arte.
+function referenciaProduto(produto) {
+  return produto.tipo === "unitario" && produto.tamanhoSelecionado
+    ? `${produto.referencia}-${produto.tamanhoSelecionado}`
+    : produto.referencia;
+}
 export {
   produtos,
+  referenciaProduto,
   buscarProdutos,
   tamanhosDisponiveis,
   precoProduto,
