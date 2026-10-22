@@ -1,0 +1,49 @@
+.frase-utilizacao {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--texto-suave);
+  font-size: 11px;
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+}
+.sugestao-utilizacao {
+  display: inline-block;
+  min-width: 12ch;
+  white-space: nowrap;
+}
+.sugestao-utilizacao > strong {
+  display: inline-block;
+  color: var(--marsala);
+  font-weight: 600;
+  background: #7a2e3a0c;
+  border-radius: 5px;
+  padding: 2px 8px;
+  margin-left: 2px;
+}
+[data-tema="escuro"] .sugestao-utilizacao > strong {
+  background: #a7c7f716;
+  color: #bed8ff;
+}
+.controle-sugestoes {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+  border: 1px solid #c6b7aa;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--marsala);
+}
+.controle-sugestoes svg {
+  width: 12px;
+  height: 12px;
+}
+.controle-sugestoes:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+[data-tema="escuro"] .controle-sugestoes {
+  border-color: #647d9e;
+}

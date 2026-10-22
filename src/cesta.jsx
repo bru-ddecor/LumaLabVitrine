@@ -383,7 +383,7 @@ function ProvedorCesta({ children: filhos }) {
     "",
     ...entradas.map(
       ({ produto: produto, quantidade: quantidade }) =>
-        `${quantidade} × ${titulo(produto)} — ${produto.tipo === "kit" ? "kit com 4 bottons" : "1 botton"} de 44 mm — ${formatarValor(preco(produto) * quantidade)}`,
+        `${quantidade} × ${titulo(produto)} — ${produto.tipo === "kit" ? "kit com 4 bottons" : "1 botton"} de 44 mm • 4,4 cm — ${formatarValor(preco(produto) * quantidade)}`,
     ),
     "",
     `Total dos produtos: ${formatarValor(total)}`,
@@ -515,7 +515,7 @@ function ProvedorCesta({ children: filhos }) {
                   <h3>{titulo(produto)}</h3>
                   <p>
                     {produto.tipo === "kit" ? "4 bottons" : "1 botton"} · 44 mm
-                    · {formatarValor(preco(produto))}
+                    • 4,4 cm · {formatarValor(preco(produto))}
                   </p>
                   <div className="controles-quantidade">
                     <button

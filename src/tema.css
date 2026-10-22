@@ -27,7 +27,6 @@
   background: #7a2e3a0c;
 }
 .ceu-estrelado,
-.botton.frase-noturna,
 .botton.lua-noturna {
   display: none;
 }
@@ -148,20 +147,14 @@
   height: 150px;
   overflow: visible;
 }
-[data-tema="escuro"] .botton.frase-noturna {
+[data-tema="escuro"] .botton.botton-slogan {
   display: flex;
   width: 180px;
   height: 180px;
   background: radial-gradient(circle at 30% 20%, #496a99, #203e68);
   color: #edf2fb;
 }
-.botton.frase-noturna > span {
-  font-family: Georgia, serif;
-  font-size: 21px;
-  line-height: 1.4;
-  font-weight: bold;
-  text-align: center;
-}
+
 [data-tema="escuro"] .apresentacao-botton.terceiro {
   right: 10%;
   top: 125px;

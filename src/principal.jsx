@@ -4,6 +4,7 @@ import "./estilos.css";
 import "./tema.css";
 import { MenuLateral } from "./menu";
 import { MovimentoOrbital } from "./orbita";
+import { FraseUtilizacao } from "./frase-utilizacao";
 import {
   ProvedorCesta,
   AdicionarCesta,
@@ -144,9 +145,11 @@ function Colecao({
     <section className="colecao" id={kit ? "kits" : "destaques"}>
       <div className="cabecalho-secao">
         <div>
-          <span className="sobretitulo">
-            {kit ? "QUATRO JEITOS DE SE EXPRESSAR" : "ESCOLHAS DO LAB"}
-          </span>
+          {kit ? (
+            <FraseUtilizacao />
+          ) : (
+            <span className="sobretitulo">ESCOLHAS DO LAB</span>
+          )}
           <h2>
             {titulo}
             <span>✦</span>
@@ -170,7 +173,7 @@ function Colecao({
               <div className="informacoes-produto">
                 <span>
                   {produto.tipo === "kit"
-                    ? "KIT COM 4 BOTTONS · 44 MM"
+                    ? "KIT COM 4 BOTTONS · 44 MM • 4,4 CM"
                     : "BOTTON · 44 MM"}
                 </span>
                 {produto.tipo === "kit" && <b>ECONOMIZE R$ 6,50</b>}
@@ -212,8 +215,8 @@ function Aplicacao() {
   return (
     <>
       <div className="aviso-topo">
-        PEQUENOS DETALHES. GRANDES FORMAS DE SER. <span>✦</span> BOTTONS
-        AUTORAIS DE 44 MM
+        PEQUENOS DETALHES. GRANDES FORMAS DE SER. <span>✦</span> BOTTONS PARA
+        EXPRESSAR VOCÊ
       </div>
       <header>
         <div className="inicio-cabecalho">
@@ -252,7 +255,6 @@ function Aplicacao() {
               Explore a vitrine <span>↗︎</span>
             </a>
             <div className="apresentacao-rodape">
-              <span>44 mm de expressão</span>
               <span>Infinitas possibilidades</span>
             </div>
           </div>
@@ -296,23 +298,17 @@ function Aplicacao() {
               <div className="apresentacao-botton segundo">
                 <div className="face-orbital">
                   <div
-                    className="botton frase-noturna"
+                    className="botton botton-slogan"
                     role="img"
-                    aria-label="Botton azul: I’m not perfect, I’m original"
+                    aria-label="Personalidade para usar, vestir e compartilhar"
                   >
                     <span>
-                      I’m not perfect
+                      Personalidade
                       <br />
-                      I’m original
+                      para usar, vestir
+                      <br />e compartilhar
                     </span>
                   </div>
-                  <img
-                    className="decoracao-original"
-                    src="/imagens/decoracao/botton-original.png"
-                    alt="Botton marsala com a frase: I'm not perfect, I'm original"
-                    width="1280"
-                    height="1280"
-                  />
                 </div>
               </div>
               <div className="apresentacao-botton terceiro">
@@ -404,8 +400,8 @@ function Aplicacao() {
           </label>
         </div>
         <div className="nota-catalogo">
-          Kits com 4 bottons de 44 mm. Explore as três fotos de cada kit e
-          encontre o seu favorito.
+          Kits com 4 bottons de 44 mm • 4,4 cm. Explore as três fotos de cada
+          kit e encontre o seu favorito.
         </div>
         {filtrados.length ? (
           <>
@@ -422,7 +418,8 @@ function Aplicacao() {
                 </span>
                 <h2>Quatro bottons. Muitas combinações.</h2>
                 <p>
-                  Escolha um kit com 4 unidades de 44 mm e economize R$ 6,50.
+                  Escolha um kit com 4 unidades de 44 mm • 4,4 cm e economize R$
+                  6,50.
                 </p>
               </div>
               <div className="promocao-preco">
