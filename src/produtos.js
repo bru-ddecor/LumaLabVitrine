@@ -387,6 +387,74 @@ const produtos = [
     ),
   },
   {
+    id: "kakashi_ninja_copiador",
+    referencia: "UNI-023",
+    nome: "Kakashi — Ninja Copiador",
+    tipo: "unitario",
+    palavrasChave:
+      "kakashi hatake naruto shippuden ninja copiador shinobi sensei professor sharingan chidori raikiri konoha aldeia folha hokage anime mangá manga otaku geek azul blue branco white preto black verde oliva vermelho máscara bandana cabelo branco prateado colete mãos selo raio relâmpago",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/kakashi_ninja_copiador/${arquivo}`,
+    ),
+  },
+  {
+    id: "gumball_darwin",
+    referencia: "PAR-001",
+    nome: "Gumball e Darwin — Dupla Inseparável",
+    tipo: "parzinho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
+    descricao:
+      "Dois bottons que combinam, para usar juntos ou dividir com alguém especial.",
+    palavrasChave:
+      "par parzinho dupla dois 2 unidades gumball darwin incrível mundo desenho cartoon network amizade amigos irmãos azul blue laranja orange preto branco olhos sorriso fofo cute kawaii presente combinar",
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/parzinhos/gumball_darwin/${arquivo}`,
+    ),
+  },
+  {
+    id: "marceline_jujuba_doce_sintonia",
+    referencia: "PAR-002",
+    nome: "Marceline e Jujuba — Doce Sintonia",
+    tipo: "parzinho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
+    descricao: "Uma dupla de Hora de Aventura para usar juntinha ou dividir com alguém especial.",
+    palavrasChave:
+      "par parzinho dupla dois 2 unidades marceline marshall princesa jujuba bubblegum bubbline hora de aventura adventure time cartoon network desenho casal amor amizade vampira presas dentes coroa princesa rosa pink preto black branco white amarelo dourado azul fofo cute kawaii minimalista presente",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/parzinhos/marceline_jujuba_doce_sintonia/${arquivo}`,
+    ),
+  },
+  {
+    id: "mutano_ravena_sintonia_tita",
+    referencia: "PAR-003",
+    nome: "Mutano e Ravena — Sintonia Titã",
+    tipo: "parzinho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
+    descricao: "Uma dupla dos Jovens Titãs para usar junto ou dividir com alguém especial.",
+    palavrasChave:
+      "par parzinho dupla dois 2 unidades mutano ravena beast boy beastboy raven jovens titãs teen titans titans go dc cartoon network desenho herói super heróis casal amizade verde green roxo purple violeta azul blue preto black branco white olhos rosto capuz fofo cute presente",
+    imagens: ["/imagens/parzinhos/mutano_ravena_sintonia_tita/01.jpg"],
+  },
+  {
+    id: "amigos_de_ooo",
+    referencia: "PAR-004",
+    nome: "Hora de Aventura — Amigos de Ooo",
+    tipo: "parzinho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
+    descricao: "Jake e a turma de Ooo em dois bottons para usar juntos ou dividir uma aventura.",
+    palavrasChave:
+      "par parzinho dupla dois 2 unidades hora de aventura adventure time cartoon network finn jake cachorro cão princesa jujuba marceline princesa caroço rei gelado bmo ooo amigos amizade desenho amarelo yellow laranja azul blue rosa pink verde roxo colorido fofo cute kawaii espada fantasia presente",
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/parzinhos/amigos_de_ooo/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
@@ -415,7 +483,7 @@ function buscarProdutos(busca) {
   const termos = normalizarBusca(busca).split(/\s+/).filter(Boolean);
   return produtos.filter((produto) => {
     const texto = normalizarBusca(
-      `${produto.nome} ${produto.palavrasChave} botton bottons ${produto.tipo === "kit" ? "kit 4 unidades 44mm 44 mm" : produto.tipo === "unitario" ? "individual unitario avulso 32mm 32 mm 44mm 44 mm 55mm 55 mm" : "personalizado"}`,
+      `${produto.nome} ${produto.palavrasChave} botton bottons ${produto.tipo === "kit" ? "kit 4 unidades 44mm 44 mm" : ["unitario", "parzinho"].includes(produto.tipo) ? "individual unitario avulso 32mm 32 mm 44mm 44 mm 55mm 55 mm" : "personalizado"}`,
     );
     return termos.every((termo) => texto.includes(termo));
   });
@@ -428,12 +496,12 @@ const tamanhosDisponiveis = [
 ];
 function precoProduto(produto) {
   if (produto.tipo === "kit") return 2350;
-  if (produto.tipo === "unitario")
+  if (["unitario", "parzinho"].includes(produto.tipo))
     return produto.precosPorTamanho[produto.tamanhoSelecionado] ?? null;
   return produto.precoCentavos ?? null;
 }
 function chaveProduto(produto) {
-  return produto.tipo === "unitario"
+  return ["unitario", "parzinho"].includes(produto.tipo)
     ? `${produto.id}::${produto.tamanhoSelecionado}`
     : produto.id;
 }
@@ -462,7 +530,8 @@ function resolverItemCesta(chave) {
 }
 // Uso interno: a medida diferencia as variantes sem alterar o código da arte.
 function referenciaProduto(produto) {
-  return produto.tipo === "unitario" && produto.tamanhoSelecionado
+  return ["unitario", "parzinho"].includes(produto.tipo) &&
+    produto.tamanhoSelecionado
     ? `${produto.referencia}-${produto.tamanhoSelecionado}`
     : produto.referencia;
 }

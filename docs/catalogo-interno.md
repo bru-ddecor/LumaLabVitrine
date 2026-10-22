@@ -39,6 +39,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-020 | Mortícia e Gomez — Amor Sombrio | Botton individual | morticia_gomez_amor_sombrio |
 | UNI-021 | Naruto — Sétimo Hokage | Botton individual | naruto_setimo_hokage |
 | UNI-022 | Poe — Beleza Rara | Botton individual | poe_beleza_rara |
+| UNI-023 | Kakashi — Ninja Copiador | Botton individual | kakashi_ninja_copiador |
+| PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
+| PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
+| PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
+| PAR-004 | Hora de Aventura — Amigos de Ooo | Parzinho | amigos_de_ooo |
 | PER-001 | Seu artista, sua música | Personalizado | personalizado_musical |
 
 ## Tamanhos dos individuais
@@ -52,3 +57,5 @@ O código base identifica a arte. Para distinguir o tamanho internamente, acresc
 | 55 mm • 5,5 cm | R$ 9,00 |
 
 Os kits custam R$ 23,50 e usam quatro bottons de 44 mm • 4,4 cm. O personalizado musical custa R$ 8,00; seu tamanho ainda precisa ser confirmado. Suas fotos ficam em `public/imagens/personalizados/anavitoriasong/`.
+
+Os parzinhos contêm dois bottons do mesmo tamanho: 32 mm por R$ 11,00, 44 mm por R$ 15,00 e 55 mm por R$ 18,00. Cada par exige seleção do tamanho e usa o sufixo correspondente na referência interna.

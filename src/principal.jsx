@@ -153,8 +153,9 @@ function GaleriaProduto({ produto: produto, kit = false }) {
 }
 function CartaoProduto({ produto, kit = false }) {
   const [tamanhoSelecionado, definirTamanhoSelecionado] = useState(null);
-  const produtoSelecionado =
-    produto.tipo === "unitario" ? { ...produto, tamanhoSelecionado } : produto;
+  const produtoSelecionado = ["unitario", "parzinho"].includes(produto.tipo)
+    ? { ...produto, tamanhoSelecionado }
+    : produto;
   const valor = precoProduto(produtoSelecionado);
   return (
     <article className="produto">
@@ -168,7 +169,9 @@ function CartaoProduto({ produto, kit = false }) {
             ? "KIT COM 4 BOTTONS · 44 MM • 4,4 CM"
             : produto.tipo === "personalizado"
               ? "BOTTON PERSONALIZADO · 1 UNIDADE"
-              : "BOTTON INDIVIDUAL"}
+              : produto.tipo === "parzinho"
+                ? "PAR COM 2 BOTTONS"
+                : "BOTTON INDIVIDUAL"}
         </span>
         {produto.tipo === "kit" && <b>ECONOMIZE R$ 6,50</b>}
       </div>
@@ -176,7 +179,7 @@ function CartaoProduto({ produto, kit = false }) {
         {produto.tipo === "kit" ? "Kit " : ""}
         {produto.nome}
       </h3>
-      {produto.tipo === "unitario" && (
+      {["unitario", "parzinho"].includes(produto.tipo) && (
         <fieldset className="seletor-tamanho">
           <legend>Escolha o tamanho</legend>
           <div>
@@ -227,7 +230,13 @@ function CartaoProduto({ produto, kit = false }) {
                 ? "Valor a confirmar"
                 : `A partir de ${formatarMoeda(Math.min(...Object.values(produto.precosPorTamanho)) / 100)}`}
           </strong>
-          <span>{produto.tipo === "kit" ? " / kit" : " / unidade"}</span>
+          <span>
+            {produto.tipo === "kit"
+              ? " / kit"
+              : produto.tipo === "parzinho"
+                ? " / par"
+                : " / unidade"}
+          </span>
         </div>
       )}
     </article>
@@ -580,6 +589,16 @@ function Aplicacao() {
                 titulo="Bottons individuais"
                 subtitulo="Escolha sua arte e o tamanho que combina com você."
                 produtosDaColecao={unitariosFiltrados}
+              />
+            )}
+            {filtrados.some((produto) => produto.tipo === "parzinho") && (
+              <Colecao
+                identificador="parzinhos"
+                titulo="Parzinhos"
+                subtitulo="Duplas para usar juntas ou dividir com alguém especial."
+                produtosDaColecao={filtrados.filter(
+                  (produto) => produto.tipo === "parzinho",
+                )}
               />
             )}
             {personalizadosFiltrados.length > 0 && (
