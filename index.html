@@ -8,6 +8,22 @@
       name="description"
       content="Bottons LumaLab de 44 mm. Conheça nossa vitrine e kits com quatro unidades."
     />
+    <script>
+      (() => {
+        let tema;
+        try {
+          tema = localStorage.getItem("lumalab-tema");
+        } catch {}
+        if (!["claro", "escuro"].includes(tema))
+          tema = matchMedia("(prefers-color-scheme: dark)").matches
+            ? "escuro"
+            : "claro";
+        document.documentElement.dataset.tema = tema;
+        document
+          .querySelector('meta[name="theme-color"]')
+          .setAttribute("content", tema === "escuro" ? "#0d1422" : "#7a2e3a");
+      })();
+    </script>
     <title>LumaLab — pequenas peças, muita personalidade</title>
   </head>
   <body>

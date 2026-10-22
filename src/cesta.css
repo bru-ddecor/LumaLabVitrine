@@ -359,3 +359,34 @@
   border: 2px solid #fff;
   box-shadow: 0 2px 5px #30231e44;
 }
+.alternar-som {
+  position: fixed;
+  right: 25px;
+  bottom: 170px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid #cfbdb0;
+  border-radius: 20px;
+  background: #f6f2ecf5;
+  color: var(--marsala);
+  padding: 8px 10px;
+  font-size: 9px;
+}
+.alternar-som svg {
+  width: 17px;
+  height: 17px;
+}
+.alternar-som:hover {
+  background: #e7d6ce;
+}
+@media (max-width: 600px) {
+  .alternar-som {
+    right: 14px;
+    bottom: 132px;
+    padding: 7px 8px;
+    font-size: 8px;
+  }
+}

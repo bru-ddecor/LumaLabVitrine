@@ -7,10 +7,27 @@ import React, {
 } from "react";
 import { produtos } from "./produtos";
 import "./cesta.css";
+import { usarSomCesta } from "./sons";
 const ContextoCesta = createContext(null);
 const CHAVE_ARMAZENAMENTO = "lumalab-cart-v1";
 const imagemCesta = (produto) =>
   produto.imagemCesta || produto.imagens[2] || produto.imagens[0];
+const imagensPreparadas = new Map();
+function prepararImagemCesta(produto) {
+  const caminho = imagemCesta(produto);
+  if (!imagensPreparadas.has(caminho)) {
+    const imagem = new Image();
+    imagem.src = caminho;
+    imagensPreparadas.set(
+      caminho,
+      imagem.decode().catch((erro) => {
+        imagensPreparadas.delete(caminho);
+        throw erro;
+      }),
+    );
+  }
+  return imagensPreparadas.get(caminho);
+}
 const preco = (produto) => (produto.tipo === "kit" ? 2350 : 750);
 const formatarValor = (centavos) =>
   (centavos / 100).toLocaleString("pt-BR", {
@@ -76,6 +93,21 @@ function ImagemArrastavelProduto({ produto: produto, ...propriedades }) {
     finalizarArraste: finalizarArraste,
     soltarProduto: soltarProduto,
   } = useContext(ContextoCesta);
+  const referenciaImagem = useRef(null);
+  useEffect(() => {
+    if (
+      !("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    )
+      return;
+    const observador = new IntersectionObserver((entradas) => {
+      if (!entradas.some((entrada) => entrada.isIntersecting)) return;
+      observador.disconnect();
+      prepararImagemCesta(produto).catch(() => {});
+    });
+    if (referenciaImagem.current) observador.observe(referenciaImagem.current);
+    return () => observador.disconnect();
+  }, [produto]);
   const gesto = useRef(null);
   const limpar = () => {
     const atual = gesto.current;
@@ -145,6 +177,7 @@ function ImagemArrastavelProduto({ produto: produto, ...propriedades }) {
   }
   return (
     <img
+      ref={referenciaImagem}
       {...propriedades}
       draggable={false}
       onPointerDown={iniciar}
@@ -160,6 +193,14 @@ export { ImagemArrastavelProduto };
 function ProvedorCesta({ children: filhos }) {
   const [itensCesta, definirItensCesta] = useState(lerCesta);
   const [aviso, definirAviso] = useState("");
+  const { somAtivo, alternarSom, reproduzirBrilho } = usarSomCesta();
+  const paginaAtiva = useRef(true);
+  useEffect(() => {
+    paginaAtiva.current = true;
+    return () => {
+      paginaAtiva.current = false;
+    };
+  }, []);
   const [arrastando, definirArrastando] = useState(false);
   const produtoArrastado = useRef(null);
   const cesta = useRef(null);
@@ -196,20 +237,54 @@ function ProvedorCesta({ children: filhos }) {
     },
     [],
   );
-  function animarAteCesta(produto, imagem) {
+  async function animarAteCesta(produto, imagem) {
     if (
       !imagem ||
       window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
       !imagem.animate
     )
       return;
-    const origem = imagem.getBoundingClientRect(),
-      destino = cesta.current.getBoundingClientRect();
+    try {
+      await prepararImagemCesta(produto);
+    } catch {
+      return;
+    }
+    if (!paginaAtiva.current) return;
     const copia = document.createElement("img");
     copia.src = imagemCesta(produto);
     copia.alt = "";
     copia.className = "produto-em-voo";
-    copia.style.cssText = `left:${origem.left}px;top:${origem.top}px;width:${origem.width}px;height:${origem.height}px`;
+    try {
+      await copia.decode();
+    } catch {
+      return;
+    }
+    if (
+      !paginaAtiva.current ||
+      !cesta.current ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    )
+      return;
+    const origem = imagem.getBoundingClientRect(),
+      destino = cesta.current.getBoundingClientRect();
+    const largura = Math.min(origem.width || 130, 160);
+    const altura = (largura * copia.naturalHeight) / copia.naturalWidth;
+    // A miniatura começa na parte visível do card, mesmo em uma grade longa.
+    const esquerda = Math.max(
+      8,
+      Math.min(
+        origem.left + (origem.width - largura) / 2,
+        window.innerWidth - largura - 8,
+      ),
+    );
+    const topo = Math.max(
+      8,
+      Math.min(
+        origem.top + (origem.height - altura) / 2,
+        window.innerHeight - altura - 8,
+      ),
+    );
+    copia.style.cssText = `left:${esquerda}px;top:${topo}px;width:${largura}px;height:${altura}px`;
     document.body.append(copia);
     imagensEmVoo.current.add(copia);
     const preferenciaMovimento = window.matchMedia(
@@ -217,19 +292,13 @@ function ProvedorCesta({ children: filhos }) {
     );
     const animacao = copia.animate(
       [
+        { transform: "translate(0,0) scale(1)", opacity: 0.95 },
         {
-          transform: "translate(0,0) scale(1)",
-          opacity: 0.85,
-        },
-        {
-          transform: `translate(${destino.left + destino.width / 2 - origem.left - origem.width / 2}px,${destino.top + destino.height / 2 - origem.top - origem.height / 2}px) scale(.14) rotate(12deg)`,
-          opacity: 0.25,
+          transform: `translate(${destino.left + destino.width / 2 - esquerda - largura / 2}px,${destino.top + destino.height / 2 - topo - altura / 2}px) scale(.22) rotate(12deg)`,
+          opacity: 0.3,
         },
       ],
-      {
-        duration: 650,
-        easing: "cubic-bezier(.4,0,.2,1)",
-      },
+      { duration: 700, easing: "cubic-bezier(.4,0,.2,1)" },
     );
     const limpar = () => {
       copia.remove();
@@ -237,17 +306,13 @@ function ProvedorCesta({ children: filhos }) {
       preferenciaMovimento.removeEventListener("change", cancelar);
     };
     const cancelar = () => animacao.cancel();
-    preferenciaMovimento.addEventListener("change", cancelar, {
-      once: true,
-    });
-    animacao.addEventListener("finish", limpar, {
-      once: true,
-    });
-    animacao.addEventListener("cancel", limpar, {
-      once: true,
-    });
+    preferenciaMovimento.addEventListener("change", cancelar, { once: true });
+    animacao.addEventListener("finish", limpar, { once: true });
+    animacao.addEventListener("cancel", limpar, { once: true });
   }
   function adicionar(produto, imagem) {
+    if ((itensCesta[produto.id] || 0) >= 99) return;
+    reproduzirBrilho();
     definirItensCesta((atual) => ({
       ...atual,
       [produto.id]: Math.min(99, (atual[produto.id] || 0) + 1),
@@ -378,10 +443,33 @@ function ProvedorCesta({ children: filhos }) {
           {arrastando ? "Solte aqui" : "Sua cesta"}
         </span>
       </button>
+      <button
+        className="alternar-som"
+        onClick={alternarSom}
+        aria-pressed={somAtivo}
+        aria-label={somAtivo ? "Silenciar som da cesta" : "Ativar som da cesta"}
+        title={somAtivo ? "Silenciar som da cesta" : "Ativar som da cesta"}
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          aria-hidden="true"
+        >
+          <path d="M4 9h4l5-4v14l-5-4H4z" />
+          {somAtivo ? (
+            <path d="M16 8q4 4 0 8m3-11q7 7 0 14" />
+          ) : (
+            <path d="m17 9 5 6m0-6-5 6" />
+          )}
+        </svg>
+        <span>Som {somAtivo ? "ligado" : "desligado"}</span>
+      </button>
       <dialog
         ref={painel}
         className="painel-cesta"
-        aria-labelledby="cart-title"
+        aria-labelledby="titulo-cesta"
         onClose={() => {
           document.body.style.overflow = rolagemAnterior.current;
           ultimoFoco.current?.focus();
@@ -401,7 +489,7 @@ function ProvedorCesta({ children: filhos }) {
         <div className="cabecalho-cesta">
           <div>
             <span className="sobretitulo">SEUS PEQUENOS FAVORITOS</span>
-            <h2 id="cart-title">
+            <h2 id="titulo-cesta">
               Sua cesta <span>({quantidadeTotal})</span>
             </h2>
           </div>

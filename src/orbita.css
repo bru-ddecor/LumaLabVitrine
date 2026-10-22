@@ -1,0 +1,113 @@
+.sistema-orbital {
+  --raio-orbita: 92px;
+  --escala-botton: 0.92;
+  position: absolute;
+  left: 0;
+  top: 3%;
+  width: 100%;
+  height: 100%;
+  animation: percorrer-orbita 90s linear infinite;
+  pointer-events: none;
+}
+.apresentacao-arte .sistema-orbital .apresentacao-botton {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  width: 170px;
+  height: 170px;
+  margin: 0;
+  transform: translate(-50%, -50%) rotate(var(--fase-orbita))
+    translateX(var(--raio-orbita)) rotate(calc(-1 * var(--fase-orbita)))
+    scale(var(--escala-botton));
+}
+.sistema-orbital .primeiro {
+  --fase-orbita: 195deg;
+}
+.sistema-orbital .segundo {
+  --fase-orbita: 75deg;
+}
+.sistema-orbital .terceiro {
+  --fase-orbita: 315deg;
+}
+.face-orbital {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  animation: manter-arte-legivel 90s linear infinite;
+}
+.face-orbital > * {
+  flex-shrink: 0;
+}
+.sistema-orbital[data-pausado="true"],
+.sistema-orbital[data-pausado="true"] .face-orbital {
+  animation-play-state: paused;
+}
+.controle-orbita {
+  position: absolute;
+  top: auto;
+  bottom: 10px;
+  right: 10px;
+  z-index: 5;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  padding: 7px;
+  border: 1px solid #b9a596;
+  background: #f6f2ece6;
+  color: var(--marsala);
+  border-radius: 50%;
+}
+.controle-orbita svg {
+  width: 17px;
+  height: 17px;
+}
+.controle-orbita:hover {
+  background: #f6f2ec;
+}
+.controle-orbita:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+[data-tema="escuro"] .controle-orbita {
+  background: #172338e6;
+  border-color: #647d9e;
+  color: #bed8ff;
+}
+@keyframes percorrer-orbita {
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes manter-arte-legivel {
+  to {
+    rotate: -360deg;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .sistema-orbital {
+    --raio-orbita: 49px;
+    --escala-botton: 0.55;
+  }
+}
+@media (max-width: 600px) {
+  .sistema-orbital {
+    --raio-orbita: 58px;
+    --escala-botton: 0.62;
+    top: 4%;
+  }
+  .controle-orbita {
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sistema-orbital,
+  .face-orbital {
+    animation: none;
+  }
+}

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./estilos.css";
+import "./tema.css";
+import { MenuLateral } from "./menu";
+import { MovimentoOrbital } from "./orbita";
 import {
   ProvedorCesta,
   AdicionarCesta,
@@ -213,17 +216,22 @@ function Aplicacao() {
         AUTORAIS DE 44 MM
       </div>
       <header>
-        <a className="logo" href="#" aria-label="LumaLab início">
-          Luma
-          <span>
-            Lab<i>✦</i>
-          </span>
-        </a>
+        <div className="inicio-cabecalho">
+          <MenuLateral />
+          <a className="logo" href="#" aria-label="LumaLab início">
+            Luma
+            <span>
+              Lab<i>✦</i>
+            </span>
+          </a>
+        </div>
         <nav>
           <a href="#destaques">Destaques</a>
           <a href="#kits">Kits de bottons</a>
         </nav>
-        <span className="nota-cabecalho">Feitos para expressar você ↗︎</span>
+        <div className="acoes-cabecalho">
+          <span className="nota-cabecalho">Feitos para expressar você ↗︎</span>
+        </div>
       </header>
       <main>
         <section className="apresentacao">
@@ -249,44 +257,124 @@ function Aplicacao() {
             </div>
           </div>
           <div className="apresentacao-arte">
+            <div className="ceu-estrelado" aria-hidden="true">
+              {Array.from({ length: 15 }, (ignorado, indice) => (
+                <span
+                  key={indice}
+                  style={{
+                    left: `${8 + ((indice * 23) % 86)}%`,
+                    top: `${8 + ((indice * 31) % 79)}%`,
+                  }}
+                >
+                  {indice % 4 === 0 ? "✦" : "·"}
+                </span>
+              ))}
+            </div>
             <div className="orbita" />
             <span className="legenda-arte">
               PEQUENAS PEÇAS,
               <br />
               MUITA PERSONALIDADE.
             </span>
-            <div className="apresentacao-botton primeiro">
-              <div
-                className="botton botton-logotipo"
-                role="img"
-                aria-label="Botton com a marca LumaLab"
-              >
-                <span className="marca-botton">
-                  Luma
-                  <span>
-                    Lab<b>✦</b>
-                  </span>
-                </span>
+            <MovimentoOrbital>
+              <div className="apresentacao-botton primeiro">
+                <div className="face-orbital">
+                  <div
+                    className="botton botton-logotipo"
+                    role="img"
+                    aria-label="Botton com a marca LumaLab"
+                  >
+                    <span className="marca-botton">
+                      Luma
+                      <span>
+                        Lab<b>✦</b>
+                      </span>
+                    </span>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="apresentacao-botton segundo">
-              <img
-                className="decoracao-original"
-                src="/imagens/decoracao/botton-original.png"
-                alt="Botton marsala com a frase: I'm not perfect, I'm original"
-                width="1280"
-                height="1280"
-              />
-            </div>
-            <div className="apresentacao-botton terceiro">
-              <img
-                className="decoracao-cerejeira"
-                src="/imagens/decoracao/botton-cerejeira.png"
-                alt="Botton bege com flores de cerejeira em vinho que ultrapassam a borda"
-                width="1280"
-                height="1200"
-              />
-            </div>
+              <div className="apresentacao-botton segundo">
+                <div className="face-orbital">
+                  <div
+                    className="botton frase-noturna"
+                    role="img"
+                    aria-label="Botton azul: I’m not perfect, I’m original"
+                  >
+                    <span>
+                      I’m not perfect
+                      <br />
+                      I’m original
+                    </span>
+                  </div>
+                  <img
+                    className="decoracao-original"
+                    src="/imagens/decoracao/botton-original.png"
+                    alt="Botton marsala com a frase: I'm not perfect, I'm original"
+                    width="1280"
+                    height="1280"
+                  />
+                </div>
+              </div>
+              <div className="apresentacao-botton terceiro">
+                <div className="face-orbital">
+                  <div
+                    className="botton lua-noturna"
+                    role="img"
+                    aria-label="Botton azul com uma lua cheia brilhante e estrelas"
+                  >
+                    <svg viewBox="0 0 170 170" aria-hidden="true">
+                      <defs>
+                        <radialGradient id="brilho-lua-cheia">
+                          <stop offset="0%" stopColor="#fffef4" />
+                          <stop offset="75%" stopColor="#e6f1ff" />
+                          <stop offset="100%" stopColor="#b5cce7" />
+                        </radialGradient>
+                      </defs>
+                      <circle
+                        cx="83"
+                        cy="87"
+                        r="57"
+                        fill="#b8d8ff"
+                        opacity=".06"
+                      />
+                      <circle
+                        cx="83"
+                        cy="87"
+                        r="51"
+                        fill="#dbeaff"
+                        opacity=".1"
+                      />
+                      <circle
+                        cx="83"
+                        cy="87"
+                        r="44"
+                        fill="url(#brilho-lua-cheia)"
+                      />
+                      <g fill="#809cbd" opacity=".15">
+                        <ellipse cx="65" cy="66" rx="10" ry="14" />
+                        <circle cx="96" cy="98" r="14" />
+                        <circle cx="69" cy="109" r="8" />
+                        <circle cx="101" cy="61" r="6" />
+                        <circle cx="55" cy="92" r="5" />
+                      </g>
+                      <path
+                        d="m128 22 3 9 9 3-9 3-3 9-3-9-9-3 9-3Zm22 35 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z"
+                        fill="#a7c7f7"
+                      />
+                      <circle cx="49" cy="29" r="2" fill="#a7c7f7" />
+                      <circle cx="141" cy="113" r="2" fill="#a7c7f7" />
+                    </svg>
+                  </div>
+                  <img
+                    className="decoracao-cerejeira"
+                    src="/imagens/decoracao/botton-cerejeira.png"
+                    alt="Botton bege com flores de cerejeira em vinho que ultrapassam a borda"
+                    width="1280"
+                    height="1200"
+                  />
+                </div>
+              </div>
+            </MovimentoOrbital>
             <span className="apresentacao-selo">
               crie • expresse • seja você •
             </span>
