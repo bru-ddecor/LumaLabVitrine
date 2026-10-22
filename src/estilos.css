@@ -1172,3 +1172,53 @@ footer {
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
+
+.galeria-produto {
+  position: relative;
+}
+.ampliar-foto {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 0.65rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid #ffffff80;
+  border-radius: 50%;
+  background: #222b;
+  color: white;
+  font-size: 1.5rem;
+  cursor: zoom-in;
+}
+.visualizacao-foto {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+  max-width: 94vw;
+  max-height: 94dvh;
+}
+.visualizacao-foto::backdrop {
+  background: #111a;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+.visualizacao-foto img {
+  display: block;
+  max-width: 94vw;
+  max-height: 88dvh;
+  object-fit: contain;
+  border-radius: 0.75rem;
+}
+.fechar-foto {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: #222d;
+  color: white;
+  border: 1px solid #fff8;
+  border-radius: 50%;
+  font-size: 1.75rem;
+  cursor: pointer;
+}

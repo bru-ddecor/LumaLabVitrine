@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { createRoot } from "react-dom/client";
 import "./estilos.css";
 import "./tema.css";
@@ -93,6 +93,31 @@ function ArteProvisoria({ produto: produto, kit = false, visualizacao = 0 }) {
 function GaleriaProduto({ produto: produto, kit = false }) {
   const [ativa, definirAtiva] = useState(0);
   const referenciaFoto = usarAnimacaoFoto(ativa);
+  const dialogoFoto = useRef(null);
+  const ultimoToque = useRef(0);
+  const inicioToque = useRef(null);
+  function ampliarFoto() {
+    if (!produto.imagens?.[ativa] || dialogoFoto.current.open) return;
+    dialogoFoto.current.showModal();
+  }
+  function iniciarToque(evento) {
+    if (evento.pointerType === "touch")
+      inicioToque.current = { x: evento.clientX, y: evento.clientY };
+  }
+  function terminarToque(evento) {
+    if (evento.pointerType !== "touch" || !inicioToque.current) return;
+    const inicio = inicioToque.current;
+    inicioToque.current = null;
+    if (Math.hypot(evento.clientX - inicio.x, evento.clientY - inicio.y) > 12) {
+      ultimoToque.current = 0;
+      return;
+    }
+    const agora = Date.now();
+    if (agora - ultimoToque.current < 350) {
+      ampliarFoto();
+      ultimoToque.current = 0;
+    } else ultimoToque.current = agora;
+  }
   const nome = `${produto.tipo === "kit" ? "Kit " : ""}${produto.nome}`;
   // A galeria aceita uma ou mais fotos por produto.
   const fotos = produto.imagens ?? [null, null, null];
@@ -105,6 +130,9 @@ function GaleriaProduto({ produto: produto, kit = false }) {
     >
       <div
         ref={referenciaFoto}
+        onDoubleClick={ampliarFoto}
+        onPointerDownCapture={iniciarToque}
+        onPointerUpCapture={terminarToque}
         role="group"
         aria-roledescription="slide"
         aria-label={`Imagem ${ativa + 1} de ${fotos.length}`}
@@ -131,6 +159,41 @@ function GaleriaProduto({ produto: produto, kit = false }) {
           <ArteProvisoria produto={produto} kit={kit} visualizacao={ativa} />
         )}
       </div>
+      {fotos[ativa] && (
+        <>
+          <button
+            className="ampliar-foto"
+            onClick={ampliarFoto}
+            aria-label={`Ampliar foto de ${nome}`}
+            title="Ampliar foto (ou dê dois cliques)"
+          >
+            ⤢
+          </button>
+          <dialog
+            className="visualizacao-foto"
+            ref={dialogoFoto}
+            aria-label={`Foto ampliada de ${nome}`}
+            onClick={(evento) => {
+              if (evento.target === evento.currentTarget)
+                dialogoFoto.current.close();
+            }}
+          >
+            <button
+              className="fechar-foto"
+              onClick={() => dialogoFoto.current.close()}
+              aria-label="Fechar foto ampliada"
+              autoFocus
+            >
+              ×
+            </button>
+            <img
+              src={fotos[ativa]}
+              alt={`${nome} — foto ${ativa + 1} ampliada`}
+              draggable={false}
+            />
+          </dialog>
+        </>
+      )}
       {fotos.length > 1 && (
         <div className="indicadores-fotos" aria-label="Escolher foto">
           {fotos.map((ignorado, indice) => (
