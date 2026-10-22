@@ -107,5 +107,10 @@ insert into public.catalogo_favoritos(produto) values
 ('cavaleiro_juramento_rubro'),
 ('amar_nesta_economia'),
 ('semente_do_amor'),
-('fala_comigo_nao_eu_namoro')
+('fala_comigo_nao_eu_namoro'),
+('sanji_passo_em_chamas'),
+('me_ame_anavitoria'),
+('mikey_tons_de_calmaria'),
+('em_algum_lugar_pra_relaxar'),
+('sou_feliz_e_agradeco')
 on conflict do nothing;

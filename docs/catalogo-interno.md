@@ -54,6 +54,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-035 | Amar? Nesta Economia? | Botton individual | amar_nesta_economia |
 | UNI-036 | Semente do Amor | Botton individual | semente_do_amor |
 | UNI-037 | Fala Comigo Não, Eu Namoro | Botton individual | fala_comigo_nao_eu_namoro |
+| UNI-038 | Sanji — Passo em Chamas | Botton individual | sanji_passo_em_chamas |
+| UNI-039 | Me Ame ao Som de ANAVITÓRIA | Botton individual | me_ame_anavitoria |
+| UNI-040 | Mikey — Tons de Calmaria | Botton individual | mikey_tons_de_calmaria |
+| UNI-041 | Em Algum Lugar pra Relaxar | Botton individual | em_algum_lugar_pra_relaxar |
+| UNI-042 | Sou Feliz e Agradeço | Botton individual | sou_feliz_e_agradeco |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

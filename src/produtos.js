@@ -694,6 +694,70 @@ const produtos = [
     ),
   },
   {
+    id: "sanji_passo_em_chamas",
+    referencia: "UNI-038",
+    nome: "Sanji — Passo em Chamas",
+    tipo: "unitario",
+    palavrasChave:
+      "sanji vinsmoke one piece onepiece perna negra black leg diable jambe cozinheiro pirata mugiwara anime mangá manga otaku geek chute fogo chama chamas amarelo yellow laranja orange preto black branco white cabelo loiro terno gravata quadrinhos",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sanji_passo_em_chamas/${arquivo}`,
+    ),
+  },
+  {
+    id: "me_ame_anavitoria",
+    referencia: "UNI-039",
+    nome: "Me Ame ao Som de ANAVITÓRIA",
+    tipo: "unitario",
+    palavrasChave:
+      "anavitória anavitoria ana vitória ana caetano vitória falcão música musical mpb pop folk brasileiro duo cantoras me ame ao som de amor romance romântico frase tipografia letras colagem recortes vintage retrô vermelho red bege creme sépia presente",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/me_ame_anavitoria/${arquivo}`,
+    ),
+  },
+  {
+    id: "mikey_tons_de_calmaria",
+    referencia: "UNI-040",
+    nome: "Mikey — Tons de Calmaria",
+    tipo: "unitario",
+    palavrasChave:
+      "mikey manjiro sano tokyo revengers toman anime mangá manga otaku geek cabelo loiro olhos azuis camisa azul blue rosa pink bege creme pastel estrela patinha fofo cute kawaii delicado retrato ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/mikey_tons_de_calmaria/01.jpg"],
+  },
+  {
+    id: "em_algum_lugar_pra_relaxar",
+    referencia: "UNI-041",
+    nome: "Em Algum Lugar pra Relaxar",
+    tipo: "unitario",
+    palavrasChave:
+      "em algum lugar pra relaxar frase descanso relaxar tranquilidade paz pausa música musical letra canção rosa pink pastel amarelo yellow azul blue verde vermelho roxo colorido estrelas brilho colagem recortes letras tipografia retrô vintage divertido aesthetic",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/em_algum_lugar_pra_relaxar/${arquivo}`,
+    ),
+  },
+  {
+    id: "sou_feliz_e_agradeco",
+    referencia: "UNI-042",
+    nome: "Sou Feliz e Agradeço",
+    tipo: "unitario",
+    palavrasChave:
+      "sou feliz e agradeço por tudo que deus me deu frase fé gratidão agradecimento felicidade deus cristão cristã cristianismo religioso gospel esperança rosa pink magenta branco white creme xadrez quadriculado damier letras cursivas tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagemCesta: "/imagens/unitarios/sou_feliz_e_agradeco/02.jpg",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sou_feliz_e_agradeco/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
