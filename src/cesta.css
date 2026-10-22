@@ -1,0 +1,361 @@
+.produto {
+  position: relative;
+}
+.adicionar-cesta {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #dfcfc3;
+  background: #f6f2ecf5;
+  color: var(--marsala);
+  font-size: 25px;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.18s,
+    background 0.18s;
+}
+.produto:hover .adicionar-cesta,
+.produto:focus-within .adicionar-cesta,
+.adicionar-cesta:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.adicionar-cesta:hover {
+  background: var(--marsala);
+  color: #fff;
+}
+.adicionar-cesta:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.cesta-visual {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 126px;
+  height: 132px;
+  z-index: 20;
+  border: 1px solid #cfbdb0;
+  border-radius: 22px;
+  background: #f6f2ecee;
+  backdrop-filter: blur(8px);
+  color: var(--marsala);
+  box-shadow: 0 5px 25px #30231e18;
+}
+.cesta-visual > svg {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 100px;
+  height: 90px;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  z-index: 2;
+  pointer-events: none;
+}
+.miniaturas-cesta {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 22px;
+}
+.miniaturas-cesta img {
+  position: absolute;
+  width: 40px;
+  height: 44px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px #0003;
+  border: 2px solid #f6f2ec;
+  border-radius: 4px;
+}
+.rotulo-cesta {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  font-size: 10px;
+}
+.contador-cesta {
+  position: absolute;
+  right: 0;
+  top: -7px;
+  background: var(--marsala);
+  color: #fff;
+  border-radius: 30px;
+  min-width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  z-index: 3;
+  padding: 0 5px;
+}
+.produto-em-voo {
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.painel-cesta {
+  position: fixed;
+  inset: 0 0 0 auto;
+  margin: 0;
+  width: min(460px, 100%);
+  height: 100dvh;
+  max-width: 100%;
+  max-height: 100dvh;
+  padding: 0;
+  border: 0;
+  color: #222;
+  background: #f6f2ec;
+  box-shadow: -10px 0 50px #0002;
+}
+.painel-cesta[open] {
+  display: flex;
+  flex-direction: column;
+}
+.painel-cesta::backdrop {
+  background: #20111688;
+}
+.cabecalho-cesta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 25px 20px;
+  border-bottom: 1px solid #dcd3ca;
+  flex-shrink: 0;
+}
+.cabecalho-cesta h2 {
+  margin: 10px 0 0;
+  font-size: 28px;
+}
+.cabecalho-cesta h2 span {
+  font-size: 16px;
+  color: var(--marsala);
+}
+.fechar-cesta {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: var(--marsala);
+  background: none;
+  border: 1px solid #d4c3b8;
+  border-radius: 50%;
+}
+.itens-cesta {
+  overflow-y: auto;
+  flex: 1;
+  padding: 0 25px;
+  overscroll-behavior: contain;
+}
+.linha-cesta {
+  display: flex;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid #dcd3ca;
+}
+.linha-cesta > img {
+  width: 95px;
+  height: 119px;
+  object-fit: contain;
+  background: #eee6df;
+  border-radius: 4px;
+}
+.linha-cesta > div {
+  flex: 1;
+  min-width: 0;
+}
+.linha-cesta h3 {
+  margin: 0;
+  font-size: 14px;
+}
+.linha-cesta p {
+  font-size: 10px;
+  color: #79736e;
+  line-height: 1.6;
+}
+.linha-cesta strong {
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.controles-quantidade {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.controles-quantidade button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d4c3b8;
+  background: none;
+  color: var(--marsala);
+}
+.controles-quantidade .remover-produto {
+  width: auto;
+  height: auto;
+  border: 0;
+  text-decoration: underline;
+  font-size: 10px;
+  margin-left: auto;
+  padding: 6px 0;
+}
+.controles-quantidade button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.resumo-cesta {
+  padding: 22px 25px max(22px, env(safe-area-inset-bottom));
+  border-top: 1px solid #dcd3ca;
+  flex-shrink: 0;
+  background: #f6f2ec;
+}
+.resumo-cesta > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+}
+.resumo-cesta p {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #79736e;
+}
+.pedido-whatsapp {
+  display: block;
+  width: 100%;
+  padding: 17px 12px;
+  background: var(--marsala);
+  color: #fff;
+  text-align: center;
+  border: 0;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.pedido-whatsapp:hover {
+  background: #63232f;
+}
+.pedido-whatsapp:disabled {
+  background: #cbbdb2;
+  cursor: default;
+}
+.resumo-cesta small {
+  display: block;
+  text-align: center;
+  font-size: 9px;
+  color: #79736e;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+.cesta-vazia {
+  text-align: center;
+  padding: 55px 0;
+}
+.cesta-vazia svg {
+  width: 95px;
+  stroke: var(--marsala);
+  stroke-width: 2;
+}
+.cesta-vazia h3 {
+  font-size: 18px;
+}
+.cesta-vazia p {
+  font-size: 12px;
+  color: #79736e;
+  line-height: 1.7;
+}
+.cesta-vazia button {
+  border: 0;
+  background: none;
+  color: var(--marsala);
+  font-size: 12px;
+  text-decoration: underline;
+  padding: 15px;
+}
+.painel-cesta:focus-visible {
+  outline: none;
+}
+@media (hover: none), (pointer: coarse) {
+  .adicionar-cesta {
+    opacity: 1;
+    pointer-events: auto;
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (max-width: 600px) {
+  .cesta-visual {
+    right: 14px;
+    bottom: 14px;
+    width: 96px;
+    height: 106px;
+  }
+  .cesta-visual > svg {
+    width: 76px;
+    height: 70px;
+    left: 9px;
+    top: 8px;
+  }
+  .miniaturas-cesta img {
+    width: 30px;
+    height: 35px;
+  }
+  .cabecalho-cesta {
+    padding-top: 20px;
+  }
+  .linha-cesta {
+    gap: 12px;
+  }
+  .linha-cesta > img {
+    width: 80px;
+    height: 100px;
+  }
+  .itens-cesta {
+    padding: 0 20px;
+  }
+  .resumo-cesta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  footer {
+    padding-bottom: 125px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .adicionar-cesta {
+    transition: none;
+  }
+}
+.foto-produto[draggable="true"] {
+  cursor: grab;
+}
+.foto-produto[draggable="true"]:active {
+  cursor: grabbing;
+}
+.cesta-visual.arrastando {
+  outline: 2px dashed var(--marsala);
+  outline-offset: 5px;
+  background: #f6f2ec;
+}
+.cesta-visual.destino-arraste {
+  background: #e7d6ce;
+  box-shadow: 0 0 0 8px #7a2e3a1a;
+}
+.cesta-visual.arrastando > * {
+  pointer-events: none;
+}
+.miniaturas-cesta img {
+  object-fit: contain;
+  background: #f6f2ec;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px #30231e44;
+}
