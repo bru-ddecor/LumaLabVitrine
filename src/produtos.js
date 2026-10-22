@@ -193,6 +193,69 @@ const produtos = [
     ),
   },
   {
+    id: "erika_pra_presidente",
+    referencia: "UNI-008",
+    nome: "Erika pra Presidente",
+    tipo: "unitario",
+    palavrasChave:
+      "erika erica presidente presidenta o povo quer a erika pra presidente frase meme humor divertido cultura pop branco white preto black bege cabelo loiro dourado retrato fotografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/erika_pra_presidente/${arquivo}`,
+    ),
+  },
+  {
+    id: "itachi_poder_do_susanoo",
+    referencia: "UNI-009",
+    nome: "Itachi — Poder do Susanoo",
+    tipo: "unitario",
+    palavrasChave:
+      "itachi uchiha naruto shippuden akatsuki sharingan mangekyou susanoo susano poder ninja shinobi anime mangá manga otaku geek preto black vermelho red branco white azul blue esqueleto costelas mão energia nuvens quadrinhos",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/itachi_poder_do_susanoo/${arquivo}`,
+    ),
+  },
+  {
+    id: "naruto_legado_dos_mestres",
+    referencia: "UNI-010",
+    nome: "Naruto — Legado dos Mestres",
+    tipo: "unitario",
+    palavrasChave:
+      "naruto uzumaki jiraiya minato namikaze shippuden mestre aluno família pai filho ninja shinobi hokage sannin konoha aldeia folha anime mangá manga otaku geek laranja orange vermelho red preto black amarelo yellow cabelo loiro branco pergaminho legado",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/naruto_legado_dos_mestres/01.jpg"],
+  },
+  {
+    id: "ace_chama_livre",
+    referencia: "UNI-011",
+    nome: "Ace — Chama Livre",
+    tipo: "unitario",
+    palavrasChave:
+      "ace portgas d one piece onepiece punhos fogo chama chamas incêndio mera mera no mi pirata barba branca anime mangá manga otaku geek laranja orange amarelo yellow vermelho red preto black bege chapéu colar contas tatuagem asce caveira quadrinhos",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/ace_chama_livre/${arquivo}`,
+    ),
+  },
+  {
+    id: "gatinho_nuvem_de_amor",
+    referencia: "UNI-012",
+    nome: "Gatinho — Nuvem de Amor",
+    tipo: "unitario",
+    palavrasChave:
+      "gato gatinho gatinha felino filhote pet animal animais cat kitten rosa pink marrom brown bege pastel coração amor nuvem nuvens céu estrelas estrelinhas brilho fofo cute kawaii delicado romântico coquette aesthetic bigodes tigrado",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gatinho_nuvem_de_amor/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

@@ -94,7 +94,7 @@ function GaleriaProduto({ produto: produto, kit = false }) {
   const [ativa, definirAtiva] = useState(0);
   const referenciaFoto = usarAnimacaoFoto(ativa);
   const nome = `${produto.tipo === "kit" ? "Kit " : ""}${produto.nome}`;
-  // Cada produto do catálogo fornece suas três fotos.
+  // A galeria aceita uma ou mais fotos por produto.
   const fotos = produto.imagens ?? [null, null, null];
   return (
     <div
@@ -131,18 +131,20 @@ function GaleriaProduto({ produto: produto, kit = false }) {
           <ArteProvisoria produto={produto} kit={kit} visualizacao={ativa} />
         )}
       </div>
-      <div className="indicadores-fotos" aria-label="Escolher foto">
-        {fotos.map((ignorado, indice) => (
-          <button
-            key={indice}
-            aria-label={`Ver foto ${indice + 1} de ${nome}`}
-            aria-pressed={indice === ativa}
-            onClick={() => definirAtiva(indice)}
-          >
-            <span />
-          </button>
-        ))}
-      </div>
+      {fotos.length > 1 && (
+        <div className="indicadores-fotos" aria-label="Escolher foto">
+          {fotos.map((ignorado, indice) => (
+            <button
+              key={indice}
+              aria-label={`Ver foto ${indice + 1} de ${nome}`}
+              aria-pressed={indice === ativa}
+              onClick={() => definirAtiva(indice)}
+            >
+              <span />
+            </button>
+          ))}
+        </div>
+      )}
       <span className="apenas-leitor" aria-live="polite">
         Foto {ativa + 1} de {fotos.length}
       </span>

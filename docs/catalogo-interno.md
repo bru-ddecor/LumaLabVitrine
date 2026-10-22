@@ -24,6 +24,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-005 | Doflamingo — Sorriso do Caos | Botton individual | doflamingo_sorriso_do_caos |
 | UNI-006 | Luffy — Espírito Livre | Botton individual | luffy_espirito_livre |
 | UNI-007 | Snoopy — Eu Posso, Eu Consigo | Botton individual | snoopy_eu_posso |
+| UNI-008 | Erika pra Presidente | Botton individual | erika_pra_presidente |
+| UNI-009 | Itachi — Poder do Susanoo | Botton individual | itachi_poder_do_susanoo |
+| UNI-010 | Naruto — Legado dos Mestres | Botton individual | naruto_legado_dos_mestres |
+| UNI-011 | Ace — Chama Livre | Botton individual | ace_chama_livre |
+| UNI-012 | Gatinho — Nuvem de Amor | Botton individual | gatinho_nuvem_de_amor |
 | PER-001 | Seu artista, sua música | Personalizado | personalizado_musical |
 
 ## Tamanhos dos individuais
