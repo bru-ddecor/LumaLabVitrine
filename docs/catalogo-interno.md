@@ -49,6 +49,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-030 | Gatinho — Língua de Fora | Botton individual | gatinho_lingua_de_fora |
 | UNI-031 | Gatinho — Olhar de Veludo | Botton individual | gatinho_olhar_de_veludo |
 | UNI-032 | Luffy — Espírito Travesso | Botton individual | luffy_espirito_travesso |
+| UNI-033 | Lendas em Batalha | Botton individual | lendas_em_batalha |
+| UNI-034 | Cavaleiro — Juramento Rubro | Botton individual | cavaleiro_juramento_rubro |
+| UNI-035 | Amar? Nesta Economia? | Botton individual | amar_nesta_economia |
+| UNI-036 | Semente do Amor | Botton individual | semente_do_amor |
+| UNI-037 | Fala Comigo Não, Eu Namoro | Botton individual | fala_comigo_nao_eu_namoro |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

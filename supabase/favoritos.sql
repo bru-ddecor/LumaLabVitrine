@@ -102,5 +102,10 @@ insert into public.catalogo_favoritos(produto) values
 ('gojo_sorriso_infinito'),
 ('gatinho_lingua_de_fora'),
 ('gatinho_olhar_de_veludo'),
-('luffy_espirito_travesso')
+('luffy_espirito_travesso'),
+('lendas_em_batalha'),
+('cavaleiro_juramento_rubro'),
+('amar_nesta_economia'),
+('semente_do_amor'),
+('fala_comigo_nao_eu_namoro')
 on conflict do nothing;

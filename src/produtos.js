@@ -630,6 +630,70 @@ const produtos = [
     ),
   },
   {
+    id: "lendas_em_batalha",
+    referencia: "UNI-033",
+    nome: "Lendas em Batalha",
+    tipo: "unitario",
+    palavrasChave:
+      "kratos god of war doom slayer doomguy geralt de rivia the witcher guts berserk jogos videogame games gamer crossover anime mangá manga geek guerreiro batalha fantasia ação dark preto black branco white cinza vermelho red retrato símbolos",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/lendas_em_batalha/${arquivo}`,
+    ),
+  },
+  {
+    id: "cavaleiro_juramento_rubro",
+    referencia: "UNI-034",
+    nome: "Cavaleiro — Juramento Rubro",
+    tipo: "unitario",
+    palavrasChave:
+      "cavaleiro guerreiro knight armadura elmo capacete espada lâmina medieval fantasia dark fantasy rpg batalha juramento gótico goth sombrio preto black vermelho red branco white cinza prata metal ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagemCesta: "/imagens/unitarios/cavaleiro_juramento_rubro/02.jpg",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/cavaleiro_juramento_rubro/${arquivo}`,
+    ),
+  },
+  {
+    id: "amar_nesta_economia",
+    referencia: "UNI-035",
+    nome: "Amar? Nesta Economia?",
+    tipo: "unitario",
+    palavrasChave:
+      "meme memes humor engraçado divertido ironia sarcasmo amar nesta economia amor romance relacionamento solteiro crise dinheiro frase internet selfie espelho celular óculos escuros jaqueta preto black vermelho red verde fotografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/amar_nesta_economia/01.jpg"],
+  },
+  {
+    id: "semente_do_amor",
+    referencia: "UNI-036",
+    nome: "Semente do Amor",
+    tipo: "unitario",
+    palavrasChave:
+      "semente amor quem cultiva a semente do amor segue em frente e não se apavora frase música musical letra canção mpb brasil brasileiro esperança motivação carinho rosa pink vinho bordô marsala vermelho estrela estrelas pipa rosto sorriso ilustração tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/semente_do_amor/${arquivo}`,
+    ),
+  },
+  {
+    id: "fala_comigo_nao_eu_namoro",
+    referencia: "UNI-037",
+    nome: "Fala Comigo Não, Eu Namoro",
+    tipo: "unitario",
+    palavrasChave:
+      "fala cmg nao eu namoro fala comigo não eu namoro meme memes humor engraçado divertido ironia caveira crânio esqueleto ossos ceifador capuz manto morte dark gótico goth preto black cinza branco vermelho red frase relacionamento namoro casal compromisso",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/fala_comigo_nao_eu_namoro/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
