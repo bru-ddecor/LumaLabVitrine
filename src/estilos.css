@@ -1147,3 +1147,28 @@ footer {
   text-decoration: underline;
   color: var(--marsala);
 }
+
+.convite-personalizado {
+  margin: 2rem 0 0;
+  text-align: center;
+}
+.convite-personalizado a {
+  color: var(--marsala);
+  text-underline-offset: 0.3em;
+}
+.cartao-arte-personalizada {
+  margin-top: 2rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--marsala);
+  border-radius: 1.25rem;
+  max-width: 44rem;
+}
+.cartao-arte-personalizada h3 {
+  margin: 0.75rem 0;
+  font-size: 1.5rem;
+}
+.cartao-arte-personalizada p {
+  color: var(--texto-suave);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}

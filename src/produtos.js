@@ -321,6 +321,72 @@ const produtos = [
     ),
   },
   {
+    id: "naruto_caminho_ninja",
+    referencia: "UNI-018",
+    nome: "Naruto — Caminho Ninja",
+    tipo: "unitario",
+    palavrasChave:
+      "naruto uzumaki shippuden ninja shinobi konoha aldeia folha hokage anime mangá manga otaku geek preto black branco white creme bege vermelho red personagem costas bandana cabelo espetado corda espiral símbolo letras japonesas minimalista contraste",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/naruto_caminho_ninja/${arquivo}`,
+    ),
+  },
+  {
+    id: "trio_do_lamen",
+    referencia: "UNI-019",
+    nome: "Trio do Lámen",
+    tipo: "unitario",
+    palavrasChave:
+      "naruto uzumaki luffy monkey d one piece onepiece goku son dragon ball dragonball anime mangá manga otaku geek shonen crossover trio lámen ramen macarrão comida tigela hashi pauzinhos comendo fome concurso divertido humor preto black laranja orange vermelho red azul blue branco white chapéu palha bandana",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/trio_do_lamen/${arquivo}`,
+    ),
+  },
+  {
+    id: "morticia_gomez_amor_sombrio",
+    referencia: "UNI-020",
+    nome: "Mortícia e Gomez — Amor Sombrio",
+    tipo: "unitario",
+    palavrasChave:
+      "mortícia morticia mortisha gomez addams família familia addams casal amor romance romântico coração corações beijo mão apaixonados desenho cartoon preto black branco white cinza grey monocromático dark gótico goth gothic alternativo aesthetic vestido listras terno",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagemCesta: "/imagens/unitarios/morticia_gomez_amor_sombrio/02.jpg",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/morticia_gomez_amor_sombrio/${arquivo}`,
+    ),
+  },
+  {
+    id: "naruto_setimo_hokage",
+    referencia: "UNI-021",
+    nome: "Naruto — Sétimo Hokage",
+    tipo: "unitario",
+    palavrasChave:
+      "naruto uzumaki sétimo hokage nanadaime boruto shippuden ninja shinobi konoha aldeia folha anime mangá manga otaku geek preto black branco white bege creme monocromático minimalista silhueta costas manto capa chamas fogo kanji letras japonesas cabelo espetado",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/naruto_setimo_hokage/${arquivo}`,
+    ),
+  },
+  {
+    id: "poe_beleza_rara",
+    referencia: "UNI-022",
+    nome: "Poe — Beleza Rara",
+    tipo: "unitario",
+    palavrasChave:
+      "edgar allan poe literatura literário escritor autor livro leitura poesia poema frase citação não há beleza rara sem algo de estranho nas proporções preto black branco white cinza bege creme sépia dark academia gótico goth aesthetic clássico tipografia letras",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/poe_beleza_rara/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

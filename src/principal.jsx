@@ -239,10 +239,12 @@ function Colecao({
   kit = false,
   produtosDaColecao = produtos,
   identificador = kit ? "kits" : "destaques",
+  mostrarTodos = false,
 }) {
   const [expandida, definirExpandida] = useState(false);
-  const faixa = usarAnimacaoColecao(expandida, produtosDaColecao);
-  const gestos = usarArrasteHorizontal(faixa, expandida);
+  const exibirGrade = mostrarTodos || expandida;
+  const faixa = usarAnimacaoColecao(exibirGrade, produtosDaColecao);
+  const gestos = usarArrasteHorizontal(faixa, exibirGrade);
   return (
     <section
       className={`colecao ${["personalizados", "unitarios"].includes(identificador) ? "colecao-produtos-avulsos" : ""}`}
@@ -271,18 +273,18 @@ function Colecao({
       <div
         ref={faixa}
         {...gestos}
-        tabIndex={expandida ? undefined : 0}
+        tabIndex={exibirGrade ? undefined : 0}
         role="region"
         aria-label={`Produtos de ${titulo}: arraste para os lados ou use as teclas de seta`}
-        className={expandida ? "grade-produtos" : "faixa-produtos"}
+        className={exibirGrade ? "grade-produtos" : "faixa-produtos"}
       >
-        {(expandida ? produtosDaColecao : produtosDaColecao.slice(0, 5)).map(
+        {(exibirGrade ? produtosDaColecao : produtosDaColecao.slice(0, 5)).map(
           (produto) => (
             <CartaoProduto key={produto.id} produto={produto} kit={kit} />
           ),
         )}
       </div>
-      {produtosDaColecao.length > 5 && (
+      {!mostrarTodos && produtosDaColecao.length > 5 && (
         <div className="ver-mais">
           <button onClick={() => definirExpandida(!expandida)}>
             {expandida ? "Ver menos" : "Ver mais " + (kit ? "kits" : "bottons")}{" "}
@@ -295,6 +297,33 @@ function Colecao({
             de {produtosDaColecao.length} {kit ? "kits" : "bottons"}
           </small>
         </div>
+      )}
+      {identificador === "unitarios" && (
+        <p className="convite-personalizado">
+          <a href="#personalizados">
+            Não achou a arte que estava procurando?{" "}
+            <span aria-hidden="true">↓</span>
+          </a>
+        </p>
+      )}
+      {identificador === "personalizados" && (
+        <article className="cartao-arte-personalizada">
+          <span className="sobretitulo">SUA IDEIA VIRA BOTTON</span>
+          <h3>Unitários personalizados</h3>
+          <p>
+            Quer uma arte que ainda não está na vitrine? Conte sua ideia ou
+            envie uma referência. Vamos combinar a arte, o tamanho e o valor do
+            seu botton pelo WhatsApp.
+          </p>
+          <a
+            className="personalizar-produto"
+            href={`https://wa.me/5532999240859?text=${encodeURIComponent("Olá! Não encontrei a arte que procuro na vitrine e gostaria de um botton unitário personalizado. Podemos combinar a arte, o tamanho e o valor?")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Quero personalizar meu botton ↗
+          </a>
+        </article>
       )}
     </section>
   );
@@ -502,7 +531,15 @@ function Aplicacao() {
           Kits com 4 bottons de 44 mm • 4,4 cm. Explore as três fotos de cada
           kit e encontre o seu favorito.
         </div>
-        {filtrados.length ? (
+        {busca.trim() && filtrados.length ? (
+          <Colecao
+            identificador="resultados"
+            titulo="Resultados da busca"
+            subtitulo={`${filtrados.length} produto${filtrados.length === 1 ? " encontrado" : "s encontrados"} para “${busca.trim()}”.`}
+            produtosDaColecao={filtrados}
+            mostrarTodos
+          />
+        ) : filtrados.length ? (
           <>
             {kitsFiltrados.length > 0 && (
               <>

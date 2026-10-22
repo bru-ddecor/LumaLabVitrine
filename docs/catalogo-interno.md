@@ -34,6 +34,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-015 | Ryuk — Sombra Lunar | Botton individual | ryuk_sombra_lunar |
 | UNI-016 | Sorriso nas Sombras | Botton individual | sorriso_nas_sombras |
 | UNI-017 | Entre Luz e Sombra | Botton individual | entre_luz_e_sombra |
+| UNI-018 | Naruto — Caminho Ninja | Botton individual | naruto_caminho_ninja |
+| UNI-019 | Trio do Lámen | Botton individual | trio_do_lamen |
+| UNI-020 | Mortícia e Gomez — Amor Sombrio | Botton individual | morticia_gomez_amor_sombrio |
+| UNI-021 | Naruto — Sétimo Hokage | Botton individual | naruto_setimo_hokage |
+| UNI-022 | Poe — Beleza Rara | Botton individual | poe_beleza_rara |
 | PER-001 | Seu artista, sua música | Personalizado | personalizado_musical |
 
 ## Tamanhos dos individuais
