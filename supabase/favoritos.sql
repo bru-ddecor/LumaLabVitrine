@@ -112,5 +112,8 @@ insert into public.catalogo_favoritos(produto) values
 ('me_ame_anavitoria'),
 ('mikey_tons_de_calmaria'),
 ('em_algum_lugar_pra_relaxar'),
-('sou_feliz_e_agradeco')
+('sou_feliz_e_agradeco'),
+('nerd_universo_particular'),
+('cachorrinho_charme_de_bandana'),
+('espelho_tudo_a_seu_favor')
 on conflict do nothing;

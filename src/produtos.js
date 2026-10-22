@@ -758,6 +758,45 @@ const produtos = [
     ),
   },
   {
+    id: "nerd_universo_particular",
+    referencia: "UNI-043",
+    nome: "Nerd — Universo Particular",
+    tipo: "unitario",
+    palavrasChave:
+      "nerd geek nasa espaço espacial universo cosmos astronomia ciência órbita estrelas céu noite galáxia tecnologia azul marinho blue preto black branco white vermelho red letras tipografia humor",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/nerd_universo_particular/${arquivo}`,
+    ),
+  },
+  {
+    id: "cachorrinho_charme_de_bandana",
+    referencia: "UNI-044",
+    nome: "Cachorrinho — Charme de Bandana",
+    tipo: "unitario",
+    palavrasChave:
+      "cachorro cachorrinho cão cãozinho dog puppy pet animal animais bandana lenço azul blue preto black branco white bege focinho olhos grandes orelhas fofo cute fotografia retrato amizade companheiro",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/cachorrinho_charme_de_bandana/${arquivo}`,
+    ),
+  },
+  {
+    id: "espelho_tudo_a_seu_favor",
+    referencia: "UNI-045",
+    nome: "Espelho — Tudo a Seu Favor",
+    tipo: "unitario",
+    palavrasChave:
+      "everything is working out for you tudo a seu favor frase inglês autoestima amor próprio autocuidado confiança motivação afirmação positiva esperança espelho dourado gold rosa pink salmão preto black marrom mulher negra cabelo cacheado crespo mãos ilustração aesthetic",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/espelho_tudo_a_seu_favor/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

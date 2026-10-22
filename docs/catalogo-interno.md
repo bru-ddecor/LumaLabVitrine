@@ -59,6 +59,9 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-040 | Mikey — Tons de Calmaria | Botton individual | mikey_tons_de_calmaria |
 | UNI-041 | Em Algum Lugar pra Relaxar | Botton individual | em_algum_lugar_pra_relaxar |
 | UNI-042 | Sou Feliz e Agradeço | Botton individual | sou_feliz_e_agradeco |
+| UNI-043 | Nerd — Universo Particular | Botton individual | nerd_universo_particular |
+| UNI-044 | Cachorrinho — Charme de Bandana | Botton individual | cachorrinho_charme_de_bandana |
+| UNI-045 | Espelho — Tudo a Seu Favor | Botton individual | espelho_tudo_a_seu_favor |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
