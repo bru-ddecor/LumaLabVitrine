@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./estilos.css";
 import "./tema.css";
+import { AlternarTema, ProvedorTema } from "./tema";
 import { MenuLateral } from "./menu";
 import { MovimentoOrbital } from "./orbita";
 import { FraseUtilizacao } from "./frase-utilizacao";
@@ -228,7 +229,8 @@ function Aplicacao() {
             </span>
           </a>
         </div>
-        <nav>
+        <nav className="navegacao-principal" aria-label="Navegação principal">
+          <AlternarTema compacto />
           <a href="#destaques">Destaques</a>
           <a href="#kits">Kits de bottons</a>
         </nav>
@@ -461,7 +463,9 @@ function Aplicacao() {
   );
 }
 createRoot(document.getElementById("raiz")).render(
-  <ProvedorCesta>
-    <Aplicacao />
-  </ProvedorCesta>,
+  <ProvedorTema>
+    <ProvedorCesta>
+      <Aplicacao />
+    </ProvedorCesta>
+  </ProvedorTema>,
 );

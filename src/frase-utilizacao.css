@@ -1,15 +1,15 @@
 .frase-utilizacao {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  display: block;
+  margin-bottom: 18px;
+  font-family: Poppins, Arial, sans-serif;
   color: var(--texto-suave);
-  font-size: 11px;
+  font-size: calc(var(--tamanho-titulo-colecao) - 1pt);
   letter-spacing: 0.3px;
-  line-height: 1.8;
+  line-height: 1.65;
 }
 .sugestao-utilizacao {
   display: inline-block;
-  min-width: 12ch;
+  width: 11ch;
   white-space: nowrap;
 }
 .sugestao-utilizacao > strong {
@@ -25,25 +25,18 @@
   background: #a7c7f716;
   color: #bed8ff;
 }
-.controle-sugestoes {
-  display: grid;
-  place-items: center;
-  width: 26px;
-  height: 26px;
-  padding: 5px;
-  border: 1px solid #c6b7aa;
-  border-radius: 50%;
-  background: transparent;
-  color: var(--marsala);
+
+.colecao {
+  --tamanho-titulo-colecao: 30px;
 }
-.controle-sugestoes svg {
-  width: 12px;
-  height: 12px;
+.colecao .cabecalho-secao h2 {
+  font-size: var(--tamanho-titulo-colecao);
 }
-.controle-sugestoes:disabled {
-  opacity: 0.5;
-  cursor: default;
-}
-[data-tema="escuro"] .controle-sugestoes {
-  border-color: #647d9e;
+@media (max-width: 600px) {
+  .colecao {
+    --tamanho-titulo-colecao: 26px;
+  }
+  .frase-utilizacao {
+    margin-bottom: 16px;
+  }
 }

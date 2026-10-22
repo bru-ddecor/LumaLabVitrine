@@ -354,3 +354,48 @@ html[data-transicao-tema="cores"]
     transition: none;
   }
 }
+.navegacao-principal {
+  align-items: center;
+  gap: 24px;
+}
+.alternar-tema.tema-compacto {
+  width: 32px;
+  height: 32px;
+  min-height: 32px;
+  padding: 6px;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.alternar-tema.tema-compacto > span {
+  display: none;
+}
+.tema-compacto svg {
+  width: 17px;
+  height: 17px;
+}
+@media (max-width: 600px) {
+  .navegacao-principal {
+    gap: 10px;
+  }
+}
+@media (max-width: 380px) {
+  header {
+    gap: 8px;
+  }
+  .inicio-cabecalho {
+    gap: 7px;
+  }
+  .inicio-cabecalho .logo {
+    font-size: 24px;
+  }
+  .navegacao-principal {
+    gap: 8px;
+  }
+  .alternar-tema.tema-compacto {
+    width: 28px;
+    height: 28px;
+    min-height: 28px;
+    padding: 5px;
+  }
+}

@@ -1,4 +1,11 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 
 const CHAVE_TEMA = "lumalab-tema";
 function preferenciaSalva() {
@@ -15,7 +22,9 @@ function temaDoSistema() {
     : "claro";
 }
 
-export function AlternarTema() {
+const ContextoTema = createContext(null);
+
+export function ProvedorTema({ children: conteudo }) {
   const [tema, definirTema] = useState(
     () => preferenciaSalva() || temaDoSistema(),
   );
@@ -73,8 +82,17 @@ export function AlternarTema() {
     } catch {}
   }
   return (
+    <ContextoTema.Provider value={{ tema, alternar }}>
+      {conteudo}
+    </ContextoTema.Provider>
+  );
+}
+
+export function AlternarTema({ compacto = false }) {
+  const { tema, alternar } = useContext(ContextoTema);
+  return (
     <button
-      className="alternar-tema"
+      className={`alternar-tema ${compacto ? "tema-compacto" : ""}`}
       onClick={alternar}
       aria-pressed={tema === "escuro"}
       aria-label={
