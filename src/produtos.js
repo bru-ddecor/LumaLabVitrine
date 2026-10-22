@@ -194,11 +194,12 @@ const produtos = [
   },
   {
     id: "erika_pra_presidente",
+    destaque: true,
     referencia: "UNI-008",
     nome: "Erika pra Presidente",
     tipo: "unitario",
     palavrasChave:
-      "erika erica presidente presidenta o povo quer a erika pra presidente frase meme humor divertido cultura pop branco white preto black bege cabelo loiro dourado retrato fotografia",
+      "política eleições democracia representação erika erica presidente presidenta o povo quer a erika pra presidente frase meme humor divertido cultura pop branco white preto black bege cabelo loiro dourado retrato fotografia",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -421,11 +422,13 @@ const produtos = [
     tipo: "parzinho",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
-    descricao: "Uma dupla de Hora de Aventura para usar juntinha ou dividir com alguém especial.",
+    descricao:
+      "Uma dupla de Hora de Aventura para usar juntinha ou dividir com alguém especial.",
     palavrasChave:
       "par parzinho dupla dois 2 unidades marceline marshall princesa jujuba bubblegum bubbline hora de aventura adventure time cartoon network desenho casal amor amizade vampira presas dentes coroa princesa rosa pink preto black branco white amarelo dourado azul fofo cute kawaii minimalista presente",
     imagens: ["01.jpg", "02.jpg"].map(
-      (arquivo) => `/imagens/parzinhos/marceline_jujuba_doce_sintonia/${arquivo}`,
+      (arquivo) =>
+        `/imagens/parzinhos/marceline_jujuba_doce_sintonia/${arquivo}`,
     ),
   },
   {
@@ -435,7 +438,8 @@ const produtos = [
     tipo: "parzinho",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
-    descricao: "Uma dupla dos Jovens Titãs para usar junto ou dividir com alguém especial.",
+    descricao:
+      "Uma dupla dos Jovens Titãs para usar junto ou dividir com alguém especial.",
     palavrasChave:
       "par parzinho dupla dois 2 unidades mutano ravena beast boy beastboy raven jovens titãs teen titans titans go dc cartoon network desenho herói super heróis casal amizade verde green roxo purple violeta azul blue preto black branco white olhos rosto capuz fofo cute presente",
     imagens: ["/imagens/parzinhos/mutano_ravena_sintonia_tita/01.jpg"],
@@ -447,11 +451,83 @@ const produtos = [
     tipo: "parzinho",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
-    descricao: "Jake e a turma de Ooo em dois bottons para usar juntos ou dividir uma aventura.",
+    descricao:
+      "Jake e a turma de Ooo em dois bottons para usar juntos ou dividir uma aventura.",
     palavrasChave:
       "par parzinho dupla dois 2 unidades hora de aventura adventure time cartoon network finn jake cachorro cão princesa jujuba marceline princesa caroço rei gelado bmo ooo amigos amizade desenho amarelo yellow laranja azul blue rosa pink verde roxo colorido fofo cute kawaii espada fantasia presente",
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
       (arquivo) => `/imagens/parzinhos/amigos_de_ooo/${arquivo}`,
+    ),
+  },
+  {
+    id: "hello_kitty_treino_fofo",
+    referencia: "PAR-005",
+    nome: "Hello Kitty — Treino Fofo",
+    tipo: "parzinho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
+    descricao:
+      "Uma dupla cheia de energia e fofura para acompanhar seus treinos ou dividir com sua parceria de academia.",
+    palavrasChave:
+      "hello kitty hellokitty sanrio par parzinho dupla dois 2 unidades academia treino musculação fitness gym esporte exercício bicicleta ergométrica spinning cardio barra peso halteres laço rosa pink branco white pastel coração flores estrelas fofo cute kawaii girly aesthetic amizade presente",
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/parzinhos/hello_kitty_treino_fofo/${arquivo}`,
+    ),
+  },
+  {
+    id: "meninas_superpoderosas",
+    referencia: "TRI-001",
+    nome: "Meninas Superpoderosas — Trio de Poder",
+    tipo: "trio",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 1500, 44: 2000, 55: 2400 },
+    imagemCesta: "/imagens/trios/meninas_superpoderosas/02.jpg",
+    descricao:
+      "Florzinha, Lindinha e Docinho: três bottons para levar esse trio de poder com você ou dividir com suas melhores companhias.",
+    palavrasChave:
+      "trio trios três 3 unidades meninas superpoderosas powerpuff girls florzinha lindinha docinho blossom bubbles buttercup cartoon network desenho heroínas super heroínas amizade amigas irmãs azul blue rosa pink verde green amarelo laço fofo cute kawaii presente",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/trios/meninas_superpoderosas/${arquivo}`,
+    ),
+  },
+  {
+    id: "gatinha_comunista",
+    referencia: "UNI-024",
+    nome: "Gatinha Comunista — Vitroles",
+    tipo: "unitario",
+    destaque: true,
+    palavrasChave:
+      "gatinha comunista vitroles música musical banda canção letra trecho spotify playlist indie rock pop brasileiro mpb política comunismo esquerda socialismo vermelho red preto black frase minha gatinha comunista eu preciso te dizer que eu acho que o vermelho fica tão bem em você romance humor",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gatinha_comunista/${arquivo}`,
+    ),
+  },
+  {
+    id: "ultimo_ato_de_amor",
+    referencia: "UNI-025",
+    nome: "Último Ato de Amor",
+    tipo: "unitario",
+    palavrasChave:
+      "monster energy ultra energético bebida lata taurina branco white preto black cinza prata azul frase texto meme amor último ato de amor eu nunca mais vou te procurar mas me tornarei tudo aquilo que prometi término superação recomeço promessa romântico melancólico aesthetic fotografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/ultimo_ato_de_amor/${arquivo}`,
+    ),
+  },
+  {
+    id: "nao_aguento_segunda_feira",
+    referencia: "UNI-026",
+    nome: "Não Aguento Segunda-feira",
+    tipo: "unitario",
+    palavrasChave:
+      "meme memes humor engraçado divertido ironia reação televisão tv ao vivo joão kleber não aguenta a chegada da segunda feira e desmaia trabalho rotina cansaço cansado cansada preguiça fim de semana azul blue preto black marrom frase internet brasileiro",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/nao_aguento_segunda_feira/${arquivo}`,
     ),
   },
   {
@@ -483,7 +559,7 @@ function buscarProdutos(busca) {
   const termos = normalizarBusca(busca).split(/\s+/).filter(Boolean);
   return produtos.filter((produto) => {
     const texto = normalizarBusca(
-      `${produto.nome} ${produto.palavrasChave} botton bottons ${produto.tipo === "kit" ? "kit 4 unidades 44mm 44 mm" : ["unitario", "parzinho"].includes(produto.tipo) ? "individual unitario avulso 32mm 32 mm 44mm 44 mm 55mm 55 mm" : "personalizado"}`,
+      `${produto.nome} ${produto.palavrasChave} botton bottons ${produto.tipo === "kit" ? "kit 4 unidades 44mm 44 mm" : ["unitario", "parzinho", "trio"].includes(produto.tipo) ? "individual unitario avulso 32mm 32 mm 44mm 44 mm 55mm 55 mm" : "personalizado"}`,
     );
     return termos.every((termo) => texto.includes(termo));
   });
@@ -496,12 +572,12 @@ const tamanhosDisponiveis = [
 ];
 function precoProduto(produto) {
   if (produto.tipo === "kit") return 2350;
-  if (["unitario", "parzinho"].includes(produto.tipo))
+  if (["unitario", "parzinho", "trio"].includes(produto.tipo))
     return produto.precosPorTamanho[produto.tamanhoSelecionado] ?? null;
   return produto.precoCentavos ?? null;
 }
 function chaveProduto(produto) {
-  return ["unitario", "parzinho"].includes(produto.tipo)
+  return ["unitario", "parzinho", "trio"].includes(produto.tipo)
     ? `${produto.id}::${produto.tamanhoSelecionado}`
     : produto.id;
 }
@@ -530,7 +606,7 @@ function resolverItemCesta(chave) {
 }
 // Uso interno: a medida diferencia as variantes sem alterar o código da arte.
 function referenciaProduto(produto) {
-  return ["unitario", "parzinho"].includes(produto.tipo) &&
+  return ["unitario", "parzinho", "trio"].includes(produto.tipo) &&
     produto.tamanhoSelecionado
     ? `${produto.referencia}-${produto.tamanhoSelecionado}`
     : produto.referencia;

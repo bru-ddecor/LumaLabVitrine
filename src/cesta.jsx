@@ -40,7 +40,7 @@ const formatarValor = (centavos) =>
     currency: "BRL",
   });
 const titulo = (produto) =>
-  `${produto.tipo === "kit" ? "Kit " : ""}${produto.nome}${["unitario", "parzinho"].includes(produto.tipo) && produto.tamanhoSelecionado ? ` — ${produto.tamanhoSelecionado} mm` : ""}`;
+  `${produto.tipo === "kit" ? "Kit " : ""}${produto.nome}${["unitario", "parzinho", "trio"].includes(produto.tipo) && produto.tamanhoSelecionado ? ` — ${produto.tamanhoSelecionado} mm` : ""}`;
 function lerCesta() {
   try {
     const salvos = JSON.parse(localStorage.getItem(CHAVE_ARMAZENAMENTO));
@@ -321,7 +321,7 @@ function ProvedorCesta({ children: filhos }) {
   function validarEscolha(produto, imagem) {
     if (produto.tipo === "personalizado") return false;
     if (
-      ["unitario", "parzinho"].includes(produto.tipo) &&
+      ["unitario", "parzinho", "trio"].includes(produto.tipo) &&
       (!produto.tamanhoSelecionado || preco(produto) === null)
     ) {
       origemAviso.current = imagem

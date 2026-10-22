@@ -153,7 +153,9 @@ function GaleriaProduto({ produto: produto, kit = false }) {
 }
 function CartaoProduto({ produto, kit = false }) {
   const [tamanhoSelecionado, definirTamanhoSelecionado] = useState(null);
-  const produtoSelecionado = ["unitario", "parzinho"].includes(produto.tipo)
+  const produtoSelecionado = ["unitario", "parzinho", "trio"].includes(
+    produto.tipo,
+  )
     ? { ...produto, tamanhoSelecionado }
     : produto;
   const valor = precoProduto(produtoSelecionado);
@@ -171,7 +173,9 @@ function CartaoProduto({ produto, kit = false }) {
               ? "BOTTON PERSONALIZADO · 1 UNIDADE"
               : produto.tipo === "parzinho"
                 ? "PAR COM 2 BOTTONS"
-                : "BOTTON INDIVIDUAL"}
+                : produto.tipo === "trio"
+                  ? "TRIO COM 3 BOTTONS"
+                  : "BOTTON INDIVIDUAL"}
         </span>
         {produto.tipo === "kit" && <b>ECONOMIZE R$ 6,50</b>}
       </div>
@@ -179,7 +183,7 @@ function CartaoProduto({ produto, kit = false }) {
         {produto.tipo === "kit" ? "Kit " : ""}
         {produto.nome}
       </h3>
-      {["unitario", "parzinho"].includes(produto.tipo) && (
+      {["unitario", "parzinho", "trio"].includes(produto.tipo) && (
         <fieldset className="seletor-tamanho">
           <legend>Escolha o tamanho</legend>
           <div>
@@ -235,7 +239,9 @@ function CartaoProduto({ produto, kit = false }) {
               ? " / kit"
               : produto.tipo === "parzinho"
                 ? " / par"
-                : " / unidade"}
+                : produto.tipo === "trio"
+                  ? " / trio"
+                  : " / unidade"}
           </span>
         </div>
       )}
@@ -550,13 +556,16 @@ function Aplicacao() {
           />
         ) : filtrados.length ? (
           <>
+            <Colecao
+              titulo="Em destaque"
+              subtitulo="Arraste para os lados e encontre seus favoritos."
+              produtosDaColecao={[
+                ...filtrados.filter((produto) => produto.destaque),
+                ...kitsFiltrados.filter((produto) => !produto.destaque),
+              ]}
+            />
             {kitsFiltrados.length > 0 && (
               <>
-                <Colecao
-                  titulo="Em destaque"
-                  subtitulo="Arraste para os lados e encontre seus favoritos."
-                  produtosDaColecao={kitsFiltrados}
-                />
                 <aside className="promocao">
                   <span className="promocao-estrela">✺</span>
                   <div>
@@ -598,6 +607,16 @@ function Aplicacao() {
                 subtitulo="Duplas para usar juntas ou dividir com alguém especial."
                 produtosDaColecao={filtrados.filter(
                   (produto) => produto.tipo === "parzinho",
+                )}
+              />
+            )}
+            {filtrados.some((produto) => produto.tipo === "trio") && (
+              <Colecao
+                identificador="trios"
+                titulo="Trios"
+                subtitulo="Três bottons, uma combinação cheia de personalidade."
+                produtosDaColecao={filtrados.filter(
+                  (produto) => produto.tipo === "trio",
                 )}
               />
             )}

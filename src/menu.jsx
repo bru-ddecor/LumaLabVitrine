@@ -118,6 +118,9 @@ export function MenuLateral() {
             <a href="#parzinhos" onClick={fechar}>
               Parzinhos
             </a>
+            <a href="#trios" onClick={fechar}>
+              Trios
+            </a>
             <a href="#personalizados" onClick={fechar}>
               Personalizados <span aria-hidden="true">↗</span>
             </a>

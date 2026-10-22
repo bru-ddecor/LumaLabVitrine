@@ -40,10 +40,15 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-021 | Naruto — Sétimo Hokage | Botton individual | naruto_setimo_hokage |
 | UNI-022 | Poe — Beleza Rara | Botton individual | poe_beleza_rara |
 | UNI-023 | Kakashi — Ninja Copiador | Botton individual | kakashi_ninja_copiador |
+| UNI-024 | Gatinha Comunista — Vitroles | Botton individual | gatinha_comunista |
+| UNI-025 | Último Ato de Amor | Botton individual | ultimo_ato_de_amor |
+| UNI-026 | Não Aguento Segunda-feira | Botton individual | nao_aguento_segunda_feira |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
 | PAR-004 | Hora de Aventura — Amigos de Ooo | Parzinho | amigos_de_ooo |
+| PAR-005 | Hello Kitty — Treino Fofo | Parzinho | hello_kitty_treino_fofo |
+| TRI-001 | Meninas Superpoderosas — Trio de Poder | Trio | meninas_superpoderosas |
 | PER-001 | Seu artista, sua música | Personalizado | personalizado_musical |
 
 ## Tamanhos dos individuais
@@ -59,3 +64,5 @@ O código base identifica a arte. Para distinguir o tamanho internamente, acresc
 Os kits custam R$ 23,50 e usam quatro bottons de 44 mm • 4,4 cm. O personalizado musical custa R$ 8,00; seu tamanho ainda precisa ser confirmado. Suas fotos ficam em `public/imagens/personalizados/anavitoriasong/`.
 
 Os parzinhos contêm dois bottons do mesmo tamanho: 32 mm por R$ 11,00, 44 mm por R$ 15,00 e 55 mm por R$ 18,00. Cada par exige seleção do tamanho e usa o sufixo correspondente na referência interna.
+
+Trios: três bottons do mesmo tamanho. Preços por conjunto: 32 mm R$ 15,00; 44 mm R$ 20,00; 55 mm R$ 24,00. O trio de 32 mm tem valor arredondado para R$ 15,00; os demais mantêm o desconto proporcional combinado.
