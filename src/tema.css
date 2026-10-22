@@ -399,3 +399,20 @@ html[data-transicao-tema="cores"]
     padding: 5px;
   }
 }
+[data-tema="escuro"] .personalizar-produto {
+  background: var(--fundo-azul);
+  color: #edf2fb;
+}
+[data-tema="escuro"] .seletor-tamanho button {
+  border-color: #647d9e;
+}
+[data-tema="escuro"] .seletor-tamanho button[aria-pressed="true"],
+[data-tema="escuro"] .aviso-tamanho button {
+  background: var(--fundo-azul);
+  color: #edf2fb;
+}
+[data-tema="escuro"] .aviso-tamanho {
+  background: #111b2b;
+  color: #edf2fb;
+  border-color: #647d9e;
+}

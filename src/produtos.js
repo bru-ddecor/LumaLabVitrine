@@ -9,7 +9,7 @@ const kit = (id, arquivos, palavrasChave) => ({
   tipo: "kit",
   // Cores, estilos, temas e detalhes presentes nas artes dos bottons.
   palavrasChave,
-  imagens: arquivos.map((arquivo) => `/imagens/produtos/${id}/${arquivo}.png`),
+  imagens: arquivos.map((arquivo) => `/imagens/kits/${id}/${arquivo}.png`),
 });
 
 const produtos = [
@@ -78,6 +78,43 @@ const produtos = [
     ["mp_deco", "mp2", "mp3"],
     "lilás roxo purple lavanda violeta pastel magic purple magicpurple aesthetic mágico místico magia fantasia olho olhos velas chama fogo espiral hipnose borboleta asas fada fairycore",
   ),
+  {
+    id: "cansada_de_ser_adulta",
+    nome: "Cansada de ser adulta",
+    tipo: "unitario",
+    palavrasChave:
+      "unitário individual avulso verde amarelo lilás roxo pato patinho mochila óculos cansada de ser adulta adulto humor divertido frase meme faculdade trabalho rotina",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/cansada_de_ser_adulta/${arquivo}`,
+    ),
+  },
+  {
+    id: "zoro_one_piece",
+    nome: "Zoro — One Piece",
+    tipo: "unitario",
+    palavrasChave:
+      "zoro roronoa one piece onepiece anime mangá manga otaku geek espadachim samurai espada katana pirata preto black verde green branco white frase if you die i will kill you",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/zoro_one_piece/${arquivo}`,
+    ),
+  },
+  {
+    id: "personalizado_musical",
+    nome: "Seu artista, sua música",
+    tipo: "personalizado",
+    precoCentavos: 800,
+    descricao:
+      "Escolha seu artista favorito para o botton e uma música especial para personalizar a embalagem. Um presente com significado para alguém que ama música — ou para você!",
+    palavrasChave:
+      "personalizado personalizados personalização música musical artista cantor cantora banda favorito embalagem presente presentear spotify código amarelo laranja verde azul ilustração",
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/personalizados/anavitoriasong/${arquivo}`,
+    ),
+  },
 ];
 
 function normalizarBusca(texto) {
@@ -93,10 +130,57 @@ function buscarProdutos(busca) {
   const termos = normalizarBusca(busca).split(/\s+/).filter(Boolean);
   return produtos.filter((produto) => {
     const texto = normalizarBusca(
-      `${produto.nome} ${produto.palavrasChave} kit botton bottons 4 unidades 44mm 44 mm`,
+      `${produto.nome} ${produto.palavrasChave} botton bottons ${produto.tipo === "kit" ? "kit 4 unidades 44mm 44 mm" : produto.tipo === "unitario" ? "individual unitario avulso 32mm 32 mm 44mm 44 mm 55mm 55 mm" : "personalizado"}`,
     );
     return termos.every((termo) => texto.includes(termo));
   });
 }
 
-export { produtos, buscarProdutos };
+const tamanhosDisponiveis = [
+  { valor: 32, rotulo: "32 mm", medida: "32 mm • 3,2 cm" },
+  { valor: 44, rotulo: "44 mm", medida: "44 mm • 4,4 cm" },
+  { valor: 55, rotulo: "55 mm", medida: "55 mm • 5,5 cm" },
+];
+function precoProduto(produto) {
+  if (produto.tipo === "kit") return 2350;
+  if (produto.tipo === "unitario")
+    return produto.precosPorTamanho[produto.tamanhoSelecionado] ?? null;
+  return produto.precoCentavos ?? null;
+}
+function chaveProduto(produto) {
+  return produto.tipo === "unitario"
+    ? `${produto.id}::${produto.tamanhoSelecionado}`
+    : produto.id;
+}
+function medidaProduto(produto) {
+  return (
+    tamanhosDisponiveis.find(
+      (tamanho) =>
+        tamanho.valor ===
+        (produto.tipo === "kit" ? 44 : produto.tamanhoSelecionado),
+    )?.medida || ""
+  );
+}
+function resolverItemCesta(chave) {
+  const [id, tamanho, ...extras] = chave.split("::");
+  if (extras.length) return null;
+  const produto = produtos.find((produto) => produto.id === id);
+  if (!produto || produto.tipo === "personalizado") return null;
+  if (produto.tipo === "kit") return tamanho === undefined ? produto : null;
+  if (
+    !produto.tamanhos.includes(Number(tamanho)) ||
+    String(Number(tamanho)) !== tamanho
+  )
+    return null;
+  const selecionado = { ...produto, tamanhoSelecionado: Number(tamanho) };
+  return precoProduto(selecionado) !== null ? selecionado : null;
+}
+export {
+  produtos,
+  buscarProdutos,
+  tamanhosDisponiveis,
+  precoProduto,
+  chaveProduto,
+  medidaProduto,
+  resolverItemCesta,
+};

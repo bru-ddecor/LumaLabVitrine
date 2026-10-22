@@ -5,7 +5,12 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { produtos } from "./produtos";
+import {
+  precoProduto,
+  chaveProduto,
+  medidaProduto,
+  resolverItemCesta,
+} from "./produtos";
 import "./cesta.css";
 import { usarSomCesta } from "./sons";
 const ContextoCesta = createContext(null);
@@ -28,27 +33,26 @@ function prepararImagemCesta(produto) {
   }
   return imagensPreparadas.get(caminho);
 }
-const preco = (produto) => (produto.tipo === "kit" ? 2350 : 750);
+const preco = precoProduto;
 const formatarValor = (centavos) =>
   (centavos / 100).toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
   });
 const titulo = (produto) =>
-  `${produto.tipo === "kit" ? "Kit " : ""}${produto.nome}`;
+  `${produto.tipo === "kit" ? "Kit " : ""}${produto.nome}${produto.tipo === "unitario" && produto.tamanhoSelecionado ? ` — ${produto.tamanhoSelecionado} mm` : ""}`;
 function lerCesta() {
   try {
     const salvos = JSON.parse(localStorage.getItem(CHAVE_ARMAZENAMENTO));
     if (!salvos || typeof salvos !== "object") return {};
     return Object.fromEntries(
-      produtos
-        .filter(
-          (produto) =>
-            Number.isInteger(salvos[produto.id]) &&
-            salvos[produto.id] > 0 &&
-            salvos[produto.id] <= 99,
-        )
-        .map((produto) => [produto.id, salvos[produto.id]]),
+      Object.entries(salvos).filter(
+        ([chave, quantidade]) =>
+          resolverItemCesta(chave) &&
+          Number.isInteger(quantidade) &&
+          quantidade > 0 &&
+          quantidade <= 99,
+      ),
     );
   } catch {
     return {};
@@ -66,7 +70,7 @@ function IconeCesta() {
 function AdicionarCesta({ produto: produto }) {
   const { adicionar: adicionar, itensCesta: itensCesta } =
     useContext(ContextoCesta);
-  const limiteAtingido = (itensCesta[produto.id] || 0) >= 99;
+  const limiteAtingido = (itensCesta[chaveProduto(produto)] || 0) >= 99;
   return (
     <button
       className="adicionar-cesta"
@@ -151,7 +155,7 @@ function ImagemArrastavelProduto({ produto: produto, ...propriedades }) {
           : "cesta";
       if (atual.modo === "rolagem") atual.faixa.classList.add("rolando");
       else {
-        if (!iniciarArraste(produto)) {
+        if (!iniciarArraste(produto, referenciaImagem.current)) {
           limpar();
           return;
         }
@@ -205,15 +209,19 @@ function ProvedorCesta({ children: filhos }) {
   const produtoArrastado = useRef(null);
   const cesta = useRef(null);
   const painel = useRef(null);
+  const avisoTamanho = useRef(null);
+  const origemAviso = useRef(null);
+  const [mensagemTamanho, definirMensagemTamanho] = useState("");
   const imagensEmVoo = useRef(new Set());
   const ultimoFoco = useRef(null);
   const rolagemAnterior = useRef("");
-  const entradas = produtos
-    .filter((produto) => itensCesta[produto.id])
-    .map((produto) => ({
-      produto: produto,
-      quantidade: itensCesta[produto.id],
-    }));
+  const entradas = Object.entries(itensCesta)
+    .map(([chave, quantidade]) => ({
+      chave,
+      quantidade,
+      produto: resolverItemCesta(chave),
+    }))
+    .filter((entrada) => entrada.produto);
   const quantidadeTotal = entradas.reduce(
     (acumulado, entrada) => acumulado + entrada.quantidade,
     0,
@@ -310,19 +318,41 @@ function ProvedorCesta({ children: filhos }) {
     animacao.addEventListener("finish", limpar, { once: true });
     animacao.addEventListener("cancel", limpar, { once: true });
   }
+  function validarEscolha(produto, imagem) {
+    if (produto.tipo === "personalizado") return false;
+    if (
+      produto.tipo === "unitario" &&
+      (!produto.tamanhoSelecionado || preco(produto) === null)
+    ) {
+      origemAviso.current = imagem
+        ?.closest("article")
+        ?.querySelector(".seletor-tamanho button");
+      definirMensagemTamanho(
+        !produto.tamanhoSelecionado
+          ? "Escolha 32 mm, 44 mm ou 55 mm antes de adicionar este botton à cesta."
+          : "O valor deste tamanho ainda precisa ser confirmado. Fale com a LumaLab pelo WhatsApp para consultar.",
+      );
+      if (!avisoTamanho.current.open) avisoTamanho.current.showModal();
+      return false;
+    }
+    return true;
+  }
   function adicionar(produto, imagem) {
-    if ((itensCesta[produto.id] || 0) >= 99) return;
+    if (!validarEscolha(produto, imagem)) return;
+    const chave = chaveProduto(produto);
+    if ((itensCesta[chave] || 0) >= 99) return;
     reproduzirBrilho();
     definirItensCesta((atual) => ({
       ...atual,
-      [produto.id]: Math.min(99, (atual[produto.id] || 0) + 1),
+      [chave]: Math.min(99, (atual[chave] || 0) + 1),
     }));
     definirAviso(`${titulo(produto)} adicionado à cesta.`);
     animarAteCesta(produto, imagem);
   }
-  function iniciarArraste(produto) {
-    if ((itensCesta[produto.id] || 0) >= 99) return false;
-    produtoArrastado.current = produto.id;
+  function iniciarArraste(produto, imagem) {
+    if (!validarEscolha(produto, imagem)) return false;
+    if ((itensCesta[chaveProduto(produto)] || 0) >= 99) return false;
+    produtoArrastado.current = chaveProduto(produto);
     definirArrastando(true);
     return true;
   }
@@ -333,12 +363,12 @@ function ProvedorCesta({ children: filhos }) {
   function soltarProduto(produto, horizontal, vertical) {
     const retangulo = cesta.current.getBoundingClientRect();
     if (
-      produto.id === produtoArrastado.current &&
+      chaveProduto(produto) === produtoArrastado.current &&
       horizontal >= retangulo.left &&
       horizontal <= retangulo.right &&
       vertical >= retangulo.top &&
       vertical <= retangulo.bottom &&
-      (itensCesta[produto.id] || 0) < 99
+      (itensCesta[chaveProduto(produto)] || 0) < 99
     )
       adicionar(produto);
     finalizarArraste();
@@ -383,7 +413,7 @@ function ProvedorCesta({ children: filhos }) {
     "",
     ...entradas.map(
       ({ produto: produto, quantidade: quantidade }) =>
-        `${quantidade} × ${titulo(produto)} — ${produto.tipo === "kit" ? "kit com 4 bottons" : "1 botton"} de 44 mm • 4,4 cm — ${formatarValor(preco(produto) * quantidade)}`,
+        `${quantidade} × ${titulo(produto)} — ${produto.tipo === "kit" ? "kit com 4 bottons" : "1 botton"} de ${medidaProduto(produto)} — ${formatarValor(preco(produto) * quantidade)}`,
     ),
     "",
     `Total dos produtos: ${formatarValor(total)}`,
@@ -403,6 +433,31 @@ function ProvedorCesta({ children: filhos }) {
       <div className="apenas-leitor" role="status">
         {aviso}
       </div>
+      <dialog
+        className="aviso-tamanho"
+        ref={avisoTamanho}
+        aria-labelledby="titulo-aviso-tamanho"
+        onClose={() => origemAviso.current?.focus({ preventScroll: true })}
+      >
+        <h2 id="titulo-aviso-tamanho">
+          {mensagemTamanho.startsWith("Escolha")
+            ? "Escolha o tamanho"
+            : "Vamos confirmar o valor"}
+        </h2>
+        <p>{mensagemTamanho}</p>
+        {!mensagemTamanho.startsWith("Escolha") && (
+          <a
+            href="https://wa.me/5532999240859?text=Ol%C3%A1!%20Quero%20consultar%20o%20valor%20dos%20bottons%20individuais%20de%2032%20e%2055%20mm."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Consultar pelo WhatsApp ↗
+          </a>
+        )}
+        <button onClick={() => avisoTamanho.current.close()} autoFocus>
+          Entendi
+        </button>
+      </dialog>
       <button
         ref={cesta}
         className={`cesta-visual ${arrastando ? "arrastando" : ""}`}
@@ -418,7 +473,7 @@ function ProvedorCesta({ children: filhos }) {
                 },
                 (ignorado, indice) => ({
                   produto: produto,
-                  chave: `${produto.id}-${indice}`,
+                  chave: `${chaveProduto(produto)}-${indice}`,
                 }),
               ),
             )
@@ -504,56 +559,60 @@ function ProvedorCesta({ children: filhos }) {
         </div>
         <div className="itens-cesta">
           {entradas.length ? (
-            entradas.map(({ produto: produto, quantidade: quantidade }) => (
-              <article className="linha-cesta" key={produto.id}>
-                <img
-                  src={imagemCesta(produto)}
-                  draggable={false}
-                  alt={titulo(produto)}
-                />
-                <div>
-                  <h3>{titulo(produto)}</h3>
-                  <p>
-                    {produto.tipo === "kit" ? "4 bottons" : "1 botton"} · 44 mm
-                    • 4,4 cm · {formatarValor(preco(produto))}
-                  </p>
-                  <div className="controles-quantidade">
-                    <button
-                      aria-label={`Diminuir quantidade de ${titulo(produto)}`}
-                      onClick={() => alterarQuantidade(produto.id, -1)}
-                    >
-                      −
-                    </button>
-                    <span aria-label={`Quantidade de ${titulo(produto)}`}>
-                      {quantidade}
-                    </span>
-                    <button
-                      disabled={quantidade >= 99}
-                      aria-label={`Aumentar quantidade de ${titulo(produto)}`}
-                      onClick={() => alterarQuantidade(produto.id, 1)}
-                    >
-                      +
-                    </button>
-                    <button
-                      className="remover-produto"
-                      onClick={() =>
-                        definirItensCesta((atual) => {
-                          const proximos = {
-                            ...atual,
-                          };
-                          delete proximos[produto.id];
-                          return proximos;
-                        })
-                      }
-                      aria-label={`Remover ${titulo(produto)}`}
-                    >
-                      Remover
-                    </button>
+            entradas.map(
+              ({ chave, produto: produto, quantidade: quantidade }) => (
+                <article className="linha-cesta" key={chave}>
+                  <img
+                    src={imagemCesta(produto)}
+                    draggable={false}
+                    alt={titulo(produto)}
+                  />
+                  <div>
+                    <h3>{titulo(produto)}</h3>
+                    <p>
+                      {produto.tipo === "kit" ? "4 bottons" : "1 botton"} ·{" "}
+                      {medidaProduto(produto)} · {formatarValor(preco(produto))}
+                    </p>
+                    <div className="controles-quantidade">
+                      <button
+                        aria-label={`Diminuir quantidade de ${titulo(produto)}`}
+                        onClick={() => alterarQuantidade(chave, -1)}
+                      >
+                        −
+                      </button>
+                      <span aria-label={`Quantidade de ${titulo(produto)}`}>
+                        {quantidade}
+                      </span>
+                      <button
+                        disabled={quantidade >= 99}
+                        aria-label={`Aumentar quantidade de ${titulo(produto)}`}
+                        onClick={() => alterarQuantidade(chave, 1)}
+                      >
+                        +
+                      </button>
+                      <button
+                        className="remover-produto"
+                        onClick={() =>
+                          definirItensCesta((atual) => {
+                            const proximos = {
+                              ...atual,
+                            };
+                            delete proximos[chave];
+                            return proximos;
+                          })
+                        }
+                        aria-label={`Remover ${titulo(produto)}`}
+                      >
+                        Remover
+                      </button>
+                    </div>
+                    <strong>
+                      {formatarValor(preco(produto) * quantidade)}
+                    </strong>
                   </div>
-                  <strong>{formatarValor(preco(produto) * quantidade)}</strong>
-                </div>
-              </article>
-            ))
+                </article>
+              ),
+            )
           ) : (
             <div className="cesta-vazia">
               <IconeCesta />

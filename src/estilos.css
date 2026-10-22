@@ -1052,3 +1052,98 @@ footer {
   letter-spacing: -0.3px;
   text-align: center;
 }
+.descricao-produto {
+  font-size: 12px;
+  line-height: 1.85;
+  color: var(--texto-suave);
+  margin: 12px 0 16px;
+}
+.personalizar-produto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--marsala);
+  color: #fff;
+  padding: 12px 18px;
+  font-size: 11px;
+}
+.colecao-produtos-avulsos .faixa-produtos .produto {
+  flex-basis: min(100%, 320px);
+}
+.colecao-produtos-avulsos .faixa-produtos {
+  cursor: default;
+}
+#personalizados .foto-produto {
+  cursor: default;
+}
+.compra-personalizado .preco {
+  margin-bottom: 16px;
+}
+.seletor-tamanho {
+  border: 0;
+  padding: 0;
+  margin: 14px 0 16px;
+  min-width: 0;
+}
+.seletor-tamanho legend {
+  font-size: 11px;
+  margin-bottom: 8px;
+  color: var(--texto-suave);
+}
+.seletor-tamanho > div {
+  display: flex;
+  gap: 6px;
+}
+.seletor-tamanho button {
+  border: 1px solid #bba79c;
+  background: transparent;
+  color: inherit;
+  padding: 9px 10px;
+  font-size: 11px;
+  border-radius: 5px;
+}
+.seletor-tamanho button[aria-pressed="true"] {
+  background: var(--marsala);
+  color: #fff;
+  border-color: var(--marsala);
+}
+.seletor-tamanho small {
+  display: block;
+  font-size: 10px;
+  color: var(--texto-suave);
+  line-height: 1.6;
+  margin-top: 8px;
+}
+.aviso-tamanho {
+  width: min(380px, calc(100% - 32px));
+  padding: 28px;
+  background: #f6f2ec;
+  color: #222;
+  border: 1px solid #c6b7aa;
+  border-radius: 12px;
+}
+.aviso-tamanho::backdrop {
+  background: #20111688;
+}
+.aviso-tamanho h2 {
+  font-size: 22px;
+  margin: 0 0 14px;
+}
+.aviso-tamanho p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.aviso-tamanho button {
+  display: block;
+  width: 100%;
+  margin-top: 18px;
+  padding: 13px;
+  border: 0;
+  background: var(--marsala);
+  color: #fff;
+}
+.aviso-tamanho a {
+  font-size: 12px;
+  text-decoration: underline;
+  color: var(--marsala);
+}

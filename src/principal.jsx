@@ -11,7 +11,13 @@ import {
   AdicionarCesta,
   ImagemArrastavelProduto,
 } from "./cesta";
-import { produtos, buscarProdutos } from "./produtos";
+import {
+  produtos,
+  buscarProdutos,
+  tamanhosDisponiveis,
+  precoProduto,
+  medidaProduto,
+} from "./produtos";
 import {
   usarRevelacaoPagina,
   usarAnimacaoFoto,
@@ -104,13 +110,23 @@ function GaleriaProduto({ produto: produto, kit = false }) {
         aria-label={`Imagem ${ativa + 1} de ${fotos.length}`}
       >
         {fotos[ativa] ? (
-          <ImagemArrastavelProduto
-            produto={produto}
-            className="foto-produto"
-            src={fotos[ativa]}
-            alt={`${nome} — foto ${ativa + 1}`}
-            loading="lazy"
-          />
+          produto.tipo === "personalizado" ? (
+            <img
+              className="foto-produto"
+              src={fotos[ativa]}
+              alt={`${nome} — foto ${ativa + 1}`}
+              loading="lazy"
+              draggable={false}
+            />
+          ) : (
+            <ImagemArrastavelProduto
+              produto={produto}
+              className="foto-produto"
+              src={fotos[ativa]}
+              alt={`${nome} — foto ${ativa + 1}`}
+              loading="lazy"
+            />
+          )
         ) : (
           <ArteProvisoria produto={produto} kit={kit} visualizacao={ativa} />
         )}
@@ -133,23 +149,115 @@ function GaleriaProduto({ produto: produto, kit = false }) {
     </div>
   );
 }
+function CartaoProduto({ produto, kit = false }) {
+  const [tamanhoSelecionado, definirTamanhoSelecionado] = useState(null);
+  const produtoSelecionado =
+    produto.tipo === "unitario" ? { ...produto, tamanhoSelecionado } : produto;
+  const valor = precoProduto(produtoSelecionado);
+  return (
+    <article className="produto">
+      {produto.tipo !== "personalizado" && (
+        <AdicionarCesta produto={produtoSelecionado} />
+      )}
+      <GaleriaProduto produto={produtoSelecionado} kit={kit} />
+      <div className="informacoes-produto">
+        <span>
+          {produto.tipo === "kit"
+            ? "KIT COM 4 BOTTONS · 44 MM • 4,4 CM"
+            : produto.tipo === "personalizado"
+              ? "BOTTON PERSONALIZADO · 1 UNIDADE"
+              : "BOTTON INDIVIDUAL"}
+        </span>
+        {produto.tipo === "kit" && <b>ECONOMIZE R$ 6,50</b>}
+      </div>
+      <h3>
+        {produto.tipo === "kit" ? "Kit " : ""}
+        {produto.nome}
+      </h3>
+      {produto.tipo === "unitario" && (
+        <fieldset className="seletor-tamanho">
+          <legend>Escolha o tamanho</legend>
+          <div>
+            {tamanhosDisponiveis.map((tamanho) => (
+              <button
+                key={tamanho.valor}
+                type="button"
+                aria-pressed={tamanhoSelecionado === tamanho.valor}
+                aria-label={`Selecionar ${tamanho.medida}`}
+                onClick={() => definirTamanhoSelecionado(tamanho.valor)}
+              >
+                {tamanho.rotulo}
+              </button>
+            ))}
+          </div>
+          <small>
+            {tamanhoSelecionado
+              ? medidaProduto(produtoSelecionado)
+              : "Selecione antes de adicionar à cesta"}
+          </small>
+        </fieldset>
+      )}
+      {produto.descricao && (
+        <p className="descricao-produto">{produto.descricao}</p>
+      )}
+      {produto.tipo === "personalizado" ? (
+        <div className="compra-personalizado">
+          <div className="preco">
+            <strong>{formatarMoeda(produto.precoCentavos / 100)}</strong>
+            <span> / unidade</span>
+          </div>
+          <a
+            className="personalizar-produto"
+            href={`https://wa.me/5532999240859?text=${encodeURIComponent(`Olá! Gostaria de um botton personalizado de ${formatarMoeda(produto.precoCentavos / 100)}, com meu artista favorito e uma música na embalagem. Podemos combinar a personalização e o tamanho?`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Personalizar pelo WhatsApp ↗
+          </a>
+        </div>
+      ) : (
+        <div className="preco">
+          {produto.tipo === "kit" && <del>R$ 30,00</del>}
+          <strong>
+            {valor !== null
+              ? formatarMoeda(valor / 100)
+              : tamanhoSelecionado
+                ? "Valor a confirmar"
+                : `A partir de ${formatarMoeda(Math.min(...Object.values(produto.precosPorTamanho)) / 100)}`}
+          </strong>
+          <span>{produto.tipo === "kit" ? " / kit" : " / unidade"}</span>
+        </div>
+      )}
+    </article>
+  );
+}
 function Colecao({
   titulo: titulo,
   subtitulo: subtitulo,
   kit = false,
   produtosDaColecao = produtos,
+  identificador = kit ? "kits" : "destaques",
 }) {
   const [expandida, definirExpandida] = useState(false);
   const faixa = usarAnimacaoColecao(expandida, produtosDaColecao);
   const gestos = usarArrasteHorizontal(faixa, expandida);
   return (
-    <section className="colecao" id={kit ? "kits" : "destaques"}>
+    <section
+      className={`colecao ${["personalizados", "unitarios"].includes(identificador) ? "colecao-produtos-avulsos" : ""}`}
+      id={identificador}
+    >
       <div className="cabecalho-secao">
         <div>
           {kit ? (
             <FraseUtilizacao />
           ) : (
-            <span className="sobretitulo">ESCOLHAS DO LAB</span>
+            <span className="sobretitulo">
+              {identificador === "personalizados"
+                ? "FEITO PARA TER A SUA CARA"
+                : identificador === "unitarios"
+                  ? "UM DETALHE, MUITA PERSONALIDADE"
+                  : "ESCOLHAS DO LAB"}
+            </span>
           )}
           <h2>
             {titulo}
@@ -168,44 +276,24 @@ function Colecao({
       >
         {(expandida ? produtosDaColecao : produtosDaColecao.slice(0, 5)).map(
           (produto) => (
-            <article className="produto" key={produto.id}>
-              <AdicionarCesta produto={produto} />
-              <GaleriaProduto produto={produto} kit={kit} />
-              <div className="informacoes-produto">
-                <span>
-                  {produto.tipo === "kit"
-                    ? "KIT COM 4 BOTTONS · 44 MM • 4,4 CM"
-                    : "BOTTON · 44 MM"}
-                </span>
-                {produto.tipo === "kit" && <b>ECONOMIZE R$ 6,50</b>}
-              </div>
-              <h3>
-                {produto.tipo === "kit" ? "Kit " : ""}
-                {produto.nome}
-              </h3>
-              <div className="preco">
-                {produto.tipo === "kit" && <del>R$ 30,00</del>}
-                <strong>
-                  {formatarMoeda(produto.tipo === "kit" ? 23.5 : 7.5)}
-                </strong>
-                <span>{produto.tipo === "kit" ? " / kit" : " / unidade"}</span>
-              </div>
-            </article>
+            <CartaoProduto key={produto.id} produto={produto} kit={kit} />
           ),
         )}
       </div>
-      <div className="ver-mais">
-        <button onClick={() => definirExpandida(!expandida)}>
-          {expandida ? "Ver menos" : "Ver mais " + (kit ? "kits" : "bottons")}{" "}
-          <span>{expandida ? "−" : "+"}</span>
-        </button>
-        <small>
-          {expandida
-            ? produtosDaColecao.length
-            : Math.min(5, produtosDaColecao.length)}{" "}
-          de {produtosDaColecao.length} {kit ? "kits" : "bottons"}
-        </small>
-      </div>
+      {produtosDaColecao.length > 5 && (
+        <div className="ver-mais">
+          <button onClick={() => definirExpandida(!expandida)}>
+            {expandida ? "Ver menos" : "Ver mais " + (kit ? "kits" : "bottons")}{" "}
+            <span>{expandida ? "−" : "+"}</span>
+          </button>
+          <small>
+            {expandida
+              ? produtosDaColecao.length
+              : Math.min(5, produtosDaColecao.length)}{" "}
+            de {produtosDaColecao.length} {kit ? "kits" : "bottons"}
+          </small>
+        </div>
+      )}
     </section>
   );
 }
@@ -213,6 +301,13 @@ function Aplicacao() {
   const [busca, definirBusca] = useState("");
   usarRevelacaoPagina(busca);
   const filtrados = buscarProdutos(busca);
+  const kitsFiltrados = filtrados.filter((produto) => produto.tipo === "kit");
+  const unitariosFiltrados = filtrados.filter(
+    (produto) => produto.tipo === "unitario",
+  );
+  const personalizadosFiltrados = filtrados.filter(
+    (produto) => produto.tipo === "personalizado",
+  );
   return (
     <>
       <div className="aviso-topo">
@@ -407,35 +502,55 @@ function Aplicacao() {
         </div>
         {filtrados.length ? (
           <>
-            <Colecao
-              titulo="Em destaque"
-              subtitulo="Arraste para os lados e encontre seus favoritos."
-              produtosDaColecao={filtrados}
-            />
-            <aside className="promocao">
-              <span className="promocao-estrela">✺</span>
-              <div>
-                <span className="sobretitulo">
-                  MAIS PERSONALIDADE, POR MENOS
-                </span>
-                <h2>Quatro bottons. Muitas combinações.</h2>
-                <p>
-                  Escolha um kit com 4 unidades de 44 mm • 4,4 cm e economize R$
-                  6,50.
-                </p>
-              </div>
-              <div className="promocao-preco">
-                <del>R$ 30,00</del>
-                <strong>R$ 23,50</strong>
-                <a href="#kits">Conheça os kits ↗︎</a>
-              </div>
-            </aside>
-            <Colecao
-              titulo="Kits de bottons"
-              subtitulo="Arraste para os lados para explorar os kits."
-              kit
-              produtosDaColecao={filtrados}
-            />
+            {kitsFiltrados.length > 0 && (
+              <>
+                <Colecao
+                  titulo="Em destaque"
+                  subtitulo="Arraste para os lados e encontre seus favoritos."
+                  produtosDaColecao={kitsFiltrados}
+                />
+                <aside className="promocao">
+                  <span className="promocao-estrela">✺</span>
+                  <div>
+                    <span className="sobretitulo">
+                      MAIS PERSONALIDADE, POR MENOS
+                    </span>
+                    <h2>Quatro bottons. Muitas combinações.</h2>
+                    <p>
+                      Escolha um kit com 4 unidades de 44 mm • 4,4 cm e
+                      economize R$ 6,50.
+                    </p>
+                  </div>
+                  <div className="promocao-preco">
+                    <del>R$ 30,00</del>
+                    <strong>R$ 23,50</strong>
+                    <a href="#kits">Conheça os kits ↗︎</a>
+                  </div>
+                </aside>
+                <Colecao
+                  titulo="Kits de bottons"
+                  subtitulo="Arraste para os lados para explorar os kits."
+                  kit
+                  produtosDaColecao={kitsFiltrados}
+                />
+              </>
+            )}
+            {unitariosFiltrados.length > 0 && (
+              <Colecao
+                identificador="unitarios"
+                titulo="Bottons individuais"
+                subtitulo="Escolha sua arte e o tamanho que combina com você."
+                produtosDaColecao={unitariosFiltrados}
+              />
+            )}
+            {personalizadosFiltrados.length > 0 && (
+              <Colecao
+                identificador="personalizados"
+                titulo="Personalizados"
+                subtitulo="Uma música, um artista e uma lembrança só sua."
+                produtosDaColecao={personalizadosFiltrados}
+              />
+            )}
           </>
         ) : (
           <p className="sem-resultados">

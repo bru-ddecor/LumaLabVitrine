@@ -112,6 +112,12 @@ export function MenuLateral() {
             <a href="#kits" onClick={fechar}>
               Bottons <span aria-hidden="true">↗</span>
             </a>
+            <a href="#unitarios" onClick={fechar}>
+              Bottons individuais <span aria-hidden="true">↗</span>
+            </a>
+            <a href="#personalizados" onClick={fechar}>
+              Personalizados <span aria-hidden="true">↗</span>
+            </a>
             <button disabled>
               <span>
                 Camisetas <Cadeado />
