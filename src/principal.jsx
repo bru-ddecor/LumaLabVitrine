@@ -6,7 +6,7 @@ import {
   AdicionarCesta,
   ImagemArrastavelProduto,
 } from "./cesta";
-import { produtos } from "./produtos";
+import { produtos, buscarProdutos } from "./produtos";
 import {
   usarRevelacaoPagina,
   usarAnimacaoFoto,
@@ -205,19 +205,7 @@ function Colecao({
 function Aplicacao() {
   const [busca, definirBusca] = useState("");
   usarRevelacaoPagina(busca);
-  const filtrados = produtos.filter((produto) =>
-    `${produto.nome} ${produto.palavrasChave}`
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLocaleLowerCase("pt-BR")
-      .includes(
-        busca
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "")
-          .toLocaleLowerCase("pt-BR")
-          .trim(),
-      ),
-  );
+  const filtrados = buscarProdutos(busca);
   return (
     <>
       <div className="aviso-topo">
