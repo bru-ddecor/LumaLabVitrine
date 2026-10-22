@@ -97,5 +97,10 @@ insert into public.catalogo_favoritos(produto) values
 ('nao_aguento_segunda_feira'),
 ('damon_elena_ultimo_folego'),
 ('lembranca_aniversario'),
-('personalizado_musical')
+('personalizado_musical'),
+('kakashi_raio_entre_paginas'),
+('gojo_sorriso_infinito'),
+('gatinho_lingua_de_fora'),
+('gatinho_olhar_de_veludo'),
+('luffy_espirito_travesso')
 on conflict do nothing;

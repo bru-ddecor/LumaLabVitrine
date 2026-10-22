@@ -44,6 +44,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-025 | Último Ato de Amor | Botton individual | ultimo_ato_de_amor |
 | UNI-026 | Não Aguento Segunda-feira | Botton individual | nao_aguento_segunda_feira |
 | UNI-027 | Damon e Elena — Último Fôlego | Botton individual | damon_elena_ultimo_folego |
+| UNI-028 | Kakashi — Raio entre Páginas | Botton individual | kakashi_raio_entre_paginas |
+| UNI-029 | Gojo — Sorriso Infinito | Botton individual | gojo_sorriso_infinito |
+| UNI-030 | Gatinho — Língua de Fora | Botton individual | gatinho_lingua_de_fora |
+| UNI-031 | Gatinho — Olhar de Veludo | Botton individual | gatinho_olhar_de_veludo |
+| UNI-032 | Luffy — Espírito Travesso | Botton individual | luffy_espirito_travesso |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

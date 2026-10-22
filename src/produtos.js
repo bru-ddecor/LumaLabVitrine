@@ -564,6 +564,72 @@ const produtos = [
     ),
   },
   {
+    id: "kakashi_raio_entre_paginas",
+    referencia: "UNI-028",
+    nome: "Kakashi — Raio entre Páginas",
+    tipo: "unitario",
+    palavrasChave:
+      "kakashi hatake naruto shippuden ninja copiador sensei professor shinobi konoha sharingan chidori raikiri raio raios relâmpago energia livros leitura páginas cachorro cães ninken anime mangá manga otaku geek azul blue branco white cinza prateado verde oliva preto máscara bandana colete",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagemCesta: "/imagens/unitarios/kakashi_raio_entre_paginas/02.jpg",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/kakashi_raio_entre_paginas/${arquivo}`,
+    ),
+  },
+  {
+    id: "gojo_sorriso_infinito",
+    referencia: "UNI-029",
+    nome: "Gojo — Sorriso Infinito",
+    tipo: "unitario",
+    palavrasChave:
+      "gojo satoru jujutsu kaisen jjk feiticeiro sensei professor infinito anime mangá manga otaku geek azul blue branco white lilás roxo vermelho amarelo preto cabelo branco prateado óculos redondos escuros lentes azuis sorriso língua divertido colorido",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gojo_sorriso_infinito/${arquivo}`,
+    ),
+  },
+  {
+    id: "gatinho_lingua_de_fora",
+    referencia: "UNI-030",
+    nome: "Gatinho — Língua de Fora",
+    tipo: "unitario",
+    palavrasChave:
+      "gato gatinho gatinha gato preto felino pet animal animais cat kitten black cat preto black branco white rosa pink língua linguinha de fora blep olhos grandes bigodes fofo cute kawaii meme humor engraçado divertido fotografia retrato",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gatinho_lingua_de_fora/${arquivo}`,
+    ),
+  },
+  {
+    id: "gatinho_olhar_de_veludo",
+    referencia: "UNI-031",
+    nome: "Gatinho — Olhar de Veludo",
+    tipo: "unitario",
+    palavrasChave:
+      "gato gatinho gatinha gato preto felino filhote pet animal animais cat kitten black cat preto black vinho bordô marsala vermelho red veludo tecido olhos dourados amarelos âmbar bigodes fofo cute dark gótico goth aesthetic fotografia retrato aconchego",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gatinho_olhar_de_veludo/${arquivo}`,
+    ),
+  },
+  {
+    id: "luffy_espirito_travesso",
+    referencia: "UNI-032",
+    nome: "Luffy — Espírito Travesso",
+    tipo: "unitario",
+    palavrasChave:
+      "luffy monkey d one piece onepiece mugiwara pirata chapéu palha anime mangá manga otaku geek preto black vermelho red amarelo dourado laranja branco white azul sorriso língua careta travesso divertido humor caveira letras japonesas",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/luffy_espirito_travesso/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

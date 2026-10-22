@@ -1,34 +1,52 @@
+.titulo-produto-com-favorito {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.titulo-produto-com-favorito h3 {
+  flex: 1;
+  min-width: 0;
+}
 .favorito-produto {
-  margin: 0.6rem 0;
+  flex: 0 0 auto;
+  position: relative;
 }
 .favorito-produto button {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  justify-content: center;
+  gap: 0.2rem;
+  min-width: 44px;
   min-height: 44px;
-  padding: 0.3rem 0.7rem;
-  border: 1px solid currentColor;
-  border-radius: 2rem;
+  padding: 0;
+  border: 0;
   background: transparent;
-  color: var(--marsala);
+  color: var(--texto-suave);
   cursor: pointer;
   font: inherit;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
 }
 .favorito-produto button > span:first-child {
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1;
 }
 .favorito-produto button[aria-pressed="true"] {
-  background: var(--marsala);
-  color: #fff;
+  color: var(--marsala);
 }
 .favorito-produto button:disabled {
   opacity: 0.6;
   cursor: wait;
 }
 .favorito-produto small {
-  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 2;
+  width: 12rem;
+  padding: 0.5rem;
+  border: 1px solid var(--marsala);
+  border-radius: 0.5rem;
+  background: var(--fundo, #f6f2ec);
   color: var(--texto-suave);
-  margin-top: 0.4rem;
 }

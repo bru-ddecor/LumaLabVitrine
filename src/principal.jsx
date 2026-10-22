@@ -243,11 +243,13 @@ function CartaoProduto({ produto, kit = false }) {
         </span>
         {produto.tipo === "kit" && <b>ECONOMIZE R$ 6,50</b>}
       </div>
-      <h3>
-        {produto.tipo === "kit" ? "Kit " : ""}
-        {produto.nome}
-      </h3>
-      <FavoritarProduto produto={produto} />
+      <div className="titulo-produto-com-favorito">
+        <h3>
+          {produto.tipo === "kit" ? "Kit " : ""}
+          {produto.nome}
+        </h3>
+        <FavoritarProduto produto={produto} />
+      </div>
       {["unitario", "parzinho", "trio"].includes(produto.tipo) && (
         <fieldset className="seletor-tamanho">
           <legend>Escolha o tamanho</legend>
