@@ -43,12 +43,14 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-024 | Gatinha Comunista — Vitroles | Botton individual | gatinha_comunista |
 | UNI-025 | Último Ato de Amor | Botton individual | ultimo_ato_de_amor |
 | UNI-026 | Não Aguento Segunda-feira | Botton individual | nao_aguento_segunda_feira |
+| UNI-027 | Damon e Elena — Último Fôlego | Botton individual | damon_elena_ultimo_folego |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
 | PAR-004 | Hora de Aventura — Amigos de Ooo | Parzinho | amigos_de_ooo |
 | PAR-005 | Hello Kitty — Treino Fofo | Parzinho | hello_kitty_treino_fofo |
 | TRI-001 | Meninas Superpoderosas — Trio de Poder | Trio | meninas_superpoderosas |
+| PER-002 | Lembrança de Aniversário | Personalizado | lembranca_aniversario |
 | PER-001 | Seu artista, sua música | Personalizado | personalizado_musical |
 
 ## Tamanhos dos individuais
@@ -66,3 +68,9 @@ Os kits custam R$ 23,50 e usam quatro bottons de 44 mm • 4,4 cm. O personaliza
 Os parzinhos contêm dois bottons do mesmo tamanho: 32 mm por R$ 11,00, 44 mm por R$ 15,00 e 55 mm por R$ 18,00. Cada par exige seleção do tamanho e usa o sufixo correspondente na referência interna.
 
 Trios: três bottons do mesmo tamanho. Preços por conjunto: 32 mm R$ 15,00; 44 mm R$ 20,00; 55 mm R$ 24,00. O trio de 32 mm tem valor arredondado para R$ 15,00; os demais mantêm o desconto proporcional combinado.
+
+PER-002: lembrancinhas de aniversário, com tema, nome, idade e foto. Tamanho e quantidade combinados no WhatsApp.
+
+Todos os personalizados custam R$ 8,00 por unidade. A partir de 100 unidades, R$ 6,90 cada: 100 unidades custam R$ 690,00, com economia de R$ 110,00 (13,75%) sobre o preço normal.
+
+Oferta por tempo limitado para personalizados a partir de 100 unidades: preço normal R$ 7,20 cada (R$ 720,00 em 100), promocional R$ 6,90 cada (R$ 690,00 em 100). Economia promocional R$ 30,00 (4,17%). O valor avulso segue R$ 8,00. Esta condição substitui a comparação anterior com o preço avulso.

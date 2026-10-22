@@ -1222,3 +1222,15 @@ footer {
   font-size: 1.75rem;
   cursor: pointer;
 }
+
+.oferta-personalizados {
+  padding: 1rem;
+  border: 1px solid var(--marsala);
+  border-radius: 0.75rem;
+  color: var(--marsala);
+}
+.oferta-personalizados p {
+  margin: 0.5rem 0 0;
+  line-height: 1.6;
+  color: var(--texto-suave);
+}

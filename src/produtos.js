@@ -531,10 +531,46 @@ const produtos = [
     ),
   },
   {
+    id: "damon_elena_ultimo_folego",
+    referencia: "UNI-027",
+    nome: "Damon e Elena — Último Fôlego",
+    tipo: "unitario",
+    palavrasChave:
+      "damon salvatore elena gilbert delena the vampire diaries diários de um vampiro tvd série vampiros romance casal amor paixão frase último fôlego se eu tivesse que escolher entre respirar e te amar usaria meu último fôlego para dizer que te amo preto black marrom dourado fotografia sobrenatural romântico",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagemCesta: "/imagens/unitarios/damon_elena_ultimo_folego/02.jpg",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/damon_elena_ultimo_folego/${arquivo}`,
+    ),
+  },
+  {
+    id: "lembranca_aniversario",
+    referencia: "PER-002",
+    nome: "Lembrança de Aniversário",
+    precoCentavos: 800,
+    tipo: "personalizado",
+    precoAtacadoCentavos: 690,
+    precoAtacadoNormalCentavos: 720,
+    quantidadeMinimaAtacado: 100,
+    descricao:
+      "Transforme um dia especial em uma lembrança para guardar! Personalize seu botton com o tema da festa, nome, idade e uma foto de sua escolha. Um carinho para presentear os convidados e celebrar esse momento com você.",
+    mensagemPersonalizacao:
+      "Olá! Gostaria de bottons personalizados para lembrancinha de aniversário. Podemos combinar tema, nome, idade, foto, tamanho, quantidade e orçamento?",
+    palavrasChave:
+      "personalizado lembrancinha lembrança aniversário festa convidados comemoração infantil bebê criança foto nome idade data safari girafa folhas verde azul amarelo bege presente celebração um ano",
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/personalizados/lembranca_aniversario/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
     tipo: "personalizado",
+    precoAtacadoCentavos: 690,
+    precoAtacadoNormalCentavos: 720,
+    quantidadeMinimaAtacado: 100,
     precoCentavos: 800,
     descricao:
       "Escolha seu artista favorito para o botton e uma música especial para personalizar a embalagem. Um presente com significado para alguém que ama música — ou para você!",

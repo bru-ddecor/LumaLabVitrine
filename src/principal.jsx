@@ -5,6 +5,7 @@ import "./tema.css";
 import { AlternarTema, ProvedorTema } from "./tema";
 import { MenuLateral } from "./menu";
 import { MovimentoOrbital } from "./orbita";
+import { ProvedorFavoritos, FavoritarProduto } from "./favoritos";
 import { FraseUtilizacao } from "./frase-utilizacao";
 import {
   ProvedorCesta,
@@ -246,6 +247,7 @@ function CartaoProduto({ produto, kit = false }) {
         {produto.tipo === "kit" ? "Kit " : ""}
         {produto.nome}
       </h3>
+      <FavoritarProduto produto={produto} />
       {["unitario", "parzinho", "trio"].includes(produto.tipo) && (
         <fieldset className="seletor-tamanho">
           <legend>Escolha o tamanho</legend>
@@ -274,13 +276,26 @@ function CartaoProduto({ produto, kit = false }) {
       )}
       {produto.tipo === "personalizado" ? (
         <div className="compra-personalizado">
+          <div className="oferta-personalizados">
+            <strong>
+              Oferta por tempo limitado · A partir de 100 unidades: R$ 6,90 cada
+            </strong>
+            <p>
+              100 lembranças por R$ 690,00 em vez de R$ 720,00. Economize R$
+              30,00 (4,17%).
+            </p>
+          </div>
           <div className="preco">
-            <strong>{formatarMoeda(produto.precoCentavos / 100)}</strong>
-            <span> / unidade</span>
+            <strong>
+              {produto.precoCentavos != null
+                ? formatarMoeda(produto.precoCentavos / 100)
+                : "Sob consulta"}
+            </strong>
+            {produto.precoCentavos != null && <span> / unidade</span>}
           </div>
           <a
             className="personalizar-produto"
-            href={`https://wa.me/5532999240859?text=${encodeURIComponent(`Olá! Gostaria de um botton personalizado de ${formatarMoeda(produto.precoCentavos / 100)}, com meu artista favorito e uma música na embalagem. Podemos combinar a personalização e o tamanho?`)}`}
+            href={`https://wa.me/5532999240859?text=${encodeURIComponent(produto.mensagemPersonalizacao || `Olá! Gostaria de um botton personalizado de ${formatarMoeda(produto.precoCentavos / 100)}, com meu artista favorito e uma música na embalagem. Podemos combinar a personalização e o tamanho?`)}`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -720,7 +735,9 @@ function Aplicacao() {
 createRoot(document.getElementById("raiz")).render(
   <ProvedorTema>
     <ProvedorCesta>
-      <Aplicacao />
+      <ProvedorFavoritos>
+        <Aplicacao />
+      </ProvedorFavoritos>
     </ProvedorCesta>
   </ProvedorTema>,
 );
