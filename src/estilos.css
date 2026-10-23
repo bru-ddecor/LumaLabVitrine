@@ -1223,14 +1223,19 @@ footer {
   cursor: pointer;
 }
 
-.oferta-personalizados {
-  padding: 1rem;
-  border: 1px solid var(--marsala);
-  border-radius: 0.75rem;
-  color: var(--marsala);
-}
-.oferta-personalizados p {
-  margin: 0.5rem 0 0;
-  line-height: 1.6;
+.condicao-personalizados {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
   color: var(--texto-suave);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+.condicao-personalizados small {
+  color: var(--marsala);
+  border: 1px solid currentColor;
+  border-radius: 1rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.65rem;
 }

@@ -139,7 +139,7 @@ function GaleriaProduto({ produto: produto, kit = false }) {
         aria-label={`Imagem ${ativa + 1} de ${fotos.length}`}
       >
         {fotos[ativa] ? (
-          produto.tipo === "personalizado" ? (
+          ["personalizado", "colecao"].includes(produto.tipo) ? (
             <img
               className="foto-produto"
               src={fotos[ativa]}
@@ -225,7 +225,7 @@ function CartaoProduto({ produto, kit = false }) {
   const valor = precoProduto(produtoSelecionado);
   return (
     <article className="produto">
-      {produto.tipo !== "personalizado" && (
+      {!["personalizado", "colecao"].includes(produto.tipo) && (
         <AdicionarCesta produto={produtoSelecionado} />
       )}
       <GaleriaProduto produto={produtoSelecionado} kit={kit} />
@@ -239,7 +239,9 @@ function CartaoProduto({ produto, kit = false }) {
                 ? "PAR COM 2 BOTTONS"
                 : produto.tipo === "trio"
                   ? "TRIO COM 3 BOTTONS"
-                  : "BOTTON INDIVIDUAL"}
+                  : produto.tipo === "colecao"
+                    ? "COLEÇÃO COM 6 BOTTONS"
+                    : "BOTTON INDIVIDUAL"}
         </span>
         {produto.tipo === "kit" && <b>ECONOMIZE R$ 6,50</b>}
       </div>
@@ -276,17 +278,43 @@ function CartaoProduto({ produto, kit = false }) {
       {produto.descricao && (
         <p className="descricao-produto">{produto.descricao}</p>
       )}
-      {produto.tipo === "personalizado" ? (
+      {produto.tipo === "personalizado" && (
+        <p className="condicao-personalizados">
+          <span>
+            A partir de {produto.quantidadeMinimaAtacado} unidades, cada botton
+            sai por {formatarMoeda(produto.precoAtacadoCentavos / 100)}.
+          </span>
+          <small title="Em comparação ao preço normal de R$ 7,20 por unidade em pedidos a partir de 100.">
+            Economize{" "}
+            {(
+              (1 -
+                produto.precoAtacadoCentavos /
+                  produto.precoAtacadoNormalCentavos) *
+              100
+            ).toLocaleString("pt-BR", {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })}
+            %
+          </small>
+        </p>
+      )}
+      {produto.tipo === "colecao" ? (
         <div className="compra-personalizado">
-          <div className="oferta-personalizados">
-            <strong>
-              Oferta por tempo limitado · A partir de 100 unidades: R$ 6,90 cada
-            </strong>
-            <p>
-              100 lembranças por R$ 690,00 em vez de R$ 720,00. Economize R$
-              30,00 (4,17%).
-            </p>
+          <div className="preco">
+            <strong>Valor sob consulta</strong>
           </div>
+          <a
+            className="personalizar-produto"
+            href={`https://wa.me/5532999240859?text=${encodeURIComponent(`Olá! Tenho interesse na ${produto.nome}. Podemos combinar tamanho, valor e detalhes?`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Consultar coleção pelo WhatsApp ↗
+          </a>
+        </div>
+      ) : produto.tipo === "personalizado" ? (
+        <div className="compra-personalizado">
           <div className="preco">
             <strong>
               {produto.precoCentavos != null
@@ -690,13 +718,15 @@ function Aplicacao() {
                 )}
               />
             )}
-            {filtrados.some((produto) => produto.tipo === "trio") && (
+            {filtrados.some((produto) =>
+              ["trio", "colecao"].includes(produto.tipo),
+            ) && (
               <Colecao
                 identificador="trios"
-                titulo="Trios"
-                subtitulo="Três bottons, uma combinação cheia de personalidade."
-                produtosDaColecao={filtrados.filter(
-                  (produto) => produto.tipo === "trio",
+                titulo="Trios e Coleções"
+                subtitulo="Combinações para reunir suas paixões favoritas."
+                produtosDaColecao={filtrados.filter((produto) =>
+                  ["trio", "colecao"].includes(produto.tipo),
                 )}
               />
             )}

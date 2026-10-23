@@ -119,7 +119,7 @@ export function MenuLateral() {
               Parzinhos
             </a>
             <a href="#trios" onClick={fechar}>
-              Trios
+              Trios e Coleções
             </a>
             <a href="#personalizados" onClick={fechar}>
               Personalizados <span aria-hidden="true">↗</span>

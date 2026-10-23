@@ -62,6 +62,9 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-043 | Nerd — Universo Particular | Botton individual | nerd_universo_particular |
 | UNI-044 | Cachorrinho — Charme de Bandana | Botton individual | cachorrinho_charme_de_bandana |
 | UNI-045 | Espelho — Tudo a Seu Favor | Botton individual | espelho_tudo_a_seu_favor |
+| UNI-046 | Sorriso Sombrio | Botton individual | sorriso_sombrio |
+| UNI-047 | Grito das Teias | Botton individual | grito_das_teias |
+| UNI-048 | Abraço Eterno | Botton individual | abraco_eterno |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
@@ -69,6 +72,8 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | PAR-005 | Hello Kitty — Treino Fofo | Parzinho | hello_kitty_treino_fofo |
 | TRI-001 | Meninas Superpoderosas — Trio de Poder | Trio | meninas_superpoderosas |
 | PER-002 | Lembrança de Aniversário | Personalizado | lembranca_aniversario |
+| PER-003 | Uma Turma de Lembranças | Personalizado | uma_turma_de_lembrancas |
+| COL-001 | Coleção Sharingan — Olhares Uchiha | Coleção com 6 bottons | colecao_sharingan |
 | PER-001 | Seu artista, sua música | Personalizado | personalizado_musical |
 
 ## Tamanhos dos individuais
@@ -89,6 +94,8 @@ Trios: três bottons do mesmo tamanho. Preços por conjunto: 32 mm R$ 15,00; 44 
 
 PER-002: lembrancinhas de aniversário, com tema, nome, idade e foto. Tamanho e quantidade combinados no WhatsApp.
 
-Todos os personalizados custam R$ 8,00 por unidade. A partir de 100 unidades, R$ 6,90 cada: 100 unidades custam R$ 690,00, com economia de R$ 110,00 (13,75%) sobre o preço normal.
+Todos os personalizados custam R$ 8,00 por unidade. A partir de 100 unidades, R$ 6,50 cada. O preço normal nessa quantidade é R$ 7,20: em 100 unidades, o total passa de R$ 720,00 para R$ 650,00, uma economia de R$ 70,00. A vitrine apresenta a condição em uma linha discreta e uma etiqueta “Economize 9,72%”, calculada sobre o preço normal de R$ 7,20.
 
-Oferta por tempo limitado para personalizados a partir de 100 unidades: preço normal R$ 7,20 cada (R$ 720,00 em 100), promocional R$ 6,90 cada (R$ 690,00 em 100). Economia promocional R$ 30,00 (4,17%). O valor avulso segue R$ 8,00. Esta condição substitui a comparação anterior com o preço avulso.
+PER-003: exemplo de encomenda para van escolar, com nomes individuais e temas para a turma. Cinco fotos da mesma encomenda: duas com Meninas Superpoderosas e três com tema de futebol e nomes individuais.
+
+COL-001: coleção Sharingan com seis artes. Preços e tamanhos a confirmar; consulta pelo WhatsApp.

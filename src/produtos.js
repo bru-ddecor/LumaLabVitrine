@@ -550,7 +550,7 @@ const produtos = [
     nome: "Lembrança de Aniversário",
     precoCentavos: 800,
     tipo: "personalizado",
-    precoAtacadoCentavos: 690,
+    precoAtacadoCentavos: 650,
     precoAtacadoNormalCentavos: 720,
     quantidadeMinimaAtacado: 100,
     descricao:
@@ -780,7 +780,8 @@ const produtos = [
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
-      (arquivo) => `/imagens/unitarios/cachorrinho_charme_de_bandana/${arquivo}`,
+      (arquivo) =>
+        `/imagens/unitarios/cachorrinho_charme_de_bandana/${arquivo}`,
     ),
   },
   {
@@ -797,11 +798,74 @@ const produtos = [
     ),
   },
   {
+    id: "sorriso_sombrio",
+    referencia: "UNI-046",
+    nome: "Sorriso Sombrio",
+    tipo: "unitario",
+    palavrasChave:
+      "rosto sorriso sombrio dentes maquiagem correntes retrato terror horror gótico goth dark preto black branco white cinza alternativo",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/sorriso_sombrio/01.jpg"],
+  },
+  {
+    id: "grito_das_teias",
+    referencia: "UNI-047",
+    nome: "Grito das Teias",
+    tipo: "unitario",
+    palavrasChave:
+      "caveira crânio esqueleto cérebro olho olhos grito boca dentes teia teias aranha terror horror gótico goth dark preto black branco white ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/grito_das_teias/01.jpg"],
+  },
+  {
+    id: "abraco_eterno",
+    referencia: "UNI-048",
+    nome: "Abraço Eterno",
+    tipo: "unitario",
+    palavrasChave:
+      "esqueleto esqueletos caveira crânio ossos abraço casal amor eterno romance serpente ouroboros círculo sigilo símbolo místico gótico goth dark terror preto black branco white ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/abraco_eterno/01.jpg"],
+  },
+  {
+    id: "uma_turma_de_lembrancas",
+    referencia: "PER-003",
+    nome: "Uma Turma de Lembranças",
+    tipo: "personalizado",
+    precoCentavos: 800,
+    precoAtacadoCentavos: 650,
+    precoAtacadoNormalCentavos: 720,
+    quantidadeMinimaAtacado: 100,
+    descricao:
+      "Um tema em comum, um nome especial em cada botton! Esta encomenda de uma van escolar ganhou versões personalizadas para cada criança. Inspire-se para presentear sua turma, comemorar uma data ou criar uma lembrança para seu grupo, com os temas e nomes que você escolher.",
+    mensagemPersonalizacao:
+      "Olá! Gostaria de bottons personalizados para uma turma ou grupo, com o nome de cada pessoa. Podemos combinar os temas, nomes, embalagem, tamanho e quantidade?",
+    palavrasChave:
+      "personalizado turma grupo van escolar transporte escola crianças infantil nomes nome individual lembrancinha lembrança presente meninas superpoderosas florzinha lindinha docinho futebol jogador neymar seleção brasil bola azul verde amarelo rosa pink coração estrelas embalagem",
+    imagens: ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"].map(
+      (arquivo) => `/imagens/personalizados/uma_turma_de_lembrancas/${arquivo}`,
+    ),
+  },
+  {
+    id: "colecao_sharingan",
+    referencia: "COL-001",
+    nome: "Coleção Sharingan — Olhares Uchiha",
+    tipo: "colecao",
+    descricao:
+      "Seis olhares, uma paixão por Naruto. Esta coleção nasceu de uma encomenda de um fã de Sharingans, reunindo Itachi, Obito, Madara, Kakashi, Sasuke e Shisui. Inspire-se para montar uma coleção com seus personagens e detalhes favoritos.",
+    palavrasChave:
+      "coleção colecoes sharingan mangekyou uchiha naruto shippuden itachi obito madara kakashi sasuke shisui anime mangá manga otaku geek seis 6 bottons olhos ninja vermelho preto laranja azul roxo verde personalizado fã",
+    imagens: ["/imagens/colecoes/sharingan/01.jpg"],
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
     tipo: "personalizado",
-    precoAtacadoCentavos: 690,
+    precoAtacadoCentavos: 650,
     precoAtacadoNormalCentavos: 720,
     quantidadeMinimaAtacado: 100,
     precoCentavos: 800,
@@ -863,7 +927,8 @@ function resolverItemCesta(chave) {
   const [id, tamanho, ...extras] = chave.split("::");
   if (extras.length) return null;
   const produto = produtos.find((produto) => produto.id === id);
-  if (!produto || produto.tipo === "personalizado") return null;
+  if (!produto || ["personalizado", "colecao"].includes(produto.tipo))
+    return null;
   if (produto.tipo === "kit") return tamanho === undefined ? produto : null;
   if (
     !produto.tamanhos.includes(Number(tamanho)) ||

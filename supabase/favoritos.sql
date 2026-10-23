@@ -115,5 +115,10 @@ insert into public.catalogo_favoritos(produto) values
 ('sou_feliz_e_agradeco'),
 ('nerd_universo_particular'),
 ('cachorrinho_charme_de_bandana'),
-('espelho_tudo_a_seu_favor')
+('espelho_tudo_a_seu_favor'),
+('sorriso_sombrio'),
+('grito_das_teias'),
+('abraco_eterno'),
+('uma_turma_de_lembrancas'),
+('colecao_sharingan')
 on conflict do nothing;
