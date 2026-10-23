@@ -10,6 +10,17 @@ const kit = (id, nome, referencia, arquivos, palavrasChave) => ({
 });
 
 const produtos = [
+  {
+    id: "kit_rock_rubro",
+    referencia: "KIT-014",
+    nome: "Rock Rubro",
+    tipo: "kit",
+    palavrasChave:
+      "rock rubro música musical baixo contrabaixo guitarra estrela vermelha boca lábios beijo garota flores vermelho vinho bordô preto bege creme alternativo vintage retrô kit quatro 4 bottons",
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/kits/kit_rock_rubro/${arquivo}`,
+    ),
+  },
   kit(
     "kit_blackpink",
     "BLACKPINK — Pink Venom",
@@ -1211,6 +1222,59 @@ const produtos = [
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
       (arquivo) => `/imagens/unitarios/bulking_bad/${arquivo}`,
+    ),
+  },
+  {
+    id: "hot_girls_love_muay_thai",
+    referencia: "UNI-071",
+    nome: "“Garotas gostosas amam Muay Thai”",
+    tipo: "unitario",
+    palavrasChave:
+      "hot girls love muay thai garotas gostosas lindas bonitas amam luta artes marciais boxe tailandês lutadora mulher mulheres feminino treino academia esporte chute silhueta frase inglês branco preto vermelho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/hot_girls_love_muay_thai/${arquivo}`,
+    ),
+  },
+  {
+    id: "authentic_girls_club",
+    referencia: "UNI-072",
+    nome: "“Clube das garotas autênticas”",
+    tipo: "unitario",
+    palavrasChave:
+      "authentic girls club clube das garotas autênticas meninas mulheres autenticidade feminino boca lábios beijo rosa vermelho branco frase inglês tipografia retrô",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/authentic_girls_club/${arquivo}`,
+    ),
+  },
+  {
+    id: "homem_vitruviano_anatomia_do_rock",
+    referencia: "UNI-073",
+    nome: "Homem Vitruviano — Anatomia do Rock",
+    tipo: "unitario",
+    palavrasChave:
+      "homem vitruviano anatomia do rock leonardo da vinci arte renascimento releitura guitarra guitarrista música musical instrumento desenho braços círculo quadrado bege creme preto",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagemCesta: "/imagens/unitarios/homem_vitruviano_anatomia_do_rock/01.jpg",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/homem_vitruviano_anatomia_do_rock/${arquivo}`,
+    ),
+  },
+  {
+    id: "mother_of_dragons",
+    referencia: "UNI-074",
+    nome: "“Mãe dos Dragões” — Game of Thrones",
+    tipo: "unitario",
+    palavrasChave:
+      "mother of dragons mãe dos dragões game of thrones got daenerys targaryen khaleesi drogon dragão fantasia série asas branco preto vermelho frase inglês letras góticas",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/mother_of_dragons/${arquivo}`,
     ),
   },
   {

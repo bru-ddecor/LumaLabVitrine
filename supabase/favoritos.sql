@@ -145,5 +145,10 @@ insert into public.catalogo_favoritos(produto) values
 ('eren_tita_de_ataque'),
 ('portugal_camisa_7'),
 ('fight_like_a_girl'),
-('bulking_bad')
+('bulking_bad'),
+('hot_girls_love_muay_thai'),
+('authentic_girls_club'),
+('homem_vitruviano_anatomia_do_rock'),
+('kit_rock_rubro'),
+('mother_of_dragons')
 on conflict do nothing;

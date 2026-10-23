@@ -17,6 +17,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | KIT-011 | Rosa Elétrico | Kit com 4 bottons | kit_darkpink |
 | KIT-012 | Cartas em Lavanda | Kit com 4 bottons | kit_lightpurple |
 | KIT-013 | Feitiço Violeta | Kit com 4 bottons | kit_magicpurple |
+| KIT-014 | Rock Rubro | Kit com 4 bottons | kit_rock_rubro |
 | UNI-001 | Cansada de ser adulta | Botton individual | cansada_de_ser_adulta |
 | UNI-002 | Zoro — One Piece | Botton individual | zoro_one_piece |
 | UNI-003 | Gojo — Jujutsu Kaisen | Botton individual | gojo_jujutsu_kaisen |
@@ -87,6 +88,10 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-068 | Portugal — Camisa 7 | Botton individual | portugal_camisa_7 |
 | UNI-069 | “Lute como uma garota” | Botton individual | fight_like_a_girl |
 | UNI-070 | Bulking Bad — “Ganhando massa” | Botton individual | bulking_bad |
+| UNI-071 | “Garotas gostosas amam Muay Thai” | Botton individual | hot_girls_love_muay_thai |
+| UNI-072 | “Clube das garotas autênticas” | Botton individual | authentic_girls_club |
+| UNI-073 | Homem Vitruviano — Anatomia do Rock | Botton individual | homem_vitruviano_anatomia_do_rock |
+| UNI-074 | “Mãe dos Dragões” — Game of Thrones | Botton individual | mother_of_dragons |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
