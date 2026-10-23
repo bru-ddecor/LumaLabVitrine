@@ -135,5 +135,10 @@ insert into public.catalogo_favoritos(produto) values
 ('fruit_of_the_spirit'),
 ('purify_my_heart_lord'),
 ('salmos_23_4_nao_temerei'),
-('all_things_new')
+('all_things_new'),
+('decidiu_salvar_voce'),
+('god_is_bigger_than_your_fear'),
+('ate_que_o_senhor_venha'),
+('cristo_e_suficiente'),
+('o_senhor_e_meu_pastor')
 on conflict do nothing;

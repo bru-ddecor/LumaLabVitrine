@@ -77,6 +77,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-058 | Purify My Heart, Lord | Botton individual / Cristãos | purify_my_heart_lord |
 | UNI-059 | Salmos 23:4 — Não Temerei | Botton individual / Cristãos | salmos_23_4_nao_temerei |
 | UNI-060 | All Things New | Botton individual / Cristãos | all_things_new |
+| UNI-061 | Decidiu Salvar Você | Botton individual / Cristãos | decidiu_salvar_voce |
+| UNI-062 | “Deus é maior que o seu medo” | Botton individual / Cristãos | god_is_bigger_than_your_fear |
+| UNI-063 | Até que o Senhor Venha | Botton individual / Cristãos | ate_que_o_senhor_venha |
+| UNI-064 | Cristo é Suficiente | Botton individual / Cristãos | cristo_e_suficiente |
+| UNI-065 | “O Senhor é meu pastor; nada me faltará” | Botton individual / Cristãos | o_senhor_e_meu_pastor |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

@@ -1078,6 +1078,76 @@ const produtos = [
     ),
   },
   {
+    id: "decidiu_salvar_voce",
+    referencia: "UNI-061",
+    nome: "Decidiu Salvar Você",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "jesus não evitou a cruz porque decidiu salvar você cristãos cristão cristã cristãs cristianismo deus fé salvação cruz coroa espinhos silhueta rosto perfil gospel evangelho frase verde green preto black branco white tipografia textura",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/decidiu_salvar_voce/${arquivo}`,
+    ),
+  },
+  {
+    id: "god_is_bigger_than_your_fear",
+    referencia: "UNI-062",
+    nome: "“Deus é maior que o seu medo”",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "god is bigger than your fear deus é maior que seu medo cristãos cristão cristã cristãs cristianismo jesus fé coragem confiança gospel frase inglês vinho bordô marsala vermelho red rosa pink brilho glitter estrela tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/god_is_bigger_than_your_fear/${arquivo}`,
+    ),
+  },
+  {
+    id: "ate_que_o_senhor_venha",
+    referencia: "UNI-063",
+    nome: "Até que o Senhor Venha",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "até que o senhor venha 1 coríntios corintios 11 26 bíblia versículo jesus volta retorno cristãos cristão cristã cristãs cristianismo deus fé esperança gospel coroa rei ampulheta tempo estrela azul blue marinho branco white brilho textura tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/ate_que_o_senhor_venha/${arquivo}`,
+    ),
+  },
+  {
+    id: "cristo_e_suficiente",
+    referencia: "UNI-064",
+    nome: "Cristo é Suficiente",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "cristo é suficiente jesus deus cristãos cristão cristã cristãs cristianismo fé evangelho gospel religioso frase retrato rosto colagem papel rasgado letras tipografia vinho bordô vermelho red dourado gold preto black branco white cinza",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/cristo_e_suficiente/${arquivo}`,
+    ),
+  },
+  {
+    id: "o_senhor_e_meu_pastor",
+    referencia: "UNI-065",
+    nome: "“O Senhor é meu pastor; nada me faltará”",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "the lord is my shepherd i lack nothing o senhor é meu pastor nada me faltará salmos salmo 23 1 bíblia versículo cristãos cristão cristã cristãs cristianismo deus jesus fé confiança gospel frase inglês creme bege amarelo claro pastel rosa pink estrela ondas tipografia retrô",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/o_senhor_e_meu_pastor/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
