@@ -1008,6 +1008,76 @@ const produtos = [
     ),
   },
   {
+    id: "jesus_king",
+    referencia: "UNI-056",
+    nome: "Jesus King",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "jesus king rei cristãos cristão cristã cristãs cristianismo fé deus evangelho gospel bíblia versículo timóteo 1 timoteo 6 15 religioso frase branco white vermelho red amarelo yellow azul blue marinho tipografia retrô hambúrguer humor",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/jesus_king/${arquivo}`,
+    ),
+  },
+  {
+    id: "fruit_of_the_spirit",
+    referencia: "UNI-057",
+    nome: "Fruit of the Spirit",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "fruit of the spirit fruto frutos espírito santo cristãos cristão cristã cristãs cristianismo deus jesus fé gospel bíblia gálatas amor alegria paz paciência benignidade bondade fidelidade mansidão domínio próprio joy kindness love gentleness peace goodness forbearance faithfulness self control banana fruta azul blue amarelo yellow laranja creme bege branco tipografia inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/fruit_of_the_spirit/${arquivo}`,
+    ),
+  },
+  {
+    id: "purify_my_heart_lord",
+    referencia: "UNI-058",
+    nome: "Purify My Heart, Lord",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "purify my heart lord purifica meu coração senhor cristãos cristão cristã cristãs cristianismo deus jesus fé oração adoração gospel frase inglês flores floral pétalas folhas rosa pink lilás verde amarelo bege creme pastel delicado tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/purify_my_heart_lord/${arquivo}`,
+    ),
+  },
+  {
+    id: "salmos_23_4_nao_temerei",
+    referencia: "UNI-059",
+    nome: "Salmos 23:4 — Não Temerei",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "salmos salmo 23 4 sl bíblia versículo ainda que eu ande pelo vale da sombra da morte não temerei cristãos cristão cristã cristãs cristianismo deus jesus fé coragem confiança gospel frase branco white preto black rosa pink magenta tipografia grafite letras urbano",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/salmos_23_4_nao_temerei/${arquivo}`,
+    ),
+  },
+  {
+    id: "all_things_new",
+    referencia: "UNI-060",
+    nome: "All Things New",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "all things new the old is gone the new is here tudo se fez novo nova criatura renovação recomeço 2 coríntios corinthians 5 17 bíblia versículo cristãos cristão cristã cristãs cristianismo deus jesus fé gospel preto black rosa pink branco white borboleta borboletas estrelas frase inglês tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/all_things_new/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

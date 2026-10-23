@@ -72,6 +72,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-053 | Made to Worship | Botton individual / Cristãos | made_to_worship |
 | UNI-054 | Jesus Salva | Botton individual / Cristãos | jesus_salva |
 | UNI-055 | I Just Need God | Botton individual / Cristãos | i_just_need_god |
+| UNI-056 | Jesus King | Botton individual / Cristãos | jesus_king |
+| UNI-057 | Fruit of the Spirit | Botton individual / Cristãos | fruit_of_the_spirit |
+| UNI-058 | Purify My Heart, Lord | Botton individual / Cristãos | purify_my_heart_lord |
+| UNI-059 | Salmos 23:4 — Não Temerei | Botton individual / Cristãos | salmos_23_4_nao_temerei |
+| UNI-060 | All Things New | Botton individual / Cristãos | all_things_new |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

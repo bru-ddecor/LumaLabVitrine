@@ -130,5 +130,10 @@ insert into public.catalogo_favoritos(produto) values
 ('voce_no_seu_anime'),
 ('made_to_worship'),
 ('jesus_salva'),
-('i_just_need_god')
+('i_just_need_god'),
+('jesus_king'),
+('fruit_of_the_spirit'),
+('purify_my_heart_lord'),
+('salmos_23_4_nao_temerei'),
+('all_things_new')
 on conflict do nothing;
