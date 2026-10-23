@@ -120,5 +120,10 @@ insert into public.catalogo_favoritos(produto) values
 ('grito_das_teias'),
 ('abraco_eterno'),
 ('uma_turma_de_lembrancas'),
-('colecao_sharingan')
+('colecao_sharingan'),
+('mini_bottons_musicais'),
+('seu_pet_sempre_por_perto'),
+('sorriso_de_aco'),
+('refugio_das_sombras'),
+('coro_dos_esqueletos')
 on conflict do nothing;

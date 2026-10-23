@@ -854,11 +854,85 @@ const produtos = [
     referencia: "COL-001",
     nome: "Coleção Sharingan — Olhares Uchiha",
     tipo: "colecao",
+    precoCentavos: 700,
     descricao:
-      "Seis olhares, uma paixão por Naruto. Esta coleção nasceu de uma encomenda de um fã de Sharingans, reunindo Itachi, Obito, Madara, Kakashi, Sasuke e Shisui. Inspire-se para montar uma coleção com seus personagens e detalhes favoritos.",
+      "Seis olhares, uma paixão por Naruto. Esta coleção nasceu de uma encomenda de um fã de Sharingans, reunindo Itachi, Obito, Madara, Kakashi, Sasuke e Shisui. Monte sua coleção com os personagens e a quantidade que preferir. Combine os detalhes pelo WhatsApp.",
     palavrasChave:
       "coleção colecoes sharingan mangekyou uchiha naruto shippuden itachi obito madara kakashi sasuke shisui anime mangá manga otaku geek seis 6 bottons olhos ninja vermelho preto laranja azul roxo verde personalizado fã",
     imagens: ["/imagens/colecoes/sharingan/01.jpg"],
+  },
+  {
+    id: "mini_bottons_musicais",
+    referencia: "COL-002",
+    nome: "Sua Banda em Mini Bottons",
+    tipo: "colecao",
+    exibirEmPersonalizados: true,
+    detalheMedida: "MINI BOTTONS · 32 MM • 3,2 CM",
+    descricao:
+      "Colecione mini bottons personalizados da sua banda ou artista favorito. Leve seus álbuns, músicas e símbolos preferidos para onde você for! Os mini bottons das fotos têm 32 mm • 3,2 cm.",
+    mensagemPersonalizacao:
+      "Olá! Gostaria de uma coleção de mini bottons personalizados da minha banda ou artista favorito. Podemos combinar a banda ou artista e a quantidade?",
+    palavrasChave:
+      "32mm 32 mm 3,2cm banda bandas música musica musical songs song coleção colecao coleções colecoes mini minibottons mini bottons personalizados artista artistas álbum album álbuns albums cantor cantora fã fandom twenty one pilots twentyonepilots top tøp tyler joseph josh dun trench blurryface scaled and icy vessel clancy regional at best rock pop alternativo indie amarelo vermelho preto rosa azul branco símbolos logo",
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/colecoes/mini_bottons_musicais/${arquivo}`,
+    ),
+  },
+  {
+    id: "seu_pet_sempre_por_perto",
+    referencia: "PER-004",
+    nome: "Seu Pet, Sempre por Perto",
+    tipo: "personalizado",
+    precoCentavos: 800,
+    precoAtacadoCentavos: 650,
+    precoAtacadoNormalCentavos: 720,
+    quantidadeMinimaAtacado: 100,
+    descricao: "Transforme a foto do seu pet em um botton personalizado e leve esse amor para todo lugar! Um carinho para usar na bolsa, na mochila ou presentear quem também é apaixonado pelo seu companheiro.",
+    mensagemPersonalizacao: "Olá! Gostaria de transformar a foto do meu pet em um botton personalizado. Podemos combinar a foto, o nome, o estilo da arte, o tamanho e a quantidade?",
+    palavrasChave:
+      "personalizado pet pets foto fotografia animal animais cachorro cachorrinho cão dog rottweiler gato gatinho cat retrato ilustração nome lembrança presente amor companheiro patinha coração azul blue vermelho red dourado teddy",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/personalizados/seu_pet_sempre_por_perto/${arquivo}`,
+    ),
+  },
+  {
+    id: "sorriso_de_aco",
+    referencia: "UNI-049",
+    nome: "Sorriso de Aço",
+    tipo: "unitario",
+    palavrasChave:
+      "caveira crânio esqueleto dentes sorriso rosto máscara ciborgue cyborg cyberpunk robô robótico mecânico tecnologia colagem xadrez quadriculado preto black branco white cinza monocromático dark gótico goth industrial alternativo grunge terror horror aesthetic",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sorriso_de_aco/${arquivo}`,
+    ),
+  },
+  {
+    id: "refugio_das_sombras",
+    referencia: "UNI-050",
+    nome: "Refúgio das Sombras",
+    tipo: "unitario",
+    palavrasChave:
+      "floresta bosque árvores galhos cabana casa refúgio caminho paisagem natureza pássaros preto black branco white cinza monocromático desenho ilustração hachuras gravura dark sombrio gótico goth mistério terror horror outono inverno aesthetic",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/refugio_das_sombras/${arquivo}`,
+    ),
+  },
+  {
+    id: "coro_dos_esqueletos",
+    referencia: "UNI-051",
+    nome: "Coro dos Esqueletos",
+    tipo: "unitario",
+    palavrasChave:
+      "caveira caveiras crânio crânios esqueleto esqueletos ossos dentes olhos grito bocas teia textura terror horror dark gótico goth macabro sombrio metal alternativo preto black branco white monocromático ilustração desenho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/coro_dos_esqueletos/${arquivo}`,
+    ),
   },
   {
     id: "personalizado_musical",

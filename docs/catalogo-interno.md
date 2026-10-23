@@ -65,6 +65,9 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-046 | Sorriso Sombrio | Botton individual | sorriso_sombrio |
 | UNI-047 | Grito das Teias | Botton individual | grito_das_teias |
 | UNI-048 | Abraço Eterno | Botton individual | abraco_eterno |
+| UNI-049 | Sorriso de Aço | Botton individual | sorriso_de_aco |
+| UNI-050 | Refúgio das Sombras | Botton individual | refugio_das_sombras |
+| UNI-051 | Coro dos Esqueletos | Botton individual | coro_dos_esqueletos |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
@@ -73,7 +76,9 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | TRI-001 | Meninas Superpoderosas — Trio de Poder | Trio | meninas_superpoderosas |
 | PER-002 | Lembrança de Aniversário | Personalizado | lembranca_aniversario |
 | PER-003 | Uma Turma de Lembranças | Personalizado | uma_turma_de_lembrancas |
+| COL-002 | Sua Banda em Mini Bottons | Coleção personalizada | mini_bottons_musicais |
 | COL-001 | Coleção Sharingan — Olhares Uchiha | Coleção com 6 bottons | colecao_sharingan |
+| PER-004 | Seu Pet, Sempre por Perto | Personalizado | seu_pet_sempre_por_perto |
 | PER-001 | Seu artista, sua música | Personalizado | personalizado_musical |
 
 ## Tamanhos dos individuais
@@ -98,4 +103,6 @@ Todos os personalizados custam R$ 8,00 por unidade. A partir de 100 unidades, R$
 
 PER-003: exemplo de encomenda para van escolar, com nomes individuais e temas para a turma. Cinco fotos da mesma encomenda: duas com Meninas Superpoderosas e três com tema de futebol e nomes individuais.
 
-COL-001: coleção Sharingan com seis artes. Preços e tamanhos a confirmar; consulta pelo WhatsApp.
+COL-001: coleção Sharingan com seis artes de exemplo. R$ 7,00 por botton; o cliente combina personagens, quantidade e tamanho pelo WhatsApp. Total conforme quantidade escolhida.
+
+COL-002: coleção de mini bottons de 32 mm • 3,2 cm, com três fotos de exemplo de Twenty One Pilots. O mesmo produto aparece em Trios e Coleções e em Personalizados, com curtidas compartilhadas. Sem preço público; contato pelo WhatsApp para banda/artista e quantidade.

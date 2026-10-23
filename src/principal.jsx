@@ -240,7 +240,7 @@ function CartaoProduto({ produto, kit = false }) {
                 : produto.tipo === "trio"
                   ? "TRIO COM 3 BOTTONS"
                   : produto.tipo === "colecao"
-                    ? "COLEÇÃO COM 6 BOTTONS"
+                    ? (produto.detalheMedida || "COLEÇÃO · QUANTIDADE À SUA ESCOLHA")
                     : "BOTTON INDIVIDUAL"}
         </span>
         {produto.tipo === "kit" && <b>ECONOMIZE R$ 6,50</b>}
@@ -301,12 +301,9 @@ function CartaoProduto({ produto, kit = false }) {
       )}
       {produto.tipo === "colecao" ? (
         <div className="compra-personalizado">
-          <div className="preco">
-            <strong>Valor sob consulta</strong>
-          </div>
           <a
             className="personalizar-produto"
-            href={`https://wa.me/5532999240859?text=${encodeURIComponent(`Olá! Tenho interesse na ${produto.nome}. Podemos combinar tamanho, valor e detalhes?`)}`}
+            href={`https://wa.me/5532999240859?text=${encodeURIComponent(produto.mensagemPersonalizacao || `Olá! Tenho interesse na ${produto.nome}. Podemos combinar os personagens, a quantidade e o tamanho?`)}`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -460,7 +457,7 @@ function Aplicacao() {
     (produto) => produto.tipo === "unitario",
   );
   const personalizadosFiltrados = filtrados.filter(
-    (produto) => produto.tipo === "personalizado",
+    (produto) => produto.tipo === "personalizado" || produto.exibirEmPersonalizados,
   );
   return (
     <>
