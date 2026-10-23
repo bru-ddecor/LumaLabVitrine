@@ -1148,6 +1148,72 @@ const produtos = [
     ),
   },
   {
+    id: "tu_porem_permaneca_em_mim",
+    referencia: "UNI-066",
+    nome: "Tu, Porém — Permaneça em Mim",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "tu porém permaneça em mim eles podem você não peixes peixe cardume contracorrente azul claro turquesa branco cristãos cristão cristã cristãs cristianismo jesus deus fé evangelho gospel frase",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/tu_porem_permaneca_em_mim/${arquivo}`,
+    ),
+  },
+  {
+    id: "eren_tita_de_ataque",
+    referencia: "UNI-067",
+    nome: "Eren — Titã de Ataque",
+    tipo: "unitario",
+    palavrasChave:
+      "eren yeager jaeger titã de ataque attack on titan shingeki no kyojin anime mangá otaku gigante perfil cabelo preto longo vapor fumaça vermelho preto branco",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/eren_tita_de_ataque/${arquivo}`,
+    ),
+  },
+  {
+    id: "portugal_camisa_7",
+    referencia: "UNI-068",
+    nome: "Portugal — Camisa 7",
+    tipo: "unitario",
+    palavrasChave:
+      "portugal camisa 7 sete seleção portuguesa futebol jogador esporte capitão braçadeira retrato ilustração preto branco cinza monocromático gráficos números",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/portugal_camisa_7/${arquivo}`,
+    ),
+  },
+  {
+    id: "fight_like_a_girl",
+    referencia: "UNI-069",
+    nome: "“Lute como uma garota”",
+    tipo: "unitario",
+    palavrasChave:
+      "fight like a girl lute como uma garota menina mulher mulheres força feminina empoderamento feminismo luta boxe luvas vermelhas esporte frase inglês branco preto vermelho laço",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/fight_like_a_girl/${arquivo}`,
+    ),
+  },
+  {
+    id: "bulking_bad",
+    referencia: "UNI-070",
+    nome: "Bulking Bad — “Ganhando massa”",
+    tipo: "unitario",
+    palavrasChave:
+      "bulking bad breaking bad ganhando massa muscular academia musculação treino fitness maromba fisiculturismo músculos força humor meme paródia trocadilho série tabela periódica preto verde branco chapéu óculos",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/bulking_bad/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

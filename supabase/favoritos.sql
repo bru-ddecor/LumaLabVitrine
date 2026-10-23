@@ -140,5 +140,10 @@ insert into public.catalogo_favoritos(produto) values
 ('god_is_bigger_than_your_fear'),
 ('ate_que_o_senhor_venha'),
 ('cristo_e_suficiente'),
-('o_senhor_e_meu_pastor')
+('o_senhor_e_meu_pastor'),
+('tu_porem_permaneca_em_mim'),
+('eren_tita_de_ataque'),
+('portugal_camisa_7'),
+('fight_like_a_girl'),
+('bulking_bad')
 on conflict do nothing;

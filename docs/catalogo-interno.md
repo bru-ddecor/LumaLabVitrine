@@ -82,6 +82,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-063 | Até que o Senhor Venha | Botton individual / Cristãos | ate_que_o_senhor_venha |
 | UNI-064 | Cristo é Suficiente | Botton individual / Cristãos | cristo_e_suficiente |
 | UNI-065 | “O Senhor é meu pastor; nada me faltará” | Botton individual / Cristãos | o_senhor_e_meu_pastor |
+| UNI-066 | Tu, Porém — Permaneça em Mim | Botton individual / Cristãos | tu_porem_permaneca_em_mim |
+| UNI-067 | Eren — Titã de Ataque | Botton individual | eren_tita_de_ataque |
+| UNI-068 | Portugal — Camisa 7 | Botton individual | portugal_camisa_7 |
+| UNI-069 | “Lute como uma garota” | Botton individual | fight_like_a_girl |
+| UNI-070 | Bulking Bad — “Ganhando massa” | Botton individual | bulking_bad |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
