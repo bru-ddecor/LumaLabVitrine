@@ -170,5 +170,10 @@ insert into public.catalogo_favoritos(produto) values
 ('dont_quit_do_it'),
 ('slay_tabela_periodica'),
 ('nova_york_estatua_da_liberdade'),
-('hello_kitty_eu_amo_nerds')
+('hello_kitty_eu_amo_nerds'),
+('vinil_o_toque_da_musica'),
+('eu_amo_chatgpt'),
+('gym_mode_on'),
+('forca_classica'),
+('focus_foco')
 on conflict do nothing;

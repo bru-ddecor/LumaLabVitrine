@@ -723,13 +723,13 @@ function Aplicacao() {
                 </div>
                 <nav className="categorias-individuais" aria-label="Categorias de bottons individuais">
                   {categoriasIndividuais.filter((categoria) =>
-                    unitariosFiltrados.some((produto) => (produto.categoria === categoria.id || produto.categoriasAdicionais?.includes(categoria.id))),
+                    filtrados.some((produto) => (produto.categoria === categoria.id || produto.categoriasAdicionais?.includes(categoria.id))),
                   ).map((categoria) => (
                     <a key={categoria.id} href={`#${categoria.id}`}>{categoria.nome}</a>
                   ))}
                 </nav>
                 {categoriasIndividuais.map((categoria) => {
-                  const itens = unitariosFiltrados.filter((produto) => (produto.categoria === categoria.id || produto.categoriasAdicionais?.includes(categoria.id)));
+                  const itens = filtrados.filter((produto) => (produto.categoria === categoria.id || produto.categoriasAdicionais?.includes(categoria.id)));
                   return itens.length > 0 && (
                     <Colecao
                       key={categoria.id}

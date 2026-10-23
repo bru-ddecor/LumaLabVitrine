@@ -111,7 +111,12 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-089 | “Não desista — Faça acontecer” | Botton individual / Motivacional | dont_quit_do_it |
 | UNI-090 | Slay — “Arrase” · Tabela Periódica | Botton individual / Nerd | slay_tabela_periodica |
 | UNI-091 | Nova York — Estátua da Liberdade | Botton individual / Estampas e Cores | nova_york_estatua_da_liberdade |
-| UNI-092 | Hello Kitty — “Eu amo nerds” | Botton individual / Nerd e Desenhos | hello_kitty_eu_amo_nerds |
+| UNI-092 | Hello Kitty — “Eu amo nerds” | Botton individual / Nerd | hello_kitty_eu_amo_nerds |
+| UNI-093 | Vinil — O Toque da Música | Botton individual / Música | vinil_o_toque_da_musica |
+| UNI-094 | “Eu amo ChatGPT” | Botton individual / Humor e Programação | eu_amo_chatgpt |
+| UNI-095 | “Modo academia ativado” | Botton individual / Academia | gym_mode_on |
+| UNI-096 | Força Clássica | Botton individual / Academia | forca_classica |
+| UNI-097 | Focus — “Foco” | Botton individual / Academia | focus_foco |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
@@ -156,4 +161,8 @@ COL-002: coleção de mini bottons de 32 mm • 3,2 cm, com três fotos de exemp
 
 Os individuais são organizados em carrosséis menores por tema, com navegação por atalhos. Cada arte tem uma categoria principal e pode aparecer em outras usando `categoriasAdicionais`; a busca continua reunindo todos os produtos e também reconhece o nome da categoria. Categorias vazias só aparecem quando recebem produtos. Classificação no campo `categoria` de cada produto; nomes e ordem em `src/categorias-individuais.js`.
 
-Carrosséis exibem todos os produtos da coleção, sem corte em cinco cards. O botão “Ver todos” abre a grade e “Voltar ao carrossel” restaura a faixa. Entre Luz e Sombra fica em Dark; Homem Vitruviano aparece em Arte e Música, com a mesma referência e curtidas; You Are the Target fica em Games (Call of Duty Mobile).
+Carrosséis exibem todos os produtos da coleção, sem corte em cinco cards. O botão “Ver todos” abre a grade e “Voltar ao carrossel” restaura a faixa. Entre Luz e Sombra fica em Dark; Homem Vitruviano aparece em Música, com a mesma referência e curtidas; You Are the Target fica em Games (Call of Duty Mobile).
+
+Anime abre as categorias. Nerd vem imediatamente após Programação e reúne exclusivamente UNI-043, UNI-082, UNI-090 e UNI-092. Parzinhos e trio com personagens também aparecem em Desenhos, mantendo seus tipos, tamanhos, preços e referências originais.
+
+Categoria Arte removida. Frases reúne UNI-022 (reflexão do Poe) e UNI-025 (Último Ato de Amor, arte da lata de Monster), que saiu de Anime. PAR-005 (Hello Kitty — Treino Fofo) aparece também em Academia.

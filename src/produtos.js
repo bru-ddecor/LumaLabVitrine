@@ -435,7 +435,7 @@ const produtos = [
     referencia: "UNI-022",
     nome: "Poe — Beleza Rara",
     tipo: "unitario",
-    categoria: "arte",
+    categoria: "frases",
     palavrasChave:
       "edgar allan poe literatura literário escritor autor livro leitura poesia poema frase citação não há beleza rara sem algo de estranho nas proporções preto black branco white cinza bege creme sépia dark academia gótico goth aesthetic clássico tipografia letras",
     tamanhos: [32, 44, 55],
@@ -463,6 +463,7 @@ const produtos = [
     referencia: "PAR-001",
     nome: "Gumball e Darwin — Dupla Inseparável",
     tipo: "parzinho",
+    categoria: "desenhos",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
     descricao:
@@ -478,6 +479,7 @@ const produtos = [
     referencia: "PAR-002",
     nome: "Marceline e Jujuba — Doce Sintonia",
     tipo: "parzinho",
+    categoria: "desenhos",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
     descricao:
@@ -494,6 +496,7 @@ const produtos = [
     referencia: "PAR-003",
     nome: "Mutano e Ravena — Sintonia Titã",
     tipo: "parzinho",
+    categoria: "desenhos",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
     descricao:
@@ -507,6 +510,7 @@ const produtos = [
     referencia: "PAR-004",
     nome: "Hora de Aventura — Amigos de Ooo",
     tipo: "parzinho",
+    categoria: "desenhos",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
     descricao:
@@ -522,6 +526,8 @@ const produtos = [
     referencia: "PAR-005",
     nome: "Hello Kitty — Treino Fofo",
     tipo: "parzinho",
+    categoria: "desenhos",
+    categoriasAdicionais: ["academia"],
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
     descricao:
@@ -537,6 +543,7 @@ const produtos = [
     referencia: "TRI-001",
     nome: "Meninas Superpoderosas — Trio de Poder",
     tipo: "trio",
+    categoria: "desenhos",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 1500, 44: 2000, 55: 2400 },
     imagemCesta: "/imagens/trios/meninas_superpoderosas/02.jpg",
@@ -568,7 +575,7 @@ const produtos = [
     referencia: "UNI-025",
     nome: "Último Ato de Amor",
     tipo: "unitario",
-    categoria: "anime",
+    categoria: "frases",
     palavrasChave:
       "monster energy ultra energético bebida lata taurina branco white preto black cinza prata azul frase texto meme amor último ato de amor eu nunca mais vou te procurar mas me tornarei tudo aquilo que prometi término superação recomeço promessa romântico melancólico aesthetic fotografia",
     tamanhos: [32, 44, 55],
@@ -840,7 +847,7 @@ const produtos = [
     referencia: "UNI-043",
     nome: "Nerd — Universo Particular",
     tipo: "unitario",
-    categoria: "estampas-e-cores",
+    categoria: "nerd",
     palavrasChave:
       "nerd geek nasa espaço espacial universo cosmos astronomia ciência órbita estrelas céu noite galáxia tecnologia azul marinho blue preto black branco white vermelho red letras tipografia humor",
     tamanhos: [32, 44, 55],
@@ -1341,8 +1348,7 @@ const produtos = [
     referencia: "UNI-073",
     nome: "Homem Vitruviano — Anatomia do Rock",
     tipo: "unitario",
-    categoria: "arte",
-    categoriasAdicionais: ["musica"],
+    categoria: "musica",
     palavrasChave:
       "homem vitruviano anatomia do rock leonardo da vinci arte renascimento releitura guitarra guitarrista música musical instrumento desenho braços círculo quadrado bege creme preto",
     tamanhos: [32, 44, 55],
@@ -1469,7 +1475,7 @@ const produtos = [
     referencia: "UNI-082",
     nome: "“Eu amo nerds”",
     tipo: "unitario",
-    categoria: "humor",
+    categoria: "nerd",
     palavrasChave:
       "i love nerds eu amo nerds nerd geek coração rosa pink pixel pixelado pixel art 8 bits oito bits branco preto humor frase inglês amor",
     tamanhos: [32, 44, 55],
@@ -1611,13 +1617,85 @@ const produtos = [
     nome: "Hello Kitty — “Eu amo nerds”",
     tipo: "unitario",
     categoria: "nerd",
-    categoriasAdicionais: ["desenhos"],
     palavrasChave:
       "hello kitty sanrio i love nerds eu amo nerds nerd geek óculos coração vermelho laço branco preto fofo kawaii cute desenho personagem amor frase inglês",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
       (arquivo) => `/imagens/unitarios/hello_kitty_eu_amo_nerds/${arquivo}`,
+    ),
+  },
+  {
+    id: "vinil_o_toque_da_musica",
+    referencia: "UNI-093",
+    nome: "Vinil — O Toque da Música",
+    tipo: "unitario",
+    categoria: "musica",
+    palavrasChave:
+      "vinil disco lp música musical toque mãos criação de adão michelangelo arte renascimento releitura conexão musical journey stereo retrô vintage preto azul claro",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagemCesta: "/imagens/unitarios/vinil_o_toque_da_musica/01.jpg",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/vinil_o_toque_da_musica/${arquivo}`,
+    ),
+  },
+  {
+    id: "eu_amo_chatgpt",
+    referencia: "UNI-094",
+    nome: "“Eu amo ChatGPT”",
+    tipo: "unitario",
+    categoria: "humor",
+    categoriasAdicionais: ["programacao"],
+    palavrasChave:
+      "i love chat gpt chatgpt eu amo chatgpt openai inteligência artificial ia ai programação programador programadora desenvolvedor desenvolvedora dev tecnologia informática humor coração vermelho branco preto frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/eu_amo_chatgpt/${arquivo}`,
+    ),
+  },
+  {
+    id: "gym_mode_on",
+    referencia: "UNI-095",
+    nome: "“Modo academia ativado”",
+    tipo: "unitario",
+    categoria: "academia",
+    palavrasChave:
+      "gym mode on modo academia ativado ligado musculação treino fitness maromba halter peso força exercício esporte frase inglês preto branco cinza tipografia interruptor botão",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gym_mode_on/${arquivo}`,
+    ),
+  },
+  {
+    id: "forca_classica",
+    referencia: "UNI-096",
+    nome: "Força Clássica",
+    tipo: "unitario",
+    categoria: "academia",
+    palavrasChave:
+      "força clássica academia musculação treino fitness maromba fisiculturismo músculos bíceps pose estátua escultura grega romana clássico louros coroa preto branco cinza monocromático",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagemCesta: "/imagens/unitarios/forca_classica/01.jpg",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/forca_classica/${arquivo}`,
+    ),
+  },
+  {
+    id: "focus_foco",
+    referencia: "UNI-097",
+    nome: "Focus — “Foco”",
+    tipo: "unitario",
+    categoria: "academia",
+    palavrasChave:
+      "focus foco academia musculação treino fitness maromba disciplina concentração força músculos costas estátua escultura clássica preto branco cinza monocromático frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/focus_foco/${arquivo}`,
     ),
   },
   {
