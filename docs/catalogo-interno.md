@@ -18,6 +18,8 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | KIT-012 | Cartas em Lavanda | Kit com 4 bottons | kit_lightpurple |
 | KIT-013 | Feitiço Violeta | Kit com 4 bottons | kit_magicpurple |
 | KIT-014 | Rock Rubro | Kit com 4 bottons | kit_rock_rubro |
+| KIT-015 | One Piece — Legado do Chapéu de Palha | Kit com 4 bottons | kit_one_piece_chapeu_de_palha |
+| KIT-016 | “A garota mais sortuda” | Kit com 4 bottons | kit_a_garota_mais_sortuda |
 | UNI-001 | Cansada de ser adulta | Botton individual | cansada_de_ser_adulta |
 | UNI-002 | Zoro — One Piece | Botton individual | zoro_one_piece |
 | UNI-003 | Gojo — Jujutsu Kaisen | Botton individual | gojo_jujutsu_kaisen |
@@ -92,6 +94,9 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-072 | “Clube das garotas autênticas” | Botton individual | authentic_girls_club |
 | UNI-073 | Homem Vitruviano — Anatomia do Rock | Botton individual | homem_vitruviano_anatomia_do_rock |
 | UNI-074 | “Mãe dos Dragões” — Game of Thrones | Botton individual | mother_of_dragons |
+| UNI-075 | “Se você não consegue identificar o alvo, você é o alvo” | Botton individual | you_are_the_target |
+| UNI-076 | I’m Going Back to 505 — Arctic Monkeys | Botton individual | im_going_back_to_505 |
+| UNI-077 | “Esta Barbie estuda Ciência da Computação” | Botton individual | barbie_ciencia_da_computacao |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

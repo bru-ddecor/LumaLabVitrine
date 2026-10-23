@@ -150,5 +150,10 @@ insert into public.catalogo_favoritos(produto) values
 ('authentic_girls_club'),
 ('homem_vitruviano_anatomia_do_rock'),
 ('kit_rock_rubro'),
-('mother_of_dragons')
+('mother_of_dragons'),
+('you_are_the_target'),
+('im_going_back_to_505'),
+('kit_one_piece_chapeu_de_palha'),
+('kit_a_garota_mais_sortuda'),
+('barbie_ciencia_da_computacao')
 on conflict do nothing;

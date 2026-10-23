@@ -11,6 +11,17 @@ const kit = (id, nome, referencia, arquivos, palavrasChave) => ({
 
 const produtos = [
   {
+    id: "kit_a_garota_mais_sortuda",
+    referencia: "KIT-016",
+    nome: "“A garota mais sortuda”",
+    tipo: "kit",
+    palavrasChave:
+      "the luckiest girl a garota mais sortuda sensitive content conteúdo sensível gato gatinho preto olhos verdes batom maquiagem lábios partitura notas música musical vinho bordô vermelho bege creme preto feminino aesthetic vintage kit quatro 4 bottons",
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/kits/kit_a_garota_mais_sortuda/${arquivo}`,
+    ),
+  },
+  {
     id: "kit_rock_rubro",
     referencia: "KIT-014",
     nome: "Rock Rubro",
@@ -28,6 +39,17 @@ const produtos = [
     ["kit_blckpnk_deco", "blckpnk2", "blckpnk3"],
     "blackpink black pink preto rosa k-pop kpop pop música coreano girl group jennie jisoo lisa rosé rose blink",
   ),
+  {
+    id: "kit_one_piece_chapeu_de_palha",
+    referencia: "KIT-015",
+    nome: "One Piece — Legado do Chapéu de Palha",
+    tipo: "kit",
+    palavrasChave:
+      "one piece luffy monkey d luffy shanks chapéu de palha mugiwara pirata piratas anime mangá manga otaku caveira bandeira jolly roger vermelho preto amarelo branco kit quatro 4 bottons",
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/kits/kit_one_piece_chapeu_de_palha/${arquivo}`,
+    ),
+  },
   kit(
     "kit_blue",
     "Maré Lunar",
@@ -1275,6 +1297,45 @@ const produtos = [
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
       (arquivo) => `/imagens/unitarios/mother_of_dragons/${arquivo}`,
+    ),
+  },
+  {
+    id: "you_are_the_target",
+    referencia: "UNI-075",
+    nome: "“Se você não consegue identificar o alvo, você é o alvo”",
+    tipo: "unitario",
+    palavrasChave:
+      "if you can't identify the target you are the target se você não consegue identificar o alvo você é o alvo mira frase inglês tipografia letras riscado preto branco vermelho minimalista",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/you_are_the_target/${arquivo}`,
+    ),
+  },
+  {
+    id: "im_going_back_to_505",
+    referencia: "UNI-076",
+    nome: "I’m Going Back to 505 — Arctic Monkeys",
+    tipo: "unitario",
+    palavrasChave:
+      "i'm going back to 505 im going back to 505 estou voltando para o 505 arctic monkeys música musical banda indie rock alternative alex turner favourite worst nightmare frase inglês branco preto vermelho números minimalista tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/im_going_back_to_505/${arquivo}`,
+    ),
+  },
+  {
+    id: "barbie_ciencia_da_computacao",
+    referencia: "UNI-077",
+    nome: "“Esta Barbie estuda Ciência da Computação”",
+    tipo: "unitario",
+    palavrasChave:
+      "this barbie studies computer science esta essa barbie estuda ciência da computação computacao programação tecnologia informática faculdade universitária estudante curso ti desenvolvedora programadora rosa pink branco frase inglês tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/barbie_ciencia_da_computacao/${arquivo}`,
     ),
   },
   {
