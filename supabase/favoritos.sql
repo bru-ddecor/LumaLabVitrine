@@ -155,5 +155,10 @@ insert into public.catalogo_favoritos(produto) values
 ('im_going_back_to_505'),
 ('kit_one_piece_chapeu_de_palha'),
 ('kit_a_garota_mais_sortuda'),
-('barbie_ciencia_da_computacao')
+('barbie_ciencia_da_computacao'),
+('me_writing_great_code'),
+('skyline_gtr_olhar_jdm'),
+('skyline_gtr_encontro_subterraneo'),
+('ctrl_alt_slay'),
+('i_love_nerds')
 on conflict do nothing;

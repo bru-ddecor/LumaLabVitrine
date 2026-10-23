@@ -1,3 +1,5 @@
+import { categoriasIndividuais } from "./categorias-individuais";
+
 // Referências são explícitas e permanentes: não dependem da ordem do catálogo.
 const kit = (id, nome, referencia, arquivos, palavrasChave) => ({
   id,
@@ -139,6 +141,7 @@ const produtos = [
     referencia: "UNI-001",
     nome: "Cansada de ser adulta",
     tipo: "unitario",
+    categoria: "humor",
     palavrasChave:
       "unitário individual avulso verde amarelo lilás roxo pato patinho mochila óculos cansada de ser adulta adulto humor divertido frase meme faculdade trabalho rotina",
     tamanhos: [32, 44, 55],
@@ -152,6 +155,7 @@ const produtos = [
     referencia: "UNI-002",
     nome: "Zoro — One Piece",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "zoro roronoa one piece onepiece anime mangá manga otaku geek espadachim samurai espada katana pirata preto black verde green branco white frase if you die i will kill you",
     tamanhos: [32, 44, 55],
@@ -165,6 +169,7 @@ const produtos = [
     referencia: "UNI-003",
     nome: "Gojo — Jujutsu Kaisen",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "gojo satoru jujutsu kaisen jjk anime mangá manga otaku geek feiticeiro professor azul blue branco white preto black cabelo branco olhos azuis óculos escuros",
     tamanhos: [32, 44, 55],
@@ -178,6 +183,7 @@ const produtos = [
     referencia: "UNI-004",
     nome: "Itachi — Olhar do Corvo",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "itachi uchiha naruto shippuden akatsuki sharingan ninja shinobi aldeia folha konoha corvo corvos olho olhos vermelho preto black red anime mangá manga otaku geek",
     tamanhos: [32, 44, 55],
@@ -191,6 +197,7 @@ const produtos = [
     referencia: "UNI-005",
     nome: "Doflamingo — Sorriso do Caos",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "doflamingo donquixote one piece onepiece joker dressrosa vilão pirata anime mangá manga otaku geek rosa pink vermelho red preto black óculos escuros penas sorriso caos",
     tamanhos: [32, 44, 55],
@@ -204,6 +211,7 @@ const produtos = [
     referencia: "UNI-006",
     nome: "Luffy — Espírito Livre",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "luffy monkey d one piece onepiece chapéu palha pirata mugiwara anime mangá manga otaku geek vermelho red amarelo yellow preto black branco white sorriso divertido aventura liberdade",
     tamanhos: [32, 44, 55],
@@ -217,6 +225,7 @@ const produtos = [
     referencia: "UNI-007",
     nome: "Snoopy — Eu Posso, Eu Consigo",
     tipo: "unitario",
+    categoria: "desenhos",
     palavrasChave:
       "snoopy peanuts charlie brown cachorro cachorrinho cão beagle desenho quadrinhos cartoon preto black branco white bege creme minimalista monocromático fofo cute frase eu podo eu posso eu consigo motivação motivacional confiança incentivo positivo humor",
     tamanhos: [32, 44, 55],
@@ -231,6 +240,7 @@ const produtos = [
     referencia: "UNI-008",
     nome: "Erika pra Presidente",
     tipo: "unitario",
+    categoria: "politica",
     palavrasChave:
       "política eleições democracia representação erika erica presidente presidenta o povo quer a erika pra presidente frase meme humor divertido cultura pop branco white preto black bege cabelo loiro dourado retrato fotografia",
     tamanhos: [32, 44, 55],
@@ -244,6 +254,7 @@ const produtos = [
     referencia: "UNI-009",
     nome: "Itachi — Poder do Susanoo",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "itachi uchiha naruto shippuden akatsuki sharingan mangekyou susanoo susano poder ninja shinobi anime mangá manga otaku geek preto black vermelho red branco white azul blue esqueleto costelas mão energia nuvens quadrinhos",
     tamanhos: [32, 44, 55],
@@ -257,6 +268,7 @@ const produtos = [
     referencia: "UNI-010",
     nome: "Naruto — Legado dos Mestres",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "naruto uzumaki jiraiya minato namikaze shippuden mestre aluno família pai filho ninja shinobi hokage sannin konoha aldeia folha anime mangá manga otaku geek laranja orange vermelho red preto black amarelo yellow cabelo loiro branco pergaminho legado",
     tamanhos: [32, 44, 55],
@@ -268,6 +280,7 @@ const produtos = [
     referencia: "UNI-011",
     nome: "Ace — Chama Livre",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "ace portgas d one piece onepiece punhos fogo chama chamas incêndio mera mera no mi pirata barba branca anime mangá manga otaku geek laranja orange amarelo yellow vermelho red preto black bege chapéu colar contas tatuagem asce caveira quadrinhos",
     tamanhos: [32, 44, 55],
@@ -281,6 +294,7 @@ const produtos = [
     referencia: "UNI-012",
     nome: "Gatinho — Nuvem de Amor",
     tipo: "unitario",
+    categoria: "pets",
     palavrasChave:
       "gato gatinho gatinha felino filhote pet animal animais cat kitten rosa pink marrom brown bege pastel coração amor nuvem nuvens céu estrelas estrelinhas brilho fofo cute kawaii delicado romântico coquette aesthetic bigodes tigrado",
     tamanhos: [32, 44, 55],
@@ -294,6 +308,7 @@ const produtos = [
     referencia: "UNI-013",
     nome: "Bruxa — Nada Conveniente",
     tipo: "unitario",
+    categoria: "dark",
     palavrasChave:
       "bruxa bruxinha bruxaria magia místico witch witchy aesthetic fantasia halloween chapéu mulher silhueta gato preto gatinho cobra serpente lua crescente estrelas folhas folhagem natureza bege creme vinho bordô vermelho laranja verde preto frase eu não vim ao mundo pra ser conveniente atitude personalidade",
     tamanhos: [32, 44, 55],
@@ -307,6 +322,7 @@ const produtos = [
     referencia: "UNI-014",
     nome: "Doflamingo — Rei de Dressrosa",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "doflamingo donquixote one piece onepiece joker dressrosa rei vilão pirata shichibukai anime mangá manga otaku geek rosa pink vermelho red lilás roxo purple amarelo yellow preto black branco white penas casaco óculos escuros cabelo loiro sentado trono mãos sorriso quadrinhos",
     tamanhos: [32, 44, 55],
@@ -320,6 +336,7 @@ const produtos = [
     referencia: "UNI-015",
     nome: "Ryuk — Sombra Lunar",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "ryuk ryuuk death note deathnote shinigami anime mangá manga otaku geek roxo purple violeta preto black lua cheia lunar noite noturno sombra silhueta asas penas fios postes céu dark gótico goth sombrio mistério sobrenatural aesthetic",
     tamanhos: [32, 44, 55],
@@ -333,6 +350,7 @@ const produtos = [
     referencia: "UNI-016",
     nome: "Sorriso nas Sombras",
     tipo: "unitario",
+    categoria: "dark",
     palavrasChave:
       "terror horror assustador sombrio sombra sombras dark gótico goth gothic alternativo aesthetic halloween sobrenatural mistério criatura monstro sorriso dentes olhos brilhantes rosto mãos cabeça cabelo longo preto black branco white bege creme monocromático ilustração hachuras",
     tamanhos: [32, 44, 55],
@@ -346,6 +364,7 @@ const produtos = [
     referencia: "UNI-017",
     nome: "Entre Luz e Sombra",
     tipo: "unitario",
+    categoria: "estampas-e-cores",
     palavrasChave:
       "mão mãos dedos toque encontro conexão luz sombra contraste preto black branco white bege sépia marrom dark aesthetic arte criação de adão michelangelo releitura renascimento clássico mão escura mão clara minimalista dramático",
     tamanhos: [32, 44, 55],
@@ -359,6 +378,7 @@ const produtos = [
     referencia: "UNI-018",
     nome: "Naruto — Caminho Ninja",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "naruto uzumaki shippuden ninja shinobi konoha aldeia folha hokage anime mangá manga otaku geek preto black branco white creme bege vermelho red personagem costas bandana cabelo espetado corda espiral símbolo letras japonesas minimalista contraste",
     tamanhos: [32, 44, 55],
@@ -372,6 +392,7 @@ const produtos = [
     referencia: "UNI-019",
     nome: "Trio do Lámen",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "naruto uzumaki luffy monkey d one piece onepiece goku son dragon ball dragonball anime mangá manga otaku geek shonen crossover trio lámen ramen macarrão comida tigela hashi pauzinhos comendo fome concurso divertido humor preto black laranja orange vermelho red azul blue branco white chapéu palha bandana",
     tamanhos: [32, 44, 55],
@@ -385,6 +406,7 @@ const produtos = [
     referencia: "UNI-020",
     nome: "Mortícia e Gomez — Amor Sombrio",
     tipo: "unitario",
+    categoria: "filmes-e-series",
     palavrasChave:
       "mortícia morticia mortisha gomez addams família familia addams casal amor romance romântico coração corações beijo mão apaixonados desenho cartoon preto black branco white cinza grey monocromático dark gótico goth gothic alternativo aesthetic vestido listras terno",
     tamanhos: [32, 44, 55],
@@ -399,6 +421,7 @@ const produtos = [
     referencia: "UNI-021",
     nome: "Naruto — Sétimo Hokage",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "naruto uzumaki sétimo hokage nanadaime boruto shippuden ninja shinobi konoha aldeia folha anime mangá manga otaku geek preto black branco white bege creme monocromático minimalista silhueta costas manto capa chamas fogo kanji letras japonesas cabelo espetado",
     tamanhos: [32, 44, 55],
@@ -412,6 +435,7 @@ const produtos = [
     referencia: "UNI-022",
     nome: "Poe — Beleza Rara",
     tipo: "unitario",
+    categoria: "arte",
     palavrasChave:
       "edgar allan poe literatura literário escritor autor livro leitura poesia poema frase citação não há beleza rara sem algo de estranho nas proporções preto black branco white cinza bege creme sépia dark academia gótico goth aesthetic clássico tipografia letras",
     tamanhos: [32, 44, 55],
@@ -425,6 +449,7 @@ const produtos = [
     referencia: "UNI-023",
     nome: "Kakashi — Ninja Copiador",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "kakashi hatake naruto shippuden ninja copiador shinobi sensei professor sharingan chidori raikiri konoha aldeia folha hokage anime mangá manga otaku geek azul blue branco white preto black verde oliva vermelho máscara bandana cabelo branco prateado colete mãos selo raio relâmpago",
     tamanhos: [32, 44, 55],
@@ -528,6 +553,7 @@ const produtos = [
     referencia: "UNI-024",
     nome: "Gatinha Comunista — Vitroles",
     tipo: "unitario",
+    categoria: "politica",
     destaque: true,
     palavrasChave:
       "gatinha comunista vitroles música musical banda canção letra trecho spotify playlist indie rock pop brasileiro mpb política comunismo esquerda socialismo vermelho red preto black frase minha gatinha comunista eu preciso te dizer que eu acho que o vermelho fica tão bem em você romance humor",
@@ -542,6 +568,7 @@ const produtos = [
     referencia: "UNI-025",
     nome: "Último Ato de Amor",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "monster energy ultra energético bebida lata taurina branco white preto black cinza prata azul frase texto meme amor último ato de amor eu nunca mais vou te procurar mas me tornarei tudo aquilo que prometi término superação recomeço promessa romântico melancólico aesthetic fotografia",
     tamanhos: [32, 44, 55],
@@ -555,6 +582,7 @@ const produtos = [
     referencia: "UNI-026",
     nome: "Não Aguento Segunda-feira",
     tipo: "unitario",
+    categoria: "humor",
     palavrasChave:
       "meme memes humor engraçado divertido ironia reação televisão tv ao vivo joão kleber não aguenta a chegada da segunda feira e desmaia trabalho rotina cansaço cansado cansada preguiça fim de semana azul blue preto black marrom frase internet brasileiro",
     tamanhos: [32, 44, 55],
@@ -568,6 +596,7 @@ const produtos = [
     referencia: "UNI-027",
     nome: "Damon e Elena — Último Fôlego",
     tipo: "unitario",
+    categoria: "filmes-e-series",
     palavrasChave:
       "damon salvatore elena gilbert delena the vampire diaries diários de um vampiro tvd série vampiros romance casal amor paixão frase último fôlego se eu tivesse que escolher entre respirar e te amar usaria meu último fôlego para dizer que te amo preto black marrom dourado fotografia sobrenatural romântico",
     tamanhos: [32, 44, 55],
@@ -583,7 +612,8 @@ const produtos = [
     nome: "Lembrança de Aniversário",
     precoCentavos: 800,
     tipo: "personalizado",
-    precoAtacadoCentavos: 650,
+    precoAtacadoCentavos: 400,
+    precosAtacadoPorTamanho: { 32: 293, 44: 400, 55: 480 },
     precoAtacadoNormalCentavos: 720,
     quantidadeMinimaAtacado: 100,
     descricao:
@@ -601,6 +631,7 @@ const produtos = [
     referencia: "UNI-028",
     nome: "Kakashi — Raio entre Páginas",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "kakashi hatake naruto shippuden ninja copiador sensei professor shinobi konoha sharingan chidori raikiri raio raios relâmpago energia livros leitura páginas cachorro cães ninken anime mangá manga otaku geek azul blue branco white cinza prateado verde oliva preto máscara bandana colete",
     tamanhos: [32, 44, 55],
@@ -615,6 +646,7 @@ const produtos = [
     referencia: "UNI-029",
     nome: "Gojo — Sorriso Infinito",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "gojo satoru jujutsu kaisen jjk feiticeiro sensei professor infinito anime mangá manga otaku geek azul blue branco white lilás roxo vermelho amarelo preto cabelo branco prateado óculos redondos escuros lentes azuis sorriso língua divertido colorido",
     tamanhos: [32, 44, 55],
@@ -628,6 +660,7 @@ const produtos = [
     referencia: "UNI-030",
     nome: "Gatinho — Língua de Fora",
     tipo: "unitario",
+    categoria: "pets",
     palavrasChave:
       "gato gatinho gatinha gato preto felino pet animal animais cat kitten black cat preto black branco white rosa pink língua linguinha de fora blep olhos grandes bigodes fofo cute kawaii meme humor engraçado divertido fotografia retrato",
     tamanhos: [32, 44, 55],
@@ -641,6 +674,7 @@ const produtos = [
     referencia: "UNI-031",
     nome: "Gatinho — Olhar de Veludo",
     tipo: "unitario",
+    categoria: "pets",
     palavrasChave:
       "gato gatinho gatinha gato preto felino filhote pet animal animais cat kitten black cat preto black vinho bordô marsala vermelho red veludo tecido olhos dourados amarelos âmbar bigodes fofo cute dark gótico goth aesthetic fotografia retrato aconchego",
     tamanhos: [32, 44, 55],
@@ -654,6 +688,7 @@ const produtos = [
     referencia: "UNI-032",
     nome: "Luffy — Espírito Travesso",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "luffy monkey d one piece onepiece mugiwara pirata chapéu palha anime mangá manga otaku geek preto black vermelho red amarelo dourado laranja branco white azul sorriso língua careta travesso divertido humor caveira letras japonesas",
     tamanhos: [32, 44, 55],
@@ -667,6 +702,7 @@ const produtos = [
     referencia: "UNI-033",
     nome: "Lendas em Batalha",
     tipo: "unitario",
+    categoria: "games",
     palavrasChave:
       "kratos god of war doom slayer doomguy geralt de rivia the witcher guts berserk jogos videogame games gamer crossover anime mangá manga geek guerreiro batalha fantasia ação dark preto black branco white cinza vermelho red retrato símbolos",
     tamanhos: [32, 44, 55],
@@ -680,6 +716,7 @@ const produtos = [
     referencia: "UNI-034",
     nome: "Cavaleiro — Juramento Rubro",
     tipo: "unitario",
+    categoria: "dark",
     palavrasChave:
       "cavaleiro guerreiro knight armadura elmo capacete espada lâmina medieval fantasia dark fantasy rpg batalha juramento gótico goth sombrio preto black vermelho red branco white cinza prata metal ilustração",
     tamanhos: [32, 44, 55],
@@ -694,6 +731,7 @@ const produtos = [
     referencia: "UNI-035",
     nome: "Amar? Nesta Economia?",
     tipo: "unitario",
+    categoria: "humor",
     palavrasChave:
       "meme memes humor engraçado divertido ironia sarcasmo amar nesta economia amor romance relacionamento solteiro crise dinheiro frase internet selfie espelho celular óculos escuros jaqueta preto black vermelho red verde fotografia",
     tamanhos: [32, 44, 55],
@@ -705,6 +743,7 @@ const produtos = [
     referencia: "UNI-036",
     nome: "Semente do Amor",
     tipo: "unitario",
+    categoria: "estampas-e-cores",
     palavrasChave:
       "semente amor quem cultiva a semente do amor segue em frente e não se apavora frase música musical letra canção mpb brasil brasileiro esperança motivação carinho rosa pink vinho bordô marsala vermelho estrela estrelas pipa rosto sorriso ilustração tipografia",
     tamanhos: [32, 44, 55],
@@ -718,6 +757,7 @@ const produtos = [
     referencia: "UNI-037",
     nome: "Fala Comigo Não, Eu Namoro",
     tipo: "unitario",
+    categoria: "humor",
     palavrasChave:
       "fala cmg nao eu namoro fala comigo não eu namoro meme memes humor engraçado divertido ironia caveira crânio esqueleto ossos ceifador capuz manto morte dark gótico goth preto black cinza branco vermelho red frase relacionamento namoro casal compromisso",
     tamanhos: [32, 44, 55],
@@ -731,6 +771,7 @@ const produtos = [
     referencia: "UNI-038",
     nome: "Sanji — Passo em Chamas",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "sanji vinsmoke one piece onepiece perna negra black leg diable jambe cozinheiro pirata mugiwara anime mangá manga otaku geek chute fogo chama chamas amarelo yellow laranja orange preto black branco white cabelo loiro terno gravata quadrinhos",
     tamanhos: [32, 44, 55],
@@ -744,6 +785,7 @@ const produtos = [
     referencia: "UNI-039",
     nome: "Me Ame ao Som de ANAVITÓRIA",
     tipo: "unitario",
+    categoria: "musica",
     palavrasChave:
       "anavitória anavitoria ana vitória ana caetano vitória falcão música musical mpb pop folk brasileiro duo cantoras me ame ao som de amor romance romântico frase tipografia letras colagem recortes vintage retrô vermelho red bege creme sépia presente",
     tamanhos: [32, 44, 55],
@@ -757,6 +799,7 @@ const produtos = [
     referencia: "UNI-040",
     nome: "Mikey — Tons de Calmaria",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "mikey manjiro sano tokyo revengers toman anime mangá manga otaku geek cabelo loiro olhos azuis camisa azul blue rosa pink bege creme pastel estrela patinha fofo cute kawaii delicado retrato ilustração",
     tamanhos: [32, 44, 55],
@@ -768,6 +811,7 @@ const produtos = [
     referencia: "UNI-041",
     nome: "Em Algum Lugar pra Relaxar",
     tipo: "unitario",
+    categoria: "musica",
     palavrasChave:
       "em algum lugar pra relaxar frase descanso relaxar tranquilidade paz pausa música musical letra canção rosa pink pastel amarelo yellow azul blue verde vermelho roxo colorido estrelas brilho colagem recortes letras tipografia retrô vintage divertido aesthetic",
     tamanhos: [32, 44, 55],
@@ -781,6 +825,7 @@ const produtos = [
     referencia: "UNI-042",
     nome: "Sou Feliz e Agradeço",
     tipo: "unitario",
+    categoria: "musica",
     palavrasChave:
       "sou feliz e agradeço por tudo que deus me deu frase fé gratidão agradecimento felicidade deus cristão cristã cristianismo religioso gospel esperança rosa pink magenta branco white creme xadrez quadriculado damier letras cursivas tipografia",
     tamanhos: [32, 44, 55],
@@ -795,6 +840,7 @@ const produtos = [
     referencia: "UNI-043",
     nome: "Nerd — Universo Particular",
     tipo: "unitario",
+    categoria: "estampas-e-cores",
     palavrasChave:
       "nerd geek nasa espaço espacial universo cosmos astronomia ciência órbita estrelas céu noite galáxia tecnologia azul marinho blue preto black branco white vermelho red letras tipografia humor",
     tamanhos: [32, 44, 55],
@@ -808,6 +854,7 @@ const produtos = [
     referencia: "UNI-044",
     nome: "Cachorrinho — Charme de Bandana",
     tipo: "unitario",
+    categoria: "pets",
     palavrasChave:
       "cachorro cachorrinho cão cãozinho dog puppy pet animal animais bandana lenço azul blue preto black branco white bege focinho olhos grandes orelhas fofo cute fotografia retrato amizade companheiro",
     tamanhos: [32, 44, 55],
@@ -822,6 +869,7 @@ const produtos = [
     referencia: "UNI-045",
     nome: "Espelho — Tudo a Seu Favor",
     tipo: "unitario",
+    categoria: "estampas-e-cores",
     palavrasChave:
       "everything is working out for you tudo a seu favor frase inglês autoestima amor próprio autocuidado confiança motivação afirmação positiva esperança espelho dourado gold rosa pink salmão preto black marrom mulher negra cabelo cacheado crespo mãos ilustração aesthetic",
     tamanhos: [32, 44, 55],
@@ -835,6 +883,7 @@ const produtos = [
     referencia: "UNI-046",
     nome: "Sorriso Sombrio",
     tipo: "unitario",
+    categoria: "dark",
     palavrasChave:
       "rosto sorriso sombrio dentes maquiagem correntes retrato terror horror gótico goth dark preto black branco white cinza alternativo",
     tamanhos: [32, 44, 55],
@@ -846,6 +895,7 @@ const produtos = [
     referencia: "UNI-047",
     nome: "Grito das Teias",
     tipo: "unitario",
+    categoria: "dark",
     palavrasChave:
       "caveira crânio esqueleto cérebro olho olhos grito boca dentes teia teias aranha terror horror gótico goth dark preto black branco white ilustração",
     tamanhos: [32, 44, 55],
@@ -857,6 +907,7 @@ const produtos = [
     referencia: "UNI-048",
     nome: "Abraço Eterno",
     tipo: "unitario",
+    categoria: "dark",
     palavrasChave:
       "esqueleto esqueletos caveira crânio ossos abraço casal amor eterno romance serpente ouroboros círculo sigilo símbolo místico gótico goth dark terror preto black branco white ilustração",
     tamanhos: [32, 44, 55],
@@ -869,7 +920,8 @@ const produtos = [
     nome: "Uma Turma de Lembranças",
     tipo: "personalizado",
     precoCentavos: 800,
-    precoAtacadoCentavos: 650,
+    precoAtacadoCentavos: 400,
+    precosAtacadoPorTamanho: { 32: 293, 44: 400, 55: 480 },
     precoAtacadoNormalCentavos: 720,
     quantidadeMinimaAtacado: 100,
     descricao:
@@ -917,7 +969,8 @@ const produtos = [
     nome: "Seu Pet, Sempre por Perto",
     tipo: "personalizado",
     precoCentavos: 800,
-    precoAtacadoCentavos: 650,
+    precoAtacadoCentavos: 400,
+    precosAtacadoPorTamanho: { 32: 293, 44: 400, 55: 480 },
     precoAtacadoNormalCentavos: 720,
     quantidadeMinimaAtacado: 100,
     descricao: "Transforme a foto do seu pet em um botton personalizado e leve esse amor para todo lugar! Um carinho para usar na bolsa, na mochila ou presentear quem também é apaixonado pelo seu companheiro.",
@@ -933,6 +986,7 @@ const produtos = [
     referencia: "UNI-049",
     nome: "Sorriso de Aço",
     tipo: "unitario",
+    categoria: "dark",
     palavrasChave:
       "caveira crânio esqueleto dentes sorriso rosto máscara ciborgue cyborg cyberpunk robô robótico mecânico tecnologia colagem xadrez quadriculado preto black branco white cinza monocromático dark gótico goth industrial alternativo grunge terror horror aesthetic",
     tamanhos: [32, 44, 55],
@@ -946,6 +1000,7 @@ const produtos = [
     referencia: "UNI-050",
     nome: "Refúgio das Sombras",
     tipo: "unitario",
+    categoria: "dark",
     palavrasChave:
       "floresta bosque árvores galhos cabana casa refúgio caminho paisagem natureza pássaros preto black branco white cinza monocromático desenho ilustração hachuras gravura dark sombrio gótico goth mistério terror horror outono inverno aesthetic",
     tamanhos: [32, 44, 55],
@@ -959,6 +1014,7 @@ const produtos = [
     referencia: "UNI-051",
     nome: "Coro dos Esqueletos",
     tipo: "unitario",
+    categoria: "dark",
     palavrasChave:
       "caveira caveiras crânio crânios esqueleto esqueletos ossos dentes olhos grito bocas teia textura terror horror dark gótico goth macabro sombrio metal alternativo preto black branco white monocromático ilustração desenho",
     tamanhos: [32, 44, 55],
@@ -972,6 +1028,7 @@ const produtos = [
     referencia: "UNI-052",
     nome: "Gato — Terceiro Olhar",
     tipo: "unitario",
+    categoria: "dark",
     palavrasChave:
       "gato gatinho felino cat terceiro olho olhos místico surreal fantasia dark gótico goth terror horror preto black branco white cinza monocromático ilustração desenho ornamentos joia bigodes rosto retrato alternativo aesthetic",
     tamanhos: [32, 44, 55],
@@ -987,7 +1044,8 @@ const produtos = [
     nome: "Você no Seu Anime Favorito",
     tipo: "personalizado",
     precoCentavos: 800,
-    precoAtacadoCentavos: 650,
+    precoAtacadoCentavos: 400,
+    precosAtacadoPorTamanho: { 32: 293, 44: 400, 55: 480 },
     precoAtacadoNormalCentavos: 720,
     quantidadeMinimaAtacado: 100,
     descricao: "Transforme-se em um personagem no universo do seu anime favorito! Sua foto ganha uma arte personalizada para virar um botton cheio de personalidade — para você ou para presentear alguém especial.",
@@ -1199,6 +1257,7 @@ const produtos = [
     referencia: "UNI-067",
     nome: "Eren — Titã de Ataque",
     tipo: "unitario",
+    categoria: "anime",
     palavrasChave:
       "eren yeager jaeger titã de ataque attack on titan shingeki no kyojin anime mangá otaku gigante perfil cabelo preto longo vapor fumaça vermelho preto branco",
     tamanhos: [32, 44, 55],
@@ -1212,6 +1271,7 @@ const produtos = [
     referencia: "UNI-068",
     nome: "Portugal — Camisa 7",
     tipo: "unitario",
+    categoria: "esportes",
     palavrasChave:
       "portugal camisa 7 sete seleção portuguesa futebol jogador esporte capitão braçadeira retrato ilustração preto branco cinza monocromático gráficos números",
     tamanhos: [32, 44, 55],
@@ -1225,6 +1285,7 @@ const produtos = [
     referencia: "UNI-069",
     nome: "“Lute como uma garota”",
     tipo: "unitario",
+    categoria: "esportes",
     palavrasChave:
       "fight like a girl lute como uma garota menina mulher mulheres força feminina empoderamento feminismo luta boxe luvas vermelhas esporte frase inglês branco preto vermelho laço",
     tamanhos: [32, 44, 55],
@@ -1238,6 +1299,7 @@ const produtos = [
     referencia: "UNI-070",
     nome: "Bulking Bad — “Ganhando massa”",
     tipo: "unitario",
+    categoria: "academia",
     palavrasChave:
       "bulking bad breaking bad ganhando massa muscular academia musculação treino fitness maromba fisiculturismo músculos força humor meme paródia trocadilho série tabela periódica preto verde branco chapéu óculos",
     tamanhos: [32, 44, 55],
@@ -1251,6 +1313,7 @@ const produtos = [
     referencia: "UNI-071",
     nome: "“Garotas gostosas amam Muay Thai”",
     tipo: "unitario",
+    categoria: "esportes",
     palavrasChave:
       "hot girls love muay thai garotas gostosas lindas bonitas amam luta artes marciais boxe tailandês lutadora mulher mulheres feminino treino academia esporte chute silhueta frase inglês branco preto vermelho",
     tamanhos: [32, 44, 55],
@@ -1264,6 +1327,7 @@ const produtos = [
     referencia: "UNI-072",
     nome: "“Clube das garotas autênticas”",
     tipo: "unitario",
+    categoria: "estampas-e-cores",
     palavrasChave:
       "authentic girls club clube das garotas autênticas meninas mulheres autenticidade feminino boca lábios beijo rosa vermelho branco frase inglês tipografia retrô",
     tamanhos: [32, 44, 55],
@@ -1277,6 +1341,7 @@ const produtos = [
     referencia: "UNI-073",
     nome: "Homem Vitruviano — Anatomia do Rock",
     tipo: "unitario",
+    categoria: "arte",
     palavrasChave:
       "homem vitruviano anatomia do rock leonardo da vinci arte renascimento releitura guitarra guitarrista música musical instrumento desenho braços círculo quadrado bege creme preto",
     tamanhos: [32, 44, 55],
@@ -1291,6 +1356,7 @@ const produtos = [
     referencia: "UNI-074",
     nome: "“Mãe dos Dragões” — Game of Thrones",
     tipo: "unitario",
+    categoria: "filmes-e-series",
     palavrasChave:
       "mother of dragons mãe dos dragões game of thrones got daenerys targaryen khaleesi drogon dragão fantasia série asas branco preto vermelho frase inglês letras góticas",
     tamanhos: [32, 44, 55],
@@ -1304,6 +1370,7 @@ const produtos = [
     referencia: "UNI-075",
     nome: "“Se você não consegue identificar o alvo, você é o alvo”",
     tipo: "unitario",
+    categoria: "humor",
     palavrasChave:
       "if you can't identify the target you are the target se você não consegue identificar o alvo você é o alvo mira frase inglês tipografia letras riscado preto branco vermelho minimalista",
     tamanhos: [32, 44, 55],
@@ -1317,6 +1384,7 @@ const produtos = [
     referencia: "UNI-076",
     nome: "I’m Going Back to 505 — Arctic Monkeys",
     tipo: "unitario",
+    categoria: "musica",
     palavrasChave:
       "i'm going back to 505 im going back to 505 estou voltando para o 505 arctic monkeys música musical banda indie rock alternative alex turner favourite worst nightmare frase inglês branco preto vermelho números minimalista tipografia",
     tamanhos: [32, 44, 55],
@@ -1330,6 +1398,7 @@ const produtos = [
     referencia: "UNI-077",
     nome: "“Esta Barbie estuda Ciência da Computação”",
     tipo: "unitario",
+    categoria: "programacao",
     palavrasChave:
       "this barbie studies computer science esta essa barbie estuda ciência da computação computacao programação tecnologia informática faculdade universitária estudante curso ti desenvolvedora programadora rosa pink branco frase inglês tipografia",
     tamanhos: [32, 44, 55],
@@ -1339,11 +1408,82 @@ const produtos = [
     ),
   },
   {
+    id: "me_writing_great_code",
+    referencia: "UNI-078",
+    nome: "“Eu escrevendo um ótimo código”",
+    tipo: "unitario",
+    categoria: "programacao",
+    palavrasChave:
+      "me writing great code eu escrevendo um ótimo código programação programador programadora desenvolvedor desenvolvedora tecnologia informática ti computação chatgpt openai claude inteligência artificial ia ai meme humor branco preto laranja",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/me_writing_great_code/${arquivo}`,
+    ),
+  },
+  {
+    id: "skyline_gtr_olhar_jdm",
+    referencia: "UNI-079",
+    nome: "Skyline GT-R — Olhar JDM",
+    tipo: "unitario",
+    categoria: "carros",
+    palavrasChave:
+      "nissan skyline gt-r gtr r34 jdm carro carros automóvel automotivo japonês japão tuning esportivo anime mangá manga garota olhos olhar preto branco cinza monocromático colagem",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/skyline_gtr_olhar_jdm/${arquivo}`,
+    ),
+  },
+  {
+    id: "skyline_gtr_encontro_subterraneo",
+    referencia: "UNI-080",
+    nome: "Skyline GT-R — Encontro Subterrâneo",
+    tipo: "unitario",
+    categoria: "carros",
+    palavrasChave:
+      "nissan skyline gt-r gtr r34 nismo jdm meet underground encontro subterrâneo garagem estacionamento carro carros automóvel automotivo japonês japão tóquio tokyo tuning esportivo noite noturno preto branco azul claro turquesa",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/skyline_gtr_encontro_subterraneo/${arquivo}`,
+    ),
+  },
+  {
+    id: "ctrl_alt_slay",
+    referencia: "UNI-081",
+    nome: "Ctrl + Alt + Slay — “Arrase”",
+    tipo: "unitario",
+    categoria: "programacao",
+    palavrasChave:
+      "ctrl alt slay arrase arrasar control alt delete del teclado teclas atalho computador programação programador programadora desenvolvedor desenvolvedora dev tecnologia informática ti humor trocadilho rosa pink preto bege estrelas ampulheta cursor chamas grade retrô y2k",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/ctrl_alt_slay/${arquivo}`,
+    ),
+  },
+  {
+    id: "i_love_nerds",
+    referencia: "UNI-082",
+    nome: "“Eu amo nerds”",
+    tipo: "unitario",
+    categoria: "humor",
+    palavrasChave:
+      "i love nerds eu amo nerds nerd geek coração rosa pink pixel pixelado pixel art 8 bits oito bits branco preto humor frase inglês amor",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/i_love_nerds/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
     tipo: "personalizado",
-    precoAtacadoCentavos: 650,
+    precoAtacadoCentavos: 400,
+    precosAtacadoPorTamanho: { 32: 293, 44: 400, 55: 480 },
     precoAtacadoNormalCentavos: 720,
     quantidadeMinimaAtacado: 100,
     precoCentavos: 800,
@@ -1370,7 +1510,7 @@ function buscarProdutos(busca) {
   const termos = normalizarBusca(busca).split(/\s+/).filter(Boolean);
   return produtos.filter((produto) => {
     const texto = normalizarBusca(
-      `${produto.nome} ${produto.palavrasChave} botton bottons ${produto.tipo === "kit" ? "kit 4 unidades 44mm 44 mm" : ["unitario", "parzinho", "trio"].includes(produto.tipo) ? "individual unitario avulso 32mm 32 mm 44mm 44 mm 55mm 55 mm" : "personalizado"}`,
+      `${produto.nome} ${categoriasIndividuais.find((categoria) => categoria.id === produto.categoria)?.nome || ""} ${produto.palavrasChave} botton bottons ${produto.tipo === "kit" ? "kit 4 unidades 44mm 44 mm" : ["unitario", "parzinho", "trio"].includes(produto.tipo) ? "individual unitario avulso 32mm 32 mm 44mm 44 mm 55mm 55 mm" : "personalizado"}`,
     );
     return termos.every((termo) => texto.includes(termo));
   });

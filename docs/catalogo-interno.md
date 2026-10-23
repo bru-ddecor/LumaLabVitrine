@@ -97,6 +97,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-075 | “Se você não consegue identificar o alvo, você é o alvo” | Botton individual | you_are_the_target |
 | UNI-076 | I’m Going Back to 505 — Arctic Monkeys | Botton individual | im_going_back_to_505 |
 | UNI-077 | “Esta Barbie estuda Ciência da Computação” | Botton individual | barbie_ciencia_da_computacao |
+| UNI-078 | “Eu escrevendo um ótimo código” | Botton individual | me_writing_great_code |
+| UNI-079 | Skyline GT-R — Olhar JDM | Botton individual | skyline_gtr_olhar_jdm |
+| UNI-080 | Skyline GT-R — Encontro Subterrâneo | Botton individual | skyline_gtr_encontro_subterraneo |
+| UNI-081 | Ctrl + Alt + Slay — “Arrase” | Botton individual / Programação | ctrl_alt_slay |
+| UNI-082 | “Eu amo nerds” | Botton individual / Humor | i_love_nerds |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
@@ -129,10 +134,14 @@ Trios: três bottons do mesmo tamanho. Preços por conjunto: 32 mm R$ 15,00; 44 
 
 PER-002: lembrancinhas de aniversário, com tema, nome, idade e foto. Tamanho e quantidade combinados no WhatsApp.
 
-Todos os personalizados custam R$ 8,00 por unidade. A partir de 100 unidades, R$ 6,50 cada. O preço normal nessa quantidade é R$ 7,20: em 100 unidades, o total passa de R$ 720,00 para R$ 650,00, uma economia de R$ 70,00. A vitrine apresenta a condição em uma linha discreta e uma etiqueta “Economize 9,72%”, calculada sobre o preço normal de R$ 7,20.
+Todos os personalizados custam R$ 8,00 por unidade. A partir de 100 unidades de 44 mm, R$ 4,00 cada. O preço normal nessa quantidade é R$ 7,20: em 100 unidades, o total passa de R$ 720,00 para R$ 400,00, uma economia de R$ 320,00. A vitrine apresenta a condição em uma linha discreta e uma etiqueta “Economize 44,44%”, calculada sobre o preço normal de R$ 7,20. Atacado proporcional a partir de 100 unidades: 32 mm por R$ 2,93; 44 mm por R$ 4,00; 55 mm por R$ 4,80.
 
 PER-003: exemplo de encomenda para van escolar, com nomes individuais e temas para a turma. Cinco fotos da mesma encomenda: duas com Meninas Superpoderosas e três com tema de futebol e nomes individuais.
 
 COL-001: coleção Sharingan com seis artes de exemplo. R$ 7,00 por botton; o cliente combina personagens, quantidade e tamanho pelo WhatsApp. Total conforme quantidade escolhida.
 
 COL-002: coleção de mini bottons de 32 mm • 3,2 cm, com três fotos de exemplo de Twenty One Pilots. O mesmo produto aparece em Trios e Coleções e em Personalizados, com curtidas compartilhadas. Sem preço público; contato pelo WhatsApp para banda/artista e quantidade.
+
+## Categorias dos individuais
+
+Os individuais são organizados em carrosséis menores por tema, com navegação por atalhos. Cada arte tem uma categoria principal; a busca continua reunindo todos os produtos e também reconhece o nome da categoria. Categorias vazias (como Idols por enquanto) só aparecem quando recebem produtos. Classificação no campo `categoria` de cada produto; nomes e ordem em `src/categorias-individuais.js`.

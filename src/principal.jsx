@@ -1,3 +1,4 @@
+import { categoriasIndividuais } from "./categorias-individuais";
 import React, { useState, useRef } from "react";
 import { createRoot } from "react-dom/client";
 import "./estilos.css";
@@ -293,8 +294,10 @@ function CartaoProduto({ produto, kit = false }) {
       {produto.tipo === "personalizado" && (
         <p className="condicao-personalizados">
           <span>
-            A partir de {produto.quantidadeMinimaAtacado} unidades, cada botton
+            A partir de {produto.quantidadeMinimaAtacado} unidades, cada botton de 44 mm
             sai por {formatarMoeda(produto.precoAtacadoCentavos / 100)}.
+            {" "}32 mm: {formatarMoeda(produto.precosAtacadoPorTamanho[32] / 100)};
+            {" "}55 mm: {formatarMoeda(produto.precosAtacadoPorTamanho[55] / 100)} por unidade.
           </span>
           <small title="Em comparação ao preço normal de R$ 7,20 por unidade em pedidos a partir de 100.">
             Economize{" "}
@@ -372,19 +375,21 @@ function Colecao({
   produtosDaColecao = produtos,
   identificador = kit ? "kits" : "destaques",
   mostrarTodos = false,
+  compacta = false,
 }) {
+  const Titulo = compacta ? "h3" : "h2";
   const [expandida, definirExpandida] = useState(false);
   const exibirGrade = mostrarTodos || expandida;
   const faixa = usarAnimacaoColecao(exibirGrade, produtosDaColecao);
   const gestos = usarArrasteHorizontal(faixa, exibirGrade);
   return (
     <section
-      className={`colecao ${["personalizados", "unitarios"].includes(identificador) ? "colecao-produtos-avulsos" : ""}`}
+      className={`colecao ${compacta ? "colecao-categoria" : ""} ${["personalizados", "unitarios"].includes(identificador) ? "colecao-produtos-avulsos" : ""}`}
       id={identificador}
     >
       <div className="cabecalho-secao">
         <div>
-          {kit ? (
+          {compacta ? null : kit ? (
             <FraseUtilizacao />
           ) : (
             <span className="sobretitulo">
@@ -395,11 +400,11 @@ function Colecao({
                   : "ESCOLHAS DO LAB"}
             </span>
           )}
-          <h2>
+          <Titulo>
             {titulo}
             <span>✦</span>
-          </h2>
-          <p>{subtitulo}</p>
+          </Titulo>
+          {subtitulo && <p>{subtitulo}</p>}
         </div>
       </div>
       <div
@@ -711,22 +716,37 @@ function Aplicacao() {
               </>
             )}
             {unitariosFiltrados.length > 0 && (
-              <Colecao
-                identificador="unitarios"
-                titulo="Bottons individuais"
-                subtitulo="Escolha sua arte e o tamanho que combina com você."
-                produtosDaColecao={unitariosFiltrados}
-              />
-            )}
-            {filtrados.some((produto) => produto.categoria === "cristaos") && (
-              <Colecao
-                identificador="cristaos"
-                titulo="Cristãos"
-                subtitulo="Bottons com temas cristãos."
-                produtosDaColecao={filtrados.filter(
-                  (produto) => produto.categoria === "cristaos",
-                )}
-              />
+              <section id="unitarios" className="individuais-por-categoria">
+                <div className="cabecalho-secao">
+                  <div>
+                    <span className="sobretitulo">UM DETALHE, MUITA PERSONALIDADE</span>
+                    <h2>Bottons individuais <span>✦</span></h2>
+                    <p>Explore por tema e escolha sua arte e tamanho.</p>
+                  </div>
+                </div>
+                <nav className="categorias-individuais" aria-label="Categorias de bottons individuais">
+                  {categoriasIndividuais.filter((categoria) =>
+                    unitariosFiltrados.some((produto) => produto.categoria === categoria.id),
+                  ).map((categoria) => (
+                    <a key={categoria.id} href={`#${categoria.id}`}>{categoria.nome}</a>
+                  ))}
+                </nav>
+                {categoriasIndividuais.map((categoria) => {
+                  const itens = unitariosFiltrados.filter((produto) => produto.categoria === categoria.id);
+                  return itens.length > 0 && (
+                    <Colecao
+                      key={categoria.id}
+                      identificador={categoria.id}
+                      titulo={categoria.nome}
+                      produtosDaColecao={itens}
+                      compacta
+                    />
+                  );
+                })}
+                <p className="convite-personalizado">
+                  <a href="#personalizados">Não achou a arte que estava procurando? <span aria-hidden="true">↓</span></a>
+                </p>
+              </section>
             )}
             {filtrados.some((produto) => produto.tipo === "parzinho") && (
               <Colecao

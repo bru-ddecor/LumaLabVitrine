@@ -1,0 +1,20 @@
+// Categorias vazias ficam disponíveis para novos cadastros, sem aparecer na vitrine.
+export const categoriasIndividuais = [
+  { id: "humor", nome: "Humor" },
+  { id: "anime", nome: "Anime" },
+  { id: "carros", nome: "Carros" },
+  { id: "programacao", nome: "Programação" },
+  { id: "musica", nome: "Música" },
+  { id: "esportes", nome: "Esportes" },
+  { id: "cristaos", nome: "Cristãos" },
+  { id: "academia", nome: "Academia" },
+  { id: "estampas-e-cores", nome: "Estampas e Cores" },
+  { id: "arte", nome: "Arte" },
+  { id: "idols", nome: "Idols" },
+  { id: "dark", nome: "Dark" },
+  { id: "pets", nome: "Pets" },
+  { id: "filmes-e-series", nome: "Filmes e Séries" },
+  { id: "games", nome: "Games" },
+  { id: "politica", nome: "Política" },
+  { id: "desenhos", nome: "Desenhos" },
+];
