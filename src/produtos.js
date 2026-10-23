@@ -364,7 +364,7 @@ const produtos = [
     referencia: "UNI-017",
     nome: "Entre Luz e Sombra",
     tipo: "unitario",
-    categoria: "estampas-e-cores",
+    categoria: "dark",
     palavrasChave:
       "mão mãos dedos toque encontro conexão luz sombra contraste preto black branco white bege sépia marrom dark aesthetic arte criação de adão michelangelo releitura renascimento clássico mão escura mão clara minimalista dramático",
     tamanhos: [32, 44, 55],
@@ -1342,6 +1342,7 @@ const produtos = [
     nome: "Homem Vitruviano — Anatomia do Rock",
     tipo: "unitario",
     categoria: "arte",
+    categoriasAdicionais: ["musica"],
     palavrasChave:
       "homem vitruviano anatomia do rock leonardo da vinci arte renascimento releitura guitarra guitarrista música musical instrumento desenho braços círculo quadrado bege creme preto",
     tamanhos: [32, 44, 55],
@@ -1370,9 +1371,9 @@ const produtos = [
     referencia: "UNI-075",
     nome: "“Se você não consegue identificar o alvo, você é o alvo”",
     tipo: "unitario",
-    categoria: "humor",
+    categoria: "games",
     palavrasChave:
-      "if you can't identify the target you are the target se você não consegue identificar o alvo você é o alvo mira frase inglês tipografia letras riscado preto branco vermelho minimalista",
+      "call of duty mobile cod codm jogo games if you can't identify the target you are the target se você não consegue identificar o alvo você é o alvo mira frase inglês tipografia letras riscado preto branco vermelho minimalista",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -1475,6 +1476,77 @@ const produtos = [
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
       (arquivo) => `/imagens/unitarios/i_love_nerds/${arquivo}`,
+    ),
+  },
+  {
+    id: "cod_mobile_guerreira_rubra",
+    referencia: "UNI-083",
+    nome: "Rin Yoshida — Call of Duty Mobile",
+    tipo: "unitario",
+    categoria: "games",
+    palavrasChave:
+      "rin yoshida call of duty mobile COD CODm jogo games gamer personagem guerreira rubra arma rifle armadura cabelo curto vermelho vinho bordô preto dourado roxo energia fantasia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/cod_mobile_guerreira_rubra/${arquivo}`,
+    ),
+  },
+  {
+    id: "lisa_violeta",
+    referencia: "UNI-084",
+    nome: "LISA — Violeta",
+    tipo: "unitario",
+    categoria: "idols",
+    palavrasChave:
+      "lisa lalisa blackpink black pink blink kpop k-pop pop música cantora idol idols violeta roxo lilás lavanda preto colagem flor coroa retrato",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/lisa_violeta/${arquivo}`,
+    ),
+  },
+  {
+    id: "targaryen_dragoes",
+    referencia: "UNI-085",
+    nome: "Targaryen — “Dragões”",
+    tipo: "unitario",
+    categoria: "filmes-e-series",
+    palavrasChave:
+      "targaryen dragons dragões dragão game of thrones got house of the dragon casa do dragão daenerys khaleesi fantasia série paródia café cafeteria logo emblema vermelho preto branco",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/targaryen_dragoes/${arquivo}`,
+    ),
+  },
+  {
+    id: "sua_direcao_importa_mais",
+    referencia: "UNI-086",
+    nome: "“Sua direção é mais importante que sua velocidade”",
+    tipo: "unitario",
+    categoria: "motivacional",
+    categoriasAdicionais: ["estampas-e-cores"],
+    palavrasChave:
+      "your direction is more important than your speed sua direção é mais importante que sua velocidade motivacional motivação inspiração progresso caminho ritmo calma frase inglês peixes peixe dourado laranja rosa creme bege pastel aesthetic tipografia estrelas",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sua_direcao_importa_mais/${arquivo}`,
+    ),
+  },
+  {
+    id: "hot_mess",
+    referencia: "UNI-087",
+    nome: "Hot Mess — “Uma bagunça de charme”",
+    tipo: "unitario",
+    categoria: "humor",
+    palavrasChave:
+      "hot mess uma bagunça de charme bagunçada caos caótica humor frase inglês rosa pink vermelho vinho branco chama fogo tipografia retrô paródia hot wheels",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/hot_mess/${arquivo}`,
     ),
   },
   {

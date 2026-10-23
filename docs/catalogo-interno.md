@@ -102,6 +102,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-080 | Skyline GT-R — Encontro Subterrâneo | Botton individual | skyline_gtr_encontro_subterraneo |
 | UNI-081 | Ctrl + Alt + Slay — “Arrase” | Botton individual / Programação | ctrl_alt_slay |
 | UNI-082 | “Eu amo nerds” | Botton individual / Humor | i_love_nerds |
+| UNI-083 | Rin Yoshida — Call of Duty Mobile | Botton individual / Games | cod_mobile_guerreira_rubra |
+| UNI-084 | LISA — Violeta | Botton individual / Idols | lisa_violeta |
+| UNI-085 | Targaryen — “Dragões” | Botton individual / Filmes e Séries | targaryen_dragoes |
+| UNI-086 | “Sua direção é mais importante que sua velocidade” | Botton individual / Motivacional e Estampas e Cores | sua_direcao_importa_mais |
+| UNI-087 | Hot Mess — “Uma bagunça de charme” | Botton individual / Humor | hot_mess |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
@@ -144,4 +149,6 @@ COL-002: coleção de mini bottons de 32 mm • 3,2 cm, com três fotos de exemp
 
 ## Categorias dos individuais
 
-Os individuais são organizados em carrosséis menores por tema, com navegação por atalhos. Cada arte tem uma categoria principal; a busca continua reunindo todos os produtos e também reconhece o nome da categoria. Categorias vazias (como Idols por enquanto) só aparecem quando recebem produtos. Classificação no campo `categoria` de cada produto; nomes e ordem em `src/categorias-individuais.js`.
+Os individuais são organizados em carrosséis menores por tema, com navegação por atalhos. Cada arte tem uma categoria principal e pode aparecer em outras usando `categoriasAdicionais`; a busca continua reunindo todos os produtos e também reconhece o nome da categoria. Categorias vazias só aparecem quando recebem produtos. Classificação no campo `categoria` de cada produto; nomes e ordem em `src/categorias-individuais.js`.
+
+Carrosséis exibem todos os produtos da coleção, sem corte em cinco cards. O botão “Ver todos” abre a grade e “Voltar ao carrossel” restaura a faixa. Entre Luz e Sombra fica em Dark; Homem Vitruviano aparece em Arte e Música, com a mesma referência e curtidas; You Are the Target fica em Games (Call of Duty Mobile).

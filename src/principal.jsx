@@ -415,23 +415,20 @@ function Colecao({
         aria-label={`Produtos de ${titulo}: arraste para os lados ou use as teclas de seta`}
         className={exibirGrade ? "grade-produtos" : "faixa-produtos"}
       >
-        {(exibirGrade ? produtosDaColecao : produtosDaColecao.slice(0, 5)).map(
+        {produtosDaColecao.map(
           (produto) => (
             <CartaoProduto key={produto.id} produto={produto} kit={kit} />
           ),
         )}
       </div>
-      {!mostrarTodos && produtosDaColecao.length > 5 && (
+      {!mostrarTodos && produtosDaColecao.length > 1 && (
         <div className="ver-mais">
           <button onClick={() => definirExpandida(!expandida)}>
-            {expandida ? "Ver menos" : "Ver mais " + (kit ? "kits" : "bottons")}{" "}
+            {expandida ? "Voltar ao carrossel" : "Ver todos"}{" "}
             <span>{expandida ? "−" : "+"}</span>
           </button>
           <small>
-            {expandida
-              ? produtosDaColecao.length
-              : Math.min(5, produtosDaColecao.length)}{" "}
-            de {produtosDaColecao.length} {kit ? "kits" : "bottons"}
+            {produtosDaColecao.length} {kit ? "kits" : "bottons"}
           </small>
         </div>
       )}
@@ -726,13 +723,13 @@ function Aplicacao() {
                 </div>
                 <nav className="categorias-individuais" aria-label="Categorias de bottons individuais">
                   {categoriasIndividuais.filter((categoria) =>
-                    unitariosFiltrados.some((produto) => produto.categoria === categoria.id),
+                    unitariosFiltrados.some((produto) => (produto.categoria === categoria.id || produto.categoriasAdicionais?.includes(categoria.id))),
                   ).map((categoria) => (
                     <a key={categoria.id} href={`#${categoria.id}`}>{categoria.nome}</a>
                   ))}
                 </nav>
                 {categoriasIndividuais.map((categoria) => {
-                  const itens = unitariosFiltrados.filter((produto) => produto.categoria === categoria.id);
+                  const itens = unitariosFiltrados.filter((produto) => (produto.categoria === categoria.id || produto.categoriasAdicionais?.includes(categoria.id)));
                   return itens.length > 0 && (
                     <Colecao
                       key={categoria.id}

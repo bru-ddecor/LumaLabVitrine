@@ -1,5 +1,6 @@
 // Categorias vazias ficam disponíveis para novos cadastros, sem aparecer na vitrine.
 export const categoriasIndividuais = [
+  { id: "motivacional", nome: "Motivacional" },
   { id: "humor", nome: "Humor" },
   { id: "anime", nome: "Anime" },
   { id: "carros", nome: "Carros" },

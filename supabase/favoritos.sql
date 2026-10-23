@@ -160,5 +160,10 @@ insert into public.catalogo_favoritos(produto) values
 ('skyline_gtr_olhar_jdm'),
 ('skyline_gtr_encontro_subterraneo'),
 ('ctrl_alt_slay'),
-('i_love_nerds')
+('i_love_nerds'),
+('cod_mobile_guerreira_rubra'),
+('lisa_violeta'),
+('targaryen_dragoes'),
+('sua_direcao_importa_mais'),
+('hot_mess')
 on conflict do nothing;
