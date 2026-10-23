@@ -175,5 +175,10 @@ insert into public.catalogo_favoritos(produto) values
 ('eu_amo_chatgpt'),
 ('gym_mode_on'),
 ('forca_classica'),
-('focus_foco')
+('focus_foco'),
+('corpo_em_construcao_mente_em_missao'),
+('never_stop_nunca_pare'),
+('pink_freud'),
+('spock_vida_longa_e_prospera'),
+('kit_ambar_amor_proprio')
 on conflict do nothing;

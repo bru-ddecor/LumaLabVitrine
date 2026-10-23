@@ -13,6 +13,17 @@ const kit = (id, nome, referencia, arquivos, palavrasChave) => ({
 
 const produtos = [
   {
+    id: "kit_ambar_amor_proprio",
+    referencia: "KIT-017",
+    nome: "Âmbar — Amor-próprio",
+    tipo: "kit",
+    palavrasChave:
+      "âmbar amor próprio autoestima motivacional afirmações i love myself love my body i am enough loved strong happy brave wanted borboleta monarca mulher abraço kintsugi dourado rachaduras mão unhas anéis bola oito sinuca bilhar marrom laranja terracota bege preto tons terrosos aesthetic kit quatro 4 bottons",
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/kits/kit_ambar_amor_proprio/${arquivo}`,
+    ),
+  },
+  {
     id: "kit_a_garota_mais_sortuda",
     referencia: "KIT-016",
     nome: "“A garota mais sortuda”",
@@ -1696,6 +1707,63 @@ const produtos = [
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
       (arquivo) => `/imagens/unitarios/focus_foco/${arquivo}`,
+    ),
+  },
+  {
+    id: "corpo_em_construcao_mente_em_missao",
+    referencia: "UNI-098",
+    nome: "“Corpo em construção, mente em missão”",
+    tipo: "unitario",
+    categoria: "academia",
+    palavrasChave:
+      "body under construction mind on a mission corpo em construção mente em missão academia musculação treino fitness maromba disciplina força halteres pesos caveira crânio preto branco frase inglês tipografia desgastada",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/corpo_em_construcao_mente_em_missao/${arquivo}`,
+    ),
+  },
+  {
+    id: "never_stop_nunca_pare",
+    referencia: "UNI-099",
+    nome: "Never Stop — “Nunca pare”",
+    tipo: "unitario",
+    categoria: "academia",
+    palavrasChave:
+      "never stop nunca pare discipline focus disciplina foco academia musculação treino fitness maromba força músculos costas estátua escultura clássica grafite graffiti setas rosa pink preto branco cinza frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/never_stop_nunca_pare/${arquivo}`,
+    ),
+  },
+  {
+    id: "pink_freud",
+    referencia: "UNI-100",
+    nome: "Pink Freud",
+    tipo: "unitario",
+    categoria: "nerd",
+    categoriasAdicionais: ["musica"],
+    palavrasChave:
+      "pink freud pink floyd sigmund freud psicanálise psicologia nerd música musical rock progressivo banda the dark side of the moon prisma triângulo arco-íris espectro luz paródia trocadilho preto branco rosa",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/pink_freud/${arquivo}`,
+    ),
+  },
+  {
+    id: "spock_vida_longa_e_prospera",
+    referencia: "UNI-101",
+    nome: "Spock — “Vida longa e próspera”",
+    tipo: "unitario",
+    categoria: "nerd",
+    palavrasChave:
+      "spock star trek jornada nas estrelas live long and prosper vida longa e próspera saudação vulcana vulcano ficção científica espaço nerd geek personagem série retrô pop art verde limão azul preto frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/spock_vida_longa_e_prospera/${arquivo}`,
     ),
   },
   {

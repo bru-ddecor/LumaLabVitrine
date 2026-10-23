@@ -20,6 +20,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | KIT-014 | Rock Rubro | Kit com 4 bottons | kit_rock_rubro |
 | KIT-015 | One Piece — Legado do Chapéu de Palha | Kit com 4 bottons | kit_one_piece_chapeu_de_palha |
 | KIT-016 | “A garota mais sortuda” | Kit com 4 bottons | kit_a_garota_mais_sortuda |
+| KIT-017 | Âmbar — Amor-próprio | Kit com 4 bottons | kit_ambar_amor_proprio |
 | UNI-001 | Cansada de ser adulta | Botton individual | cansada_de_ser_adulta |
 | UNI-002 | Zoro — One Piece | Botton individual | zoro_one_piece |
 | UNI-003 | Gojo — Jujutsu Kaisen | Botton individual | gojo_jujutsu_kaisen |
@@ -117,6 +118,10 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-095 | “Modo academia ativado” | Botton individual / Academia | gym_mode_on |
 | UNI-096 | Força Clássica | Botton individual / Academia | forca_classica |
 | UNI-097 | Focus — “Foco” | Botton individual / Academia | focus_foco |
+| UNI-098 | “Corpo em construção, mente em missão” | Botton individual / Academia | corpo_em_construcao_mente_em_missao |
+| UNI-099 | Never Stop — “Nunca pare” | Botton individual / Academia | never_stop_nunca_pare |
+| UNI-100 | Pink Freud | Botton individual / Nerd e Música | pink_freud |
+| UNI-101 | Spock — “Vida longa e próspera” | Botton individual / Nerd | spock_vida_longa_e_prospera |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
