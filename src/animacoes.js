@@ -91,7 +91,7 @@ function usarAnimacaoFoto(ativa) {
         },
       ],
       {
-        duration: 320,
+        duration: 800,
       },
     );
   }, [ativa]);

@@ -121,6 +121,9 @@ export function MenuLateral() {
             <a href="#trios" onClick={fechar}>
               Trios e Coleções
             </a>
+            <a href="#cristaos" onClick={fechar}>
+              Cristãos
+            </a>
             <a href="#personalizados" onClick={fechar}>
               Personalizados <span aria-hidden="true">↗</span>
             </a>

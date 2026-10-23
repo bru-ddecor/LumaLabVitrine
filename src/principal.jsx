@@ -5,6 +5,7 @@ import "./tema.css";
 import { AlternarTema, ProvedorTema } from "./tema";
 import { MenuLateral } from "./menu";
 import { MovimentoOrbital } from "./orbita";
+import { usarFotosAutomaticas } from "./fotos-automaticas";
 import { ProvedorFavoritos, FavoritarProduto } from "./favoritos";
 import { FraseUtilizacao } from "./frase-utilizacao";
 import {
@@ -95,6 +96,12 @@ function GaleriaProduto({ produto: produto, kit = false }) {
   const [ativa, definirAtiva] = useState(0);
   const referenciaFoto = usarAnimacaoFoto(ativa);
   const dialogoFoto = useRef(null);
+  const { aguardarInteracao } = usarFotosAutomaticas(
+    referenciaFoto,
+    produto.imagens?.length ?? 0,
+    definirAtiva,
+    dialogoFoto,
+  );
   const ultimoToque = useRef(0);
   const inicioToque = useRef(null);
   function ampliarFoto() {
@@ -102,6 +109,7 @@ function GaleriaProduto({ produto: produto, kit = false }) {
     dialogoFoto.current.showModal();
   }
   function iniciarToque(evento) {
+    aguardarInteracao();
     if (evento.pointerType === "touch")
       inicioToque.current = { x: evento.clientX, y: evento.clientY };
   }
@@ -202,7 +210,10 @@ function GaleriaProduto({ produto: produto, kit = false }) {
               key={indice}
               aria-label={`Ver foto ${indice + 1} de ${nome}`}
               aria-pressed={indice === ativa}
-              onClick={() => definirAtiva(indice)}
+              onClick={() => {
+                aguardarInteracao();
+                definirAtiva(indice);
+              }}
             >
               <span />
             </button>
@@ -240,7 +251,8 @@ function CartaoProduto({ produto, kit = false }) {
                 : produto.tipo === "trio"
                   ? "TRIO COM 3 BOTTONS"
                   : produto.tipo === "colecao"
-                    ? (produto.detalheMedida || "COLEÇÃO · QUANTIDADE À SUA ESCOLHA")
+                    ? produto.detalheMedida ||
+                      "COLEÇÃO · QUANTIDADE À SUA ESCOLHA"
                     : "BOTTON INDIVIDUAL"}
         </span>
         {produto.tipo === "kit" && <b>ECONOMIZE R$ 6,50</b>}
@@ -457,7 +469,8 @@ function Aplicacao() {
     (produto) => produto.tipo === "unitario",
   );
   const personalizadosFiltrados = filtrados.filter(
-    (produto) => produto.tipo === "personalizado" || produto.exibirEmPersonalizados,
+    (produto) =>
+      produto.tipo === "personalizado" || produto.exibirEmPersonalizados,
   );
   return (
     <>
@@ -703,6 +716,16 @@ function Aplicacao() {
                 titulo="Bottons individuais"
                 subtitulo="Escolha sua arte e o tamanho que combina com você."
                 produtosDaColecao={unitariosFiltrados}
+              />
+            )}
+            {filtrados.some((produto) => produto.categoria === "cristaos") && (
+              <Colecao
+                identificador="cristaos"
+                titulo="Cristãos"
+                subtitulo="Bottons com temas cristãos."
+                produtosDaColecao={filtrados.filter(
+                  (produto) => produto.categoria === "cristaos",
+                )}
               />
             )}
             {filtrados.some((produto) => produto.tipo === "parzinho") && (

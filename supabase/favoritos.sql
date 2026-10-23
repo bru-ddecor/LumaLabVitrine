@@ -125,5 +125,10 @@ insert into public.catalogo_favoritos(produto) values
 ('seu_pet_sempre_por_perto'),
 ('sorriso_de_aco'),
 ('refugio_das_sombras'),
-('coro_dos_esqueletos')
+('coro_dos_esqueletos'),
+('gato_terceiro_olhar'),
+('voce_no_seu_anime'),
+('made_to_worship'),
+('jesus_salva'),
+('i_just_need_god')
 on conflict do nothing;

@@ -935,6 +935,79 @@ const produtos = [
     ),
   },
   {
+    id: "gato_terceiro_olhar",
+    referencia: "UNI-052",
+    nome: "Gato — Terceiro Olhar",
+    tipo: "unitario",
+    palavrasChave:
+      "gato gatinho felino cat terceiro olho olhos místico surreal fantasia dark gótico goth terror horror preto black branco white cinza monocromático ilustração desenho ornamentos joia bigodes rosto retrato alternativo aesthetic",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagemCesta: "/imagens/unitarios/gato_terceiro_olhar/01.jpg",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gato_terceiro_olhar/${arquivo}`,
+    ),
+  },
+  {
+    id: "voce_no_seu_anime",
+    referencia: "PER-005",
+    nome: "Você no Seu Anime Favorito",
+    tipo: "personalizado",
+    precoCentavos: 800,
+    precoAtacadoCentavos: 650,
+    precoAtacadoNormalCentavos: 720,
+    quantidadeMinimaAtacado: 100,
+    descricao: "Transforme-se em um personagem no universo do seu anime favorito! Sua foto ganha uma arte personalizada para virar um botton cheio de personalidade — para você ou para presentear alguém especial.",
+    mensagemPersonalizacao: "Olá! Quero me transformar em um personagem do meu anime favorito em um botton personalizado. Podemos combinar a foto, o anime, o nome e os detalhes da arte?",
+    palavrasChave:
+      "personalizado personalização anime mangá manga otaku geek foto retrato personagem ilustração one piece onepiece wanted procurado cartaz recompensa pirata marine nome presente amarelo dourado bege marrom azul",
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/personalizados/voce_no_seu_anime/${arquivo}`,
+    ),
+  },
+  {
+    id: "made_to_worship",
+    referencia: "UNI-053",
+    nome: "Made to Worship",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "cristãos cristão cristã cristãs cristianismo fé deus jesus gospel louvor adoração worship made to worship feito para adorar frase inglês rosa pink creme bege branco flores floral margaridas amarelo magenta tipografia retrô delicado",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/made_to_worship/${arquivo}`,
+    ),
+  },
+  {
+    id: "jesus_salva",
+    referencia: "UNI-054",
+    nome: "Jesus Salva",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "jesus salva cristãos cristão cristã cristãs cristianismo fé deus salvação evangelho gospel religioso frase preto black branco white monocromático minimalista letras tipografia retrô ondulada",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/jesus_salva/${arquivo}`,
+    ),
+  },
+  {
+    id: "i_just_need_god",
+    referencia: "UNI-055",
+    nome: "I Just Need God",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "i just need god eu só preciso de deus cristãos cristão cristã cristãs cristianismo jesus fé evangelho gospel religioso frase inglês preto black branco white monocromático minimalista letras tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/i_just_need_god/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

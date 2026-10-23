@@ -68,6 +68,10 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-049 | Sorriso de Aço | Botton individual | sorriso_de_aco |
 | UNI-050 | Refúgio das Sombras | Botton individual | refugio_das_sombras |
 | UNI-051 | Coro dos Esqueletos | Botton individual | coro_dos_esqueletos |
+| UNI-052 | Gato — Terceiro Olhar | Botton individual | gato_terceiro_olhar |
+| UNI-053 | Made to Worship | Botton individual / Cristãos | made_to_worship |
+| UNI-054 | Jesus Salva | Botton individual / Cristãos | jesus_salva |
+| UNI-055 | I Just Need God | Botton individual / Cristãos | i_just_need_god |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
@@ -79,6 +83,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | COL-002 | Sua Banda em Mini Bottons | Coleção personalizada | mini_bottons_musicais |
 | COL-001 | Coleção Sharingan — Olhares Uchiha | Coleção com 6 bottons | colecao_sharingan |
 | PER-004 | Seu Pet, Sempre por Perto | Personalizado | seu_pet_sempre_por_perto |
+| PER-005 | Você no Seu Anime Favorito | Personalizado | voce_no_seu_anime |
 | PER-001 | Seu artista, sua música | Personalizado | personalizado_musical |
 
 ## Tamanhos dos individuais
