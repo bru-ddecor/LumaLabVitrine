@@ -107,6 +107,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-085 | Targaryen — “Dragões” | Botton individual / Filmes e Séries | targaryen_dragoes |
 | UNI-086 | “Sua direção é mais importante que sua velocidade” | Botton individual / Motivacional e Estampas e Cores | sua_direcao_importa_mais |
 | UNI-087 | Hot Mess — “Uma bagunça de charme” | Botton individual / Humor | hot_mess |
+| UNI-088 | Chill — “Relaxe” | Botton individual / Estampas e Cores | chill_relaxe |
+| UNI-089 | “Não desista — Faça acontecer” | Botton individual / Motivacional | dont_quit_do_it |
+| UNI-090 | Slay — “Arrase” · Tabela Periódica | Botton individual / Nerd | slay_tabela_periodica |
+| UNI-091 | Nova York — Estátua da Liberdade | Botton individual / Estampas e Cores | nova_york_estatua_da_liberdade |
+| UNI-092 | Hello Kitty — “Eu amo nerds” | Botton individual / Nerd e Desenhos | hello_kitty_eu_amo_nerds |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

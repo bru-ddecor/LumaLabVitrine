@@ -1550,6 +1550,77 @@ const produtos = [
     ),
   },
   {
+    id: "chill_relaxe",
+    referencia: "UNI-088",
+    nome: "Chill — “Relaxe”",
+    tipo: "unitario",
+    categoria: "estampas-e-cores",
+    palavrasChave:
+      "chill relaxe relaxar calma tranquilidade descanso frase inglês tipografia letras onduladas ondas retrô vintage aesthetic minimalista vermelho vinho bordô creme bege branco",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/chill_relaxe/${arquivo}`,
+    ),
+  },
+  {
+    id: "dont_quit_do_it",
+    referencia: "UNI-089",
+    nome: "“Não desista — Faça acontecer”",
+    tipo: "unitario",
+    categoria: "motivacional",
+    palavrasChave:
+      "don't quit dont quit do it não desista faça acontecer faça isso motivacional motivação inspiração persistência coragem atitude frase inglês rosa pink preto tipografia letras riscadas",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/dont_quit_do_it/${arquivo}`,
+    ),
+  },
+  {
+    id: "slay_tabela_periodica",
+    referencia: "UNI-090",
+    nome: "Slay — “Arrase” · Tabela Periódica",
+    tipo: "unitario",
+    categoria: "nerd",
+    palavrasChave:
+      "slay arrase arrasar tabela periódica química ciência elementos químicos enxofre lantânio ítrio sulfur lanthanum yttrium s la y nerd geek estudante faculdade humor trocadilho inglês branco rosa pink magenta cinza",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/slay_tabela_periodica/${arquivo}`,
+    ),
+  },
+  {
+    id: "nova_york_estatua_da_liberdade",
+    referencia: "UNI-091",
+    nome: "Nova York — Estátua da Liberdade",
+    tipo: "unitario",
+    categoria: "estampas-e-cores",
+    palavrasChave:
+      "new york nova york ny nyc estátua da liberdade statue of liberty estados unidos eua usa viagem turismo cidade monumento arquitetura estrelas selo emblema azul marinho amarelo dourado vintage retrô",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/nova_york_estatua_da_liberdade/${arquivo}`,
+    ),
+  },
+  {
+    id: "hello_kitty_eu_amo_nerds",
+    referencia: "UNI-092",
+    nome: "Hello Kitty — “Eu amo nerds”",
+    tipo: "unitario",
+    categoria: "nerd",
+    categoriasAdicionais: ["desenhos"],
+    palavrasChave:
+      "hello kitty sanrio i love nerds eu amo nerds nerd geek óculos coração vermelho laço branco preto fofo kawaii cute desenho personagem amor frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/hello_kitty_eu_amo_nerds/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

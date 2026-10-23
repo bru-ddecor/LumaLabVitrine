@@ -165,5 +165,10 @@ insert into public.catalogo_favoritos(produto) values
 ('lisa_violeta'),
 ('targaryen_dragoes'),
 ('sua_direcao_importa_mais'),
-('hot_mess')
+('hot_mess'),
+('chill_relaxe'),
+('dont_quit_do_it'),
+('slay_tabela_periodica'),
+('nova_york_estatua_da_liberdade'),
+('hello_kitty_eu_amo_nerds')
 on conflict do nothing;
