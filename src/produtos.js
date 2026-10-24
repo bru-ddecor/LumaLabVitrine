@@ -1908,6 +1908,78 @@ const produtos = [
     ),
   },
   {
+    id: "soul_sister",
+    referencia: "UNI-112",
+    nome: "Soul Sister — “Irmã de alma”",
+    tipo: "unitario",
+    categoria: "ubuntu",
+    palavrasChave:
+      "soul sister irmã de alma ubuntu raízes negras cultura negra afro afropaty afropatys representatividade identidade mulher ilustração rosto argolas brincos cabelo tipografia preto branco frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/soul_sister/${arquivo}`,
+    ),
+  },
+  {
+    id: "sabotage_vim_pra_sabotar",
+    referencia: "UNI-113",
+    nome: "Sabotage — Vim pra Sabotar seu Raciocínio",
+    tipo: "unitario",
+    categoria: "musica",
+    categoriasAdicionais: ["ubuntu"],
+    palavrasChave:
+      "sabotage vim pra sabotar seu raciocínio rap rapper hip hop hiphop música musical brasileiro nacional ubuntu raízes negras cultura negra retrato colagem vermelho amarelo branco preto tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sabotage_vim_pra_sabotar/${arquivo}`,
+    ),
+  },
+  {
+    id: "sabotage_quem_nao_fez_faz",
+    referencia: "UNI-114",
+    nome: "Sabotage — Quem Não Fez, Faz",
+    tipo: "unitario",
+    categoria: "musica",
+    categoriasAdicionais: ["ubuntu"],
+    palavrasChave:
+      "sabotage quem não fez faz usa a mente e corre atrás rap rapper hip hop hiphop música musical brasileiro nacional ubuntu raízes negras cultura negra ilustração retrato frase branco preto marrom azul claro",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sabotage_quem_nao_fez_faz/${arquivo}`,
+    ),
+  },
+  {
+    id: "preciso_de_cafeina",
+    referencia: "UNI-115",
+    nome: "“Preciso de cafeína”",
+    tipo: "unitario",
+    categoria: "frases",
+    palavrasChave:
+      "need caffeine addict preciso de cafeína café coffee cafeinado cafeteria bebida frase inglês vermelho branco tipografia letras cursivas retrô vintage",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/preciso_de_cafeina/${arquivo}`,
+    ),
+  },
+  {
+    id: "spotify_orgulho_bi",
+    referencia: "UNI-116",
+    nome: "Spotify — Orgulho Bi",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "spotify código ondas música musical orgulho bi bissexual bissexualidade bandeira lgbt lgbtq lgbtqia pride diversidade rosa pink roxo azul preto degradê",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/spotify_orgulho_bi/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

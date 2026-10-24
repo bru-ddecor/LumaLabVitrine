@@ -132,6 +132,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-109 | “O que você está esperando?” | Botton individual / Motivacional | o_que_voce_esta_esperando |
 | UNI-110 | “Parece gay, tô dentro!” | Botton individual / Orgulho LGBTQIA+ | sounds_gay_im_in |
 | UNI-111 | Yeshúa — Coração de Fé | Botton individual / Cristãos | yeshua_coracao_de_fe |
+| UNI-112 | Soul Sister — “Irmã de alma” | Botton individual / Ubuntu — Raízes Negras | soul_sister |
+| UNI-113 | Sabotage — Vim pra Sabotar seu Raciocínio | Botton individual / Música e Ubuntu — Raízes Negras | sabotage_vim_pra_sabotar |
+| UNI-114 | Sabotage — Quem Não Fez, Faz | Botton individual / Música e Ubuntu — Raízes Negras | sabotage_quem_nao_fez_faz |
+| UNI-115 | “Preciso de cafeína” | Botton individual / Frases | preciso_de_cafeina |
+| UNI-116 | Spotify — Orgulho Bi | Botton individual / Orgulho LGBTQIA+ | spotify_orgulho_bi |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

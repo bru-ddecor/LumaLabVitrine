@@ -190,5 +190,10 @@ insert into public.catalogo_favoritos(produto) values
 ('comic_sans_proibida'),
 ('o_que_voce_esta_esperando'),
 ('sounds_gay_im_in'),
-('yeshua_coracao_de_fe')
+('yeshua_coracao_de_fe'),
+('soul_sister'),
+('sabotage_vim_pra_sabotar'),
+('sabotage_quem_nao_fez_faz'),
+('preciso_de_cafeina'),
+('spotify_orgulho_bi')
 on conflict do nothing;
