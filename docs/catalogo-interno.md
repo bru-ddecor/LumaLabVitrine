@@ -21,6 +21,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | KIT-015 | One Piece — Legado do Chapéu de Palha | Kit com 4 bottons | kit_one_piece_chapeu_de_palha |
 | KIT-016 | “A garota mais sortuda” | Kit com 4 bottons | kit_a_garota_mais_sortuda |
 | KIT-017 | Âmbar — Amor-próprio | Kit com 4 bottons / Ubuntu | kit_ambar_amor_proprio |
+| KIT-018 | Mean Girls — Meninas Malvadas | Kit com 4 bottons / Filmes e Séries | kit_mean_girls |
 | UNI-001 | Cansada de ser adulta | Botton individual | cansada_de_ser_adulta |
 | UNI-002 | Zoro — One Piece | Botton individual | zoro_one_piece |
 | UNI-003 | Gojo — Jujutsu Kaisen | Botton individual | gojo_jujutsu_kaisen |
@@ -137,15 +138,19 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-114 | Sabotage — Quem Não Fez, Faz | Botton individual / Música e Ubuntu — Raízes Negras | sabotage_quem_nao_fez_faz |
 | UNI-115 | “Preciso de cafeína” | Botton individual / Frases | preciso_de_cafeina |
 | UNI-116 | Spotify — Orgulho Bi | Botton individual / Orgulho LGBTQIA+ | spotify_orgulho_bi |
+| UNI-117 | Gatinho — Astigmiautismo | Botton individual / Humor, Pets e Destaques | gatinho_astigmiautismo |
+| UNI-118 | Gatinho Pensador | Botton individual / Pets e Humor | gatinho_pensador |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
 | PAR-004 | Hora de Aventura — Amigos de Ooo | Parzinho | amigos_de_ooo |
 | PAR-005 | Hello Kitty — Treino Fofo | Parzinho | hello_kitty_treino_fofo |
+| PAR-006 | Barbie — Corações em Rosa | Parzinho / Desenhos | barbie_coracoes_em_rosa |
 | TRI-001 | Meninas Superpoderosas — Trio de Poder | Trio | meninas_superpoderosas |
 | PER-002 | Lembrança de Aniversário | Personalizado | lembranca_aniversario |
 | PER-003 | Uma Turma de Lembranças | Personalizado | uma_turma_de_lembrancas |
 | COL-002 | Sua Banda em Mini Bottons | Coleção personalizada | mini_bottons_musicais |
+| TRI-002 | Meninas Superpoderosas — Cada Uma no Seu Humor | Trio / Desenhos | meninas_superpoderosas_cada_uma_no_seu_humor |
 | COL-001 | Coleção Sharingan — Olhares Uchiha | Coleção com 6 bottons | colecao_sharingan |
 | PER-004 | Seu Pet, Sempre por Perto | Personalizado | seu_pet_sempre_por_perto |
 | PER-005 | Você no Seu Anime Favorito | Personalizado | voce_no_seu_anime |

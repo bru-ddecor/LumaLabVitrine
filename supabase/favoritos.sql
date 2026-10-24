@@ -195,5 +195,10 @@ insert into public.catalogo_favoritos(produto) values
 ('sabotage_vim_pra_sabotar'),
 ('sabotage_quem_nao_fez_faz'),
 ('preciso_de_cafeina'),
-('spotify_orgulho_bi')
+('spotify_orgulho_bi'),
+('kit_mean_girls'),
+('barbie_coracoes_em_rosa'),
+('meninas_superpoderosas_cada_uma_no_seu_humor'),
+('gatinho_astigmiautismo'),
+('gatinho_pensador')
 on conflict do nothing;

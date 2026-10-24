@@ -13,6 +13,16 @@ const kit = (id, nome, referencia, arquivos, palavrasChave) => ({
 
 const produtos = [
   {
+    id: "kit_mean_girls",
+    referencia: "KIT-018",
+    nome: "Mean Girls — Meninas Malvadas",
+    tipo: "kit",
+    categoria: "filmes-e-series",
+    palavrasChave:
+      "mean girls meninas malvadas filme cinema comédia cady heron regina george gretchen wieners karen smith plásticas plastics rosa pink retratos kit quatro 4 bottons",
+    imagens: ["/imagens/kits/kit_mean_girls/01.jpg"],
+  },
+  {
     id: "kit_ambar_amor_proprio",
     referencia: "KIT-017",
     nome: "Âmbar — Amor-próprio",
@@ -1977,6 +1987,65 @@ const produtos = [
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
       (arquivo) => `/imagens/unitarios/spotify_orgulho_bi/${arquivo}`,
+    ),
+  },
+  {
+    id: "barbie_coracoes_em_rosa",
+    referencia: "PAR-006",
+    nome: "Barbie — Corações em Rosa",
+    tipo: "parzinho",
+    categoria: "desenhos",
+    palavrasChave:
+      "barbie par parzinho dupla dois 2 bottons boneca desenho personagem rosa pink coração corações laço vestido loira bolsa azul fofo delicado",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 1100, 44: 1500, 55: 1800 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/parzinhos/barbie_coracoes_em_rosa/${arquivo}`,
+    ),
+  },
+  {
+    id: "meninas_superpoderosas_cada_uma_no_seu_humor",
+    referencia: "TRI-002",
+    nome: "Meninas Superpoderosas — Cada Uma no Seu Humor",
+    tipo: "trio",
+    categoria: "desenhos",
+    palavrasChave:
+      "meninas superpoderosas powerpuff girls lindinha docinho florzinha bubbles buttercup blossom cartoon network desenho trio três 3 bottons rosa azul verde laranja personagens expressões",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 1500, 44: 2000, 55: 2400 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/trios/meninas_superpoderosas_cada_uma_no_seu_humor/${arquivo}`,
+    ),
+  },
+  {
+    id: "gatinho_astigmiautismo",
+    referencia: "UNI-117",
+    nome: "Gatinho — Astigmiautismo",
+    tipo: "unitario",
+    categoria: "humor",
+    categoriasAdicionais: ["pets"],
+    destaque: true,
+    palavrasChave:
+      "gatinho gato cat felino pet pets astigmiautismo óculos meme humor frase fotografia tigrado marrom bege branco preto",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gatinho_astigmiautismo/${arquivo}`,
+    ),
+  },
+  {
+    id: "gatinho_pensador",
+    referencia: "UNI-118",
+    nome: "Gatinho Pensador",
+    tipo: "unitario",
+    categoria: "pets",
+    categoriasAdicionais: ["humor"],
+    palavrasChave:
+      "gatinho gato cat felino pet pets pensador pensando reflexão pensativo meme humor patinha queixo tigrado olhos verdes fotografia marrom branco preto",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gatinho_pensador/${arquivo}`,
     ),
   },
   {
