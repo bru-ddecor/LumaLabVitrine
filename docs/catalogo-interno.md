@@ -20,7 +20,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | KIT-014 | Rock Rubro | Kit com 4 bottons | kit_rock_rubro |
 | KIT-015 | One Piece — Legado do Chapéu de Palha | Kit com 4 bottons | kit_one_piece_chapeu_de_palha |
 | KIT-016 | “A garota mais sortuda” | Kit com 4 bottons | kit_a_garota_mais_sortuda |
-| KIT-017 | Âmbar — Amor-próprio | Kit com 4 bottons | kit_ambar_amor_proprio |
+| KIT-017 | Âmbar — Amor-próprio | Kit com 4 bottons / Ubuntu | kit_ambar_amor_proprio |
 | UNI-001 | Cansada de ser adulta | Botton individual | cansada_de_ser_adulta |
 | UNI-002 | Zoro — One Piece | Botton individual | zoro_one_piece |
 | UNI-003 | Gojo — Jujutsu Kaisen | Botton individual | gojo_jujutsu_kaisen |
@@ -110,9 +110,9 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-087 | Hot Mess — “Uma bagunça de charme” | Botton individual / Humor | hot_mess |
 | UNI-088 | Chill — “Relaxe” | Botton individual / Estampas e Cores | chill_relaxe |
 | UNI-089 | “Não desista — Faça acontecer” | Botton individual / Motivacional | dont_quit_do_it |
-| UNI-090 | Slay — “Arrase” · Tabela Periódica | Botton individual / Nerd | slay_tabela_periodica |
+| UNI-090 | Slay — “Arrase” · Tabela Periódica | Botton individual / Geek | slay_tabela_periodica |
 | UNI-091 | Nova York — Estátua da Liberdade | Botton individual / Estampas e Cores | nova_york_estatua_da_liberdade |
-| UNI-092 | Hello Kitty — “Eu amo nerds” | Botton individual / Nerd | hello_kitty_eu_amo_nerds |
+| UNI-092 | Hello Kitty — “Eu amo nerds” | Botton individual / Geek | hello_kitty_eu_amo_nerds |
 | UNI-093 | Vinil — O Toque da Música | Botton individual / Música | vinil_o_toque_da_musica |
 | UNI-094 | “Eu amo ChatGPT” | Botton individual / Humor e Programação | eu_amo_chatgpt |
 | UNI-095 | “Modo academia ativado” | Botton individual / Academia | gym_mode_on |
@@ -120,8 +120,13 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-097 | Focus — “Foco” | Botton individual / Academia | focus_foco |
 | UNI-098 | “Corpo em construção, mente em missão” | Botton individual / Academia | corpo_em_construcao_mente_em_missao |
 | UNI-099 | Never Stop — “Nunca pare” | Botton individual / Academia | never_stop_nunca_pare |
-| UNI-100 | Pink Freud | Botton individual / Nerd e Música | pink_freud |
-| UNI-101 | Spock — “Vida longa e próspera” | Botton individual / Nerd | spock_vida_longa_e_prospera |
+| UNI-100 | Pink Freud | Botton individual / Geek e Música | pink_freud |
+| UNI-101 | Spock — “Vida longa e próspera” | Botton individual / Geek | spock_vida_longa_e_prospera |
+| UNI-102 | Valorize suas melhores curvas | Botton individual / Geek | valorize_suas_melhores_curvas |
+| UNI-103 | Eren — Fragmentos de Liberdade | Botton individual / Anime | eren_fragmentos_de_liberdade |
+| UNI-104 | Game of Litrones | Botton individual / Filmes e Séries | game_of_litrones |
+| UNI-105 | Pense como um próton — Sempre positivo | Botton individual / Geek | pense_como_um_proton |
+| UNI-106 | “Trabalhe duro, mas aproveite a vida também” | Botton individual / Motivacional | trabalhe_duro_aproveite_a_vida |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
@@ -171,3 +176,7 @@ Carrosséis exibem todos os produtos da coleção, sem corte em cinco cards. O b
 Anime abre as categorias. Nerd vem imediatamente após Programação e reúne exclusivamente UNI-043, UNI-082, UNI-090 e UNI-092. Parzinhos e trio com personagens também aparecem em Desenhos, mantendo seus tipos, tamanhos, preços e referências originais.
 
 Categoria Arte removida. Frases reúne UNI-022 (reflexão do Poe) e UNI-025 (Último Ato de Amor, arte da lata de Monster), que saiu de Anime. PAR-005 (Hello Kitty — Treino Fofo) aparece também em Academia.
+
+Ubuntu — Raízes Negras: seleção de produtos com temas de culturas africanas, cultura negra, identidade afro e afropatys. KIT-017 aparece nesta categoria além de Kits, com o mesmo preço, referência e curtidas. Novos individuais do tema usam `categoria: "ubuntu"`.
+
+A categoria antes chamada Nerd agora se apresenta como Geek. O identificador interno `nerd` permanece para preservar os vínculos dos produtos; a posição continua logo após Programação.

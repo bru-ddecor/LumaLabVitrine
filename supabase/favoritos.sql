@@ -180,5 +180,10 @@ insert into public.catalogo_favoritos(produto) values
 ('never_stop_nunca_pare'),
 ('pink_freud'),
 ('spock_vida_longa_e_prospera'),
-('kit_ambar_amor_proprio')
+('kit_ambar_amor_proprio'),
+('valorize_suas_melhores_curvas'),
+('eren_fragmentos_de_liberdade'),
+('game_of_litrones'),
+('pense_como_um_proton'),
+('trabalhe_duro_aproveite_a_vida')
 on conflict do nothing;

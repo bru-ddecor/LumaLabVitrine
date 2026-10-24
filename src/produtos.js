@@ -17,8 +17,9 @@ const produtos = [
     referencia: "KIT-017",
     nome: "Âmbar — Amor-próprio",
     tipo: "kit",
+    categoria: "ubuntu",
     palavrasChave:
-      "âmbar amor próprio autoestima motivacional afirmações i love myself love my body i am enough loved strong happy brave wanted borboleta monarca mulher abraço kintsugi dourado rachaduras mão unhas anéis bola oito sinuca bilhar marrom laranja terracota bege preto tons terrosos aesthetic kit quatro 4 bottons",
+      "ubuntu raízes negras cultura negra cultura africana afro afropaty afropatys representatividade identidade âmbar amor próprio autoestima motivacional afirmações i love myself love my body i am enough loved strong happy brave wanted borboleta monarca mulher abraço kintsugi dourado rachaduras mão unhas anéis bola oito sinuca bilhar marrom laranja terracota bege preto tons terrosos aesthetic kit quatro 4 bottons",
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
       (arquivo) => `/imagens/kits/kit_ambar_amor_proprio/${arquivo}`,
     ),
@@ -1764,6 +1765,76 @@ const produtos = [
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
       (arquivo) => `/imagens/unitarios/spock_vida_longa_e_prospera/${arquivo}`,
+    ),
+  },
+  {
+    id: "valorize_suas_melhores_curvas",
+    referencia: "UNI-102",
+    nome: "Valorize suas melhores curvas",
+    tipo: "unitario",
+    categoria: "nerd",
+    palavrasChave:
+      "valorize suas melhores curvas cérebro cerebro mente inteligência conhecimento estudo ciência psicologia neurociência nerd geek frase rosa pink branco preto raios desenho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/valorize_suas_melhores_curvas/${arquivo}`,
+    ),
+  },
+  {
+    id: "eren_fragmentos_de_liberdade",
+    referencia: "UNI-103",
+    nome: "Eren — Fragmentos de Liberdade",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "eren yeager jaeger attack on titan shingeki no kyojin titã de ataque anime mangá manga otaku colagem quadros páginas olhos olhar cabelo preso coque preto branco cinza monocromático liberdade",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/eren_fragmentos_de_liberdade/${arquivo}`,
+    ),
+  },
+  {
+    id: "game_of_litrones",
+    referencia: "UNI-104",
+    nome: "Game of Litrones",
+    tipo: "unitario",
+    categoria: "filmes-e-series",
+    palavrasChave:
+      "game of litrones game of thrones got série fantasia paródia trocadilho litrones litrão cerveja bebida letras logo tipografia branco preto minimalista",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/game_of_litrones/${arquivo}`,
+    ),
+  },
+  {
+    id: "pense_como_um_proton",
+    referencia: "UNI-105",
+    nome: "Pense como um próton — Sempre positivo",
+    tipo: "unitario",
+    categoria: "nerd",
+    palavrasChave:
+      "pense como um próton sempre positivo proton átomo física química ciência carga positiva positividade nerd geek estudo estudante sorriso amarelo branco preto órbitas desenho frase",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/pense_como_um_proton/${arquivo}`,
+    ),
+  },
+  {
+    id: "trabalhe_duro_aproveite_a_vida",
+    referencia: "UNI-106",
+    nome: "“Trabalhe duro, mas aproveite a vida também”",
+    tipo: "unitario",
+    categoria: "motivacional",
+    palavrasChave:
+      "work hard but make sure you enjoy life too trabalhe duro mas aproveite a vida também trabalho equilíbrio descanso motivacional motivação inspiração frase inglês tela monitor televisão pixel tipografia retrô azul claro preto",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/trabalhe_duro_aproveite_a_vida/${arquivo}`,
     ),
   },
   {
