@@ -3,6 +3,7 @@ export const categoriasIndividuais = [
   { id: "anime", nome: "Anime" },
   { id: "motivacional", nome: "Motivacional" },
   { id: "humor", nome: "Humor" },
+  { id: "orgulho", nome: "Orgulho LGBTQIA+" },
   { id: "carros", nome: "Carros" },
   { id: "programacao", nome: "Programação" },
   { id: "nerd", nome: "Geek" },

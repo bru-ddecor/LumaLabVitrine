@@ -185,5 +185,10 @@ insert into public.catalogo_favoritos(produto) values
 ('eren_fragmentos_de_liberdade'),
 ('game_of_litrones'),
 ('pense_como_um_proton'),
-('trabalhe_duro_aproveite_a_vida')
+('trabalhe_duro_aproveite_a_vida'),
+('obanai_mitsuri_encontro_ao_entardecer'),
+('comic_sans_proibida'),
+('o_que_voce_esta_esperando'),
+('sounds_gay_im_in'),
+('yeshua_coracao_de_fe')
 on conflict do nothing;

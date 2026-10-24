@@ -127,6 +127,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-104 | Game of Litrones | Botton individual / Filmes e Séries | game_of_litrones |
 | UNI-105 | Pense como um próton — Sempre positivo | Botton individual / Geek | pense_como_um_proton |
 | UNI-106 | “Trabalhe duro, mas aproveite a vida também” | Botton individual / Motivacional | trabalhe_duro_aproveite_a_vida |
+| UNI-107 | Obanai e Mitsuri — Encontro ao Entardecer | Botton individual / Anime | obanai_mitsuri_encontro_ao_entardecer |
+| UNI-108 | Comic Sans Proibida | Botton individual / Humor | comic_sans_proibida |
+| UNI-109 | “O que você está esperando?” | Botton individual / Motivacional | o_que_voce_esta_esperando |
+| UNI-110 | “Parece gay, tô dentro!” | Botton individual / Orgulho LGBTQIA+ | sounds_gay_im_in |
+| UNI-111 | Yeshúa — Coração de Fé | Botton individual / Cristãos | yeshua_coracao_de_fe |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

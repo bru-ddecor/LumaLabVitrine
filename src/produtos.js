@@ -1838,6 +1838,76 @@ const produtos = [
     ),
   },
   {
+    id: "obanai_mitsuri_encontro_ao_entardecer",
+    referencia: "UNI-107",
+    nome: "Obanai e Mitsuri — Encontro ao Entardecer",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "obanai iguro mitsuri kanroji obamitsu demon slayer kimetsu no yaiba anime mangá manga otaku hashira pilar serpente amor casal romance encontro entardecer pôr do sol rosa verde roxo cobra tranças",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/obanai_mitsuri_encontro_ao_entardecer/${arquivo}`,
+    ),
+  },
+  {
+    id: "comic_sans_proibida",
+    referencia: "UNI-108",
+    nome: "Comic Sans Proibida",
+    tipo: "unitario",
+    categoria: "humor",
+    palavrasChave:
+      "comic sans proibida proibido não use fonte tipografia design designer gráfico letras humor meme placa proibição vermelho branco preto",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/comic_sans_proibida/${arquivo}`,
+    ),
+  },
+  {
+    id: "o_que_voce_esta_esperando",
+    referencia: "UNI-109",
+    nome: "“O que você está esperando?”",
+    tipo: "unitario",
+    categoria: "motivacional",
+    palavrasChave:
+      "what are you waiting for o que você está esperando motivacional motivação inspiração atitude ação comece sinal verde semáforo trânsito azul branco preto frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/o_que_voce_esta_esperando/${arquivo}`,
+    ),
+  },
+  {
+    id: "sounds_gay_im_in",
+    referencia: "UNI-110",
+    nome: "“Parece gay, tô dentro!”",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "sounds gay i'm in im in parece gay tô dentro estou dentro lgbt lgbtq lgbtqia orgulho pride diversidade arco-íris humor pin-up pinup retrô vintage mulher ilustração creme bege coral salmão preto frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sounds_gay_im_in/${arquivo}`,
+    ),
+  },
+  {
+    id: "yeshua_coracao_de_fe",
+    referencia: "UNI-111",
+    nome: "Yeshúa — Coração de Fé",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "yeshua yeshúa jesus cristo deus fé cristãos cristão cristã cristãs cristianismo gospel evangelho coração anatômico vermelho branco preto tipografia letras",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/yeshua_coracao_de_fe/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
