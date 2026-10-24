@@ -2258,6 +2258,77 @@ const produtos = [
     ),
   },
   {
+    id: "marin_kitagawa_sorriso_em_rosa",
+    referencia: "UNI-134",
+    nome: "Marin Kitagawa — Sorriso em Rosa",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "marin kitagawa my dress up darling sono bisque doll wa koi wo suru anime mangá manga cosplay gyaru sorriso rosa pink loira coração kawaii ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/marin_kitagawa_sorriso_em_rosa/${arquivo}`,
+    ),
+  },
+  {
+    id: "olhares_em_rosa_garota_e_gatinho",
+    referencia: "UNI-135",
+    nome: "Olhares em Rosa — Garota e Gatinho",
+    tipo: "unitario",
+    categoria: "anime",
+    categoriasAdicionais: ["pets"],
+    palavrasChave:
+      "olhares em rosa garota e gatinho gato preto felino pets anime mangá manga olhos rosa pink cabelo castanho kawaii fofo amizade ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/olhares_em_rosa_garota_e_gatinho/${arquivo}`,
+    ),
+  },
+  {
+    id: "ghost_vermelho_sombrio",
+    referencia: "UNI-136",
+    nome: "Ghost — Vermelho Sombrio",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "ghost vermelho sombrio fantasma dark gótico alternativo preto vermelho tipografia letras pontiagudas textura desgastada estampa",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/ghost_vermelho_sombrio/${arquivo}`,
+    ),
+  },
+  {
+    id: "voce_nao_e_seu_passado",
+    referencia: "UNI-137",
+    nome: "Você não é seu passado!",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "você não é seu passado voce nao e seu passado jesus cristo abraço acolhimento perdão recomeço fé deus cristão cristã cristãos evangelho esperança branco preto ilustração frase",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/voce_nao_e_seu_passado/${arquivo}`,
+    ),
+  },
+  {
+    id: "ide_por_todo_mundo",
+    referencia: "UNI-138",
+    nome: "Ide por todo mundo",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "ide por todo mundo e pregai o evangelho a toda criatura marcos 16 15 bíblia versículo missões evangelização jesus cristo fé deus cristão cristã cristãos globo mapa mundo rosa lilás preto frase",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/ide_por_todo_mundo/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
