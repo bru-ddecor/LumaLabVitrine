@@ -200,5 +200,10 @@ insert into public.catalogo_favoritos(produto) values
 ('barbie_coracoes_em_rosa'),
 ('meninas_superpoderosas_cada_uma_no_seu_humor'),
 ('gatinho_astigmiautismo'),
-('gatinho_pensador')
+('gatinho_pensador'),
+('macaquinho_piscadinha'),
+('mago_sem_paciencia_com_dinheiro'),
+('olhar_de_desconfianca'),
+('hacker_de_brinquedo'),
+('im_gay_for_pretty_girls')
 on conflict do nothing;

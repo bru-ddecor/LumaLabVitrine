@@ -2049,6 +2049,75 @@ const produtos = [
     ),
   },
   {
+    id: "macaquinho_piscadinha",
+    referencia: "UNI-119",
+    nome: "Macaquinho — Piscadinha",
+    tipo: "unitario",
+    categoria: "humor",
+    palavrasChave:
+      "macaquinho macaco piscadinha piscando meme humor engraçado sorriso dedo boca fotografia animal marrom bege azul",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/macaquinho_piscadinha/${arquivo}`,
+    ),
+  },
+  {
+    id: "mago_sem_paciencia_com_dinheiro",
+    referencia: "UNI-120",
+    nome: "Mago — Sem Paciência, Com Dinheiro",
+    tipo: "unitario",
+    categoria: "humor",
+    palavrasChave:
+      "mago sem paciência com dinheiro meme humor engraçado fantasia chapéu barba cachimbo notas dólares dinheiro dedo do meio gesto preto branco cinza monocromático",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/mago_sem_paciencia_com_dinheiro/${arquivo}`,
+    ),
+  },
+  {
+    id: "olhar_de_desconfianca",
+    referencia: "UNI-121",
+    nome: "Olhar de Desconfiança",
+    tipo: "unitario",
+    categoria: "humor",
+    palavrasChave:
+      "olhar de desconfiança desconfiado olhando de lado reação meme humor óculos barba fotografia retrato",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/olhar_de_desconfianca/01.jpg"],
+  },
+  {
+    id: "hacker_de_brinquedo",
+    referencia: "UNI-122",
+    nome: "Hacker de Brinquedo",
+    tipo: "unitario",
+    categoria: "humor",
+    categoriasAdicionais: ["programacao"],
+    palavrasChave:
+      "hacker de brinquedo meme humor programação programador programadora desenvolvedor desenvolvedora dev computador notebook laptop teclado matrix código verde óculos rosa azul vermelho amarelo colagem tecnologia informática",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/hacker_de_brinquedo/${arquivo}`,
+    ),
+  },
+  {
+    id: "im_gay_for_pretty_girls",
+    referencia: "UNI-123",
+    nome: "“Sou gay por garotas bonitas”",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "i'm gay for pretty girls im gay for pretty girls sou gay por garotas bonitas meninas lindas lgbt lgbtq lgbtqia orgulho pride diversidade lésbica sáfica rosa pink preto frase inglês tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/im_gay_for_pretty_girls/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

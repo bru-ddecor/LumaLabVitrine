@@ -140,6 +140,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-116 | Spotify — Orgulho Bi | Botton individual / Orgulho LGBTQIA+ | spotify_orgulho_bi |
 | UNI-117 | Gatinho — Astigmiautismo | Botton individual / Humor, Pets e Destaques | gatinho_astigmiautismo |
 | UNI-118 | Gatinho Pensador | Botton individual / Pets e Humor | gatinho_pensador |
+| UNI-119 | Macaquinho — Piscadinha | Botton individual / Humor | macaquinho_piscadinha |
+| UNI-120 | Mago — Sem Paciência, Com Dinheiro | Botton individual / Humor | mago_sem_paciencia_com_dinheiro |
+| UNI-121 | Olhar de Desconfiança | Botton individual / Humor | olhar_de_desconfianca |
+| UNI-122 | Hacker de Brinquedo | Botton individual / Humor e Programação | hacker_de_brinquedo |
+| UNI-123 | “Sou gay por garotas bonitas” | Botton individual / Orgulho LGBTQIA+ | im_gay_for_pretty_girls |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
