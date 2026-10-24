@@ -145,6 +145,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-121 | Olhar de Desconfiança | Botton individual / Humor | olhar_de_desconfianca |
 | UNI-122 | Hacker de Brinquedo | Botton individual / Humor e Programação | hacker_de_brinquedo |
 | UNI-123 | “Sou gay por garotas bonitas” | Botton individual / Orgulho LGBTQIA+ | im_gay_for_pretty_girls |
+| UNI-124 | Sem Sinal | Botton individual / Estampas e Cores | sem_sinal |
+| UNI-125 | Programmer | Botton individual / Programação | programmer |
+| UNI-126 | Esqueleto em Chamas | Botton individual / Dark | esqueleto_em_chamas |
+| UNI-127 | Que época para estar vivo | Botton individual / Dark | what_a_time_to_be_alive |
+| UNI-128 | Despertai — Efésios 5:14 | Botton individual / Cristãos | despertai_efesios_5_14 |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

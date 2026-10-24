@@ -2118,6 +2118,76 @@ const produtos = [
     ),
   },
   {
+    id: "sem_sinal",
+    referencia: "UNI-124",
+    nome: "Sem Sinal",
+    tipo: "unitario",
+    categoria: "estampas-e-cores",
+    palavrasChave:
+      "sem sinal no signal televisão tv retro retrô vintage tela teste barras coloridas cores preto branco amarelo azul verde rosa vermelho nostalgia transmissão",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sem_sinal/${arquivo}`,
+    ),
+  },
+  {
+    id: "programmer",
+    referencia: "UNI-125",
+    nome: "Programmer",
+    tipo: "unitario",
+    categoria: "programacao",
+    palavrasChave:
+      "programmer pro grammer programador programadora programação desenvolvedor desenvolvedora dev código tecnologia informática humor paródia branco preto laranja tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/programmer/${arquivo}`,
+    ),
+  },
+  {
+    id: "esqueleto_em_chamas",
+    referencia: "UNI-126",
+    nome: "Esqueleto em Chamas",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "esqueleto em chamas caveira crânio ossos fogo vermelho branco preto dark gótico alternativo tattoo tatuagem ilustração cigarro fumaça isqueiro",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/esqueleto_em_chamas/${arquivo}`,
+    ),
+  },
+  {
+    id: "what_a_time_to_be_alive",
+    referencia: "UNI-127",
+    nome: "Que época para estar vivo",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "what a time to be alive que época para estar vivo caveira esqueleto morte ceifador foice capuz dark gótico alternativo vintage retrô preto vermelho creme ilustração frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/what_a_time_to_be_alive/${arquivo}`,
+    ),
+  },
+  {
+    id: "despertai_efesios_5_14",
+    referencia: "UNI-128",
+    nome: "Despertai — Efésios 5:14",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "despertai despertar efésios efesios 5:14 5 14 bíblia versículo cristão cristã cristãos fé deus jesus cristo evangelho relógio digital despertador amarelo preto tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/despertai_efesios_5_14/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

@@ -205,5 +205,10 @@ insert into public.catalogo_favoritos(produto) values
 ('mago_sem_paciencia_com_dinheiro'),
 ('olhar_de_desconfianca'),
 ('hacker_de_brinquedo'),
-('im_gay_for_pretty_girls')
+('im_gay_for_pretty_girls'),
+('sem_sinal'),
+('programmer'),
+('esqueleto_em_chamas'),
+('what_a_time_to_be_alive'),
+('despertai_efesios_5_14')
 on conflict do nothing;
