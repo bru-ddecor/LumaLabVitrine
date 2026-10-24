@@ -150,6 +150,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-126 | Esqueleto em Chamas | Botton individual / Dark | esqueleto_em_chamas |
 | UNI-127 | Que época para estar vivo | Botton individual / Dark | what_a_time_to_be_alive |
 | UNI-128 | Despertai — Efésios 5:14 | Botton individual / Cristãos | despertai_efesios_5_14 |
+| UNI-129 | Jujutsu Kaisen — Turma Chibi | Botton individual / Anime | jujutsu_kaisen_turma_chibi |
+| UNI-130 | Tokyo — Olhares e Dragão | Botton individual / Anime | tokyo_olhares_e_dragao |
+| UNI-131 | Anya e Bond — Spy × Family | Botton individual / Anime | anya_e_bond_spy_family |
+| UNI-132 | Ghostface — Ligação de Arrepiar | Botton individual / Filmes e Séries | ghostface_ligacao_de_arrepiar |
+| UNI-133 | Baddie — Rosa e Atitude | Botton individual / Estampas e Cores | baddie_rosa_e_atitude |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

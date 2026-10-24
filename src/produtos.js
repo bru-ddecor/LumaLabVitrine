@@ -2188,6 +2188,76 @@ const produtos = [
     ),
   },
   {
+    id: "jujutsu_kaisen_turma_chibi",
+    referencia: "UNI-129",
+    nome: "Jujutsu Kaisen — Turma Chibi",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "jujutsu kaisen jjk turma chibi satoru gojo nobara kugisaki megumi fushiguro yuji yuuji itadori anime mangá manga feiticeiros kawaii fofo branco rosa personagens empilhados",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/jujutsu_kaisen_turma_chibi/${arquivo}`,
+    ),
+  },
+  {
+    id: "tokyo_olhares_e_dragao",
+    referencia: "UNI-130",
+    nome: "Tokyo — Olhares e Dragão",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "tokyo tóquio toquio olhares dragão dragao anime mangá manga japonês japonesa japão olhos garota preto branco monocromático ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/tokyo_olhares_e_dragao/${arquivo}`,
+    ),
+  },
+  {
+    id: "anya_e_bond_spy_family",
+    referencia: "UNI-131",
+    nome: "Anya e Bond — Spy × Family",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "anya forger bond forger spy x family spy family anime mangá manga menina cabelo rosa cachorro branco amizade kawaii fofo sorriso preto cinza",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/anya_e_bond_spy_family/${arquivo}`,
+    ),
+  },
+  {
+    id: "ghostface_ligacao_de_arrepiar",
+    referencia: "UNI-132",
+    nome: "Ghostface — Ligação de Arrepiar",
+    tipo: "unitario",
+    categoria: "filmes-e-series",
+    palavrasChave:
+      "ghostface ghost face ligação de arrepiar telefone celular máscara língua lingua todo mundo em pânico panico scary movie scream terror cinema filme capuz preto roxo vermelho azul ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/ghostface_ligacao_de_arrepiar/${arquivo}`,
+    ),
+  },
+  {
+    id: "baddie_rosa_e_atitude",
+    referencia: "UNI-133",
+    nome: "Baddie — Rosa e Atitude",
+    tipo: "unitario",
+    categoria: "estampas-e-cores",
+    palavrasChave:
+      "baddie rosa e atitude poderosa estilosa confiança pink preto boca lábios labios beijo tipografia pixel pixelado textura estampa estética aesthetic",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/baddie_rosa_e_atitude/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
