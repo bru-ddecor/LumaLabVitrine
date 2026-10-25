@@ -2329,6 +2329,89 @@ const produtos = [
     ),
   },
   {
+    id: "jesus_referencia_de_amor",
+    referencia: "UNI-139",
+    nome: "Jesus é a minha referência de amor",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "jesus é a minha referência de amor jesus referencia amor cristo fé deus cristão cristã cristãos evangelho azul claro branco ondas delicado frase",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/jesus_referencia_de_amor/${arquivo}`,
+    ),
+  },
+  {
+    id: "aquieta_minhalma_ministerio_zoe",
+    referencia: "UNI-140",
+    nome: "Aquieta Minh’Alma — Ministério Zoe",
+    tipo: "unitario",
+    categoria: "cristaos",
+    categoriasAdicionais: ["musica"],
+    palavrasChave:
+      "aquieta minh'alma aquieta minha alma faz meu coração ouvir tua voz ministério zoe ministerio zoe música gospel louvor adoração fé deus jesus cristão cristã cristãos vermelho branco letra canção",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/aquieta_minhalma_ministerio_zoe/${arquivo}`,
+    ),
+  },
+  {
+    id: "jesus_o_mesmo_ontem_hoje_e_sempre",
+    referencia: "UNI-141",
+    nome: "Jesus é o mesmo ontem, hoje e para sempre",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "jesus é o mesmo ontem hoje e para sempre jesus cristo hebreus 13 8 bíblia versículo fé deus cristão cristã cristãos evangelho azul branco tipografia frase",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/jesus_o_mesmo_ontem_hoje_e_sempre/${arquivo}`,
+    ),
+  },
+  {
+    id: "fogo_em_seus_olhos",
+    referencia: "UNI-142",
+    nome: "Fogo em Seus Olhos — Apocalipse 2:18",
+    tipo: "unitario",
+    categoria: "cristaos",
+    palavrasChave:
+      "fogo em seus olhos apocalipse 2:18 2 18 revelations filho de deus chama de fogo bronze reluzente jesus cristo bíblia versículo fé cristão cristã cristãos branco preto rosa pink olhos tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/fogo_em_seus_olhos/${arquivo}`,
+    ),
+  },
+  {
+    id: "7mz_vermelho_e_branco",
+    referencia: "UNI-143",
+    nome: "7MZ — Vermelho e Branco",
+    tipo: "unitario",
+    categoria: "musica",
+    palavrasChave: "7mz 7 minutoz sete minutoz rap geek música anime vermelho branco preto logotipo letras",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/7mz_vermelho_e_branco/${arquivo}`,
+    ),
+  },
+  {
+    id: "te_falta_odio_naruto",
+    referencia: "UNI-144",
+    nome: "Te Falta Ódio — Naruto",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave: "te falta ódio odio naruto shippuden itachi uchiha akatsuki anime mangá manga frase preto vermelho branco",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/te_falta_odio_naruto/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
