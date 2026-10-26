@@ -236,5 +236,10 @@ insert into public.catalogo_favoritos(produto) values
 ('brasil_camisa_7'),
 ('engradados_de_boteco'),
 ('futebol_chuteira_e_bola'),
-('futebol_bola_na_rede')
+('futebol_bola_na_rede'),
+('hora_do_gol_futebol'),
+('vida_sem_gols'),
+('amor_pelo_futebol'),
+('neymar_camisa_10_brasil'),
+('brasil_camisa_19_em_campo')
 on conflict do nothing;

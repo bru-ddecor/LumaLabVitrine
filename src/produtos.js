@@ -2553,6 +2553,74 @@ const produtos = [
     ),
   },
   {
+    id: "hora_do_gol_futebol",
+    referencia: "UNI-155",
+    nome: "Hora do Gol — Futebol",
+    tipo: "unitario",
+    categoria: "esportes",
+    palavrasChave:
+      "hora do gol goal time futebol bola rede esporte esportes preto branco respingos ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/hora_do_gol_futebol/${arquivo}`,
+    ),
+  },
+  {
+    id: "vida_sem_gols",
+    referencia: "UNI-156",
+    nome: "O que é a vida sem gols?",
+    tipo: "unitario",
+    categoria: "esportes",
+    palavrasChave:
+      "what is life without goals o que é a vida sem gols futebol bola jogador silhueta esporte esportes objetivos metas preto branco frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/vida_sem_gols/${arquivo}`,
+    ),
+  },
+  {
+    id: "amor_pelo_futebol",
+    referencia: "UNI-157",
+    nome: "Amor pelo Futebol",
+    tipo: "unitario",
+    categoria: "esportes",
+    palavrasChave:
+      "amor pelo futebol love bola paixão esporte esportes preto branco azul claro tipografia respingos desenho ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/amor_pelo_futebol/${arquivo}`,
+    ),
+  },
+  {
+    id: "neymar_camisa_10_brasil",
+    referencia: "UNI-158",
+    nome: "Neymar — Camisa 10 do Brasil",
+    tipo: "unitario",
+    categoria: "esportes",
+    palavrasChave:
+      "neymar jr junior brasil camisa 10 dez seleção brasileira futebol jogador comemoração amarelo verde azul esporte esportes fotografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/neymar_camisa_10_brasil/${arquivo}`,
+    ),
+  },
+  {
+    id: "brasil_camisa_19_em_campo",
+    referencia: "UNI-159",
+    nome: "Brasil — Camisa 19 em Campo",
+    tipo: "unitario",
+    categoria: "esportes",
+    palavrasChave:
+      "brasil camisa 19 dezenove seleção brasileira futebol jogador comemoração amarelo azul verde esporte esportes colagem",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/brasil_camisa_19_em_campo/01.jpg"],
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

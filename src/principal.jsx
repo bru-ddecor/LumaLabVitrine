@@ -465,7 +465,18 @@ function Colecao({
 function Aplicacao() {
   const [busca, definirBusca] = useState("");
   usarRevelacaoPagina(busca);
-  const filtrados = buscarProdutos(busca);
+  const [ordemProdutos] = useState(() => {
+    const embaralhados = [...produtos];
+    for (let indice = embaralhados.length - 1; indice > 0; indice -= 1) {
+      const sorteado = Math.floor(Math.random() * (indice + 1));
+      [embaralhados[indice], embaralhados[sorteado]] =
+        [embaralhados[sorteado], embaralhados[indice]];
+    }
+    return new Map(embaralhados.map((produto, indice) => [produto.id, indice]));
+  });
+  const filtrados = [...buscarProdutos(busca)].sort(
+    (primeiro, segundo) => ordemProdutos.get(primeiro.id) - ordemProdutos.get(segundo.id),
+  );
   const kitsFiltrados = filtrados.filter((produto) => produto.tipo === "kit");
   const unitariosFiltrados = filtrados.filter(
     (produto) => produto.tipo === "unitario",
@@ -662,6 +673,11 @@ function Aplicacao() {
             )}
           </label>
         </div>
+        <p className="nota-catalogo convite-curtidas">
+          <strong>Curta seus bottons favoritos ♡</strong>{" "}
+          Toque no coração das imagens que você mais gosta. Suas curtidas ajudam a
+          descobrir o que faz sucesso por aqui!
+        </p>
         <div className="nota-catalogo">
           Kits com 4 bottons de 44 mm • 4,4 cm. Explore as três fotos de cada
           kit e encontre o seu favorito.

@@ -128,7 +128,7 @@ export function FavoritarProduto({ produto }) {
         aria-pressed={curtido}
         disabled={!contexto.carregado || contexto.ocupados[produto.id]}
         onClick={() => contexto.alternar(produto.id)}
-        title={contexto.erro || "Curtir este produto"}
+        title={contexto.erro || (curtido ? "Remover sua curtida" : "Curtir esta imagem")}
       >
         <span aria-hidden="true">{curtido ? "♥" : "♡"}</span>
         <span>{contexto.carregado ? (registro?.total ?? 0) : "…"}</span>
