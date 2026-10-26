@@ -2832,6 +2832,74 @@ const produtos = [
     ),
   },
   {
+    id: "olhar_em_verde",
+    referencia: "UNI-175",
+    nome: "Olhar em Verde",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas olhar em verde garota cabelo preto olhos melancólico dark gótico alternativo verde neon listras interferência glitch ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/olhar_em_verde/${arquivo}`,
+    ),
+  },
+  {
+    id: "reflexo_cromado",
+    referencia: "UNI-176",
+    nome: "Reflexo Cromado",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas reflexo cromado rosto metálico metal prata preto branco reflexos futurista cibernético dark alternativo ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/reflexo_cromado/${arquivo}`,
+    ),
+  },
+  {
+    id: "entre_chamas_e_sombras",
+    referencia: "UNI-177",
+    nome: "Entre Chamas e Sombras",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas entre chamas e sombras figura fogo olhos brilhantes sobrenatural preto branco monocromático dark sombrio gótico alternativo fantasia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/entre_chamas_e_sombras/01.jpg"],
+  },
+  {
+    id: "ghostface_pausa_para_um_drink",
+    referencia: "UNI-178",
+    nome: "Ghostface — Pausa para um Drink",
+    tipo: "unitario",
+    categoria: "filmes-e-series",
+    palavrasChave:
+      "Lucas ghostface ghost face pânico panico scream terror cinema filme pausa para um drink bebida copo canudo máscara capuz roxo violeta neon preto",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/ghostface_pausa_para_um_drink/${arquivo}`,
+    ),
+  },
+  {
+    id: "olhar_digital_coracao_violeta",
+    referencia: "UNI-179",
+    nome: "Olhar Digital — Coração Violeta",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas olhar digital coração violeta olho roxo azul rosa neon pixel glitch lágrimas lagrimas dark alternativo cyber estética ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/olhar_digital_coracao_violeta/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
