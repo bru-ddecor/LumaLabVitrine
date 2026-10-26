@@ -186,6 +186,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-162 | Sem Ânimo | Botton individual / Anime | sem_paciencia_garoto_anime |
 | UNI-163 | Obito Uchiha — Sharingan e Rinnegan | Botton individual / Anime | obito_sharingan_e_rinnegan |
 | UNI-164 | Luffy — Sorriso de Wano | Botton individual / Anime | luffy_sorriso_de_wano |
+| UNI-165 | Garou — Sorriso do Caçador | Botton individual / Anime | garou_sorriso_do_cacador |
+| UNI-166 | Presas de Brilho | Botton individual / Dark | presas_de_brilho |
+| UNI-167 | Guts — Olhar nas Sombras | Botton individual / Anime | guts_olhar_nas_sombras |
+| UNI-168 | Sasuke Uchiha — Sharingan nas Sombras | Botton individual / Anime | sasuke_sharingan_nas_sombras |
+| UNI-169 | Olhar Estelar | Botton individual / Dark | olhar_estelar |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

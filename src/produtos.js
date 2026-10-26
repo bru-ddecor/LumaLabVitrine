@@ -2691,6 +2691,76 @@ const produtos = [
     ),
   },
   {
+    id: "garou_sorriso_do_cacador",
+    referencia: "UNI-165",
+    nome: "Garou — Sorriso do Caçador",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "Lucas garou one punch man onepunchman caçador de heróis sorriso anime mangá manga artes marciais preto branco cinza perfil ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/garou_sorriso_do_cacador/${arquivo}`,
+    ),
+  },
+  {
+    id: "presas_de_brilho",
+    referencia: "UNI-166",
+    nome: "Presas de Brilho",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas presas de brilho vampiro vampira dentes boca lábios labios glitter brilhante prata roxo vinho preto dark gótico alternativo estampa",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/presas_de_brilho/${arquivo}`,
+    ),
+  },
+  {
+    id: "guts_olhar_nas_sombras",
+    referencia: "UNI-167",
+    nome: "Guts — Olhar nas Sombras",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "Lucas guts berserk espadachim negro olhar nas sombras anime mangá manga azul preto fantasia sombria ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/guts_olhar_nas_sombras/${arquivo}`,
+    ),
+  },
+  {
+    id: "sasuke_sharingan_nas_sombras",
+    referencia: "UNI-168",
+    nome: "Sasuke Uchiha — Sharingan nas Sombras",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "Lucas sasuke uchiha sharingan nas sombras naruto shippuden ninja anime mangá manga preto cinza vermelho olhos ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sasuke_sharingan_nas_sombras/${arquivo}`,
+    ),
+  },
+  {
+    id: "olhar_estelar",
+    referencia: "UNI-169",
+    nome: "Olhar Estelar",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas olhar estelar olhos estrelas brilho preto branco monocromático sombras mistério dark gótico alternativo estampa",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/olhar_estelar/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

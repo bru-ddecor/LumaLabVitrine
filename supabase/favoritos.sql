@@ -246,5 +246,10 @@ insert into public.catalogo_favoritos(produto) values
 ('luffy_sob_o_chapeu_de_palha'),
 ('sem_paciencia_garoto_anime'),
 ('obito_sharingan_e_rinnegan'),
-('luffy_sorriso_de_wano')
+('luffy_sorriso_de_wano'),
+('garou_sorriso_do_cacador'),
+('presas_de_brilho'),
+('guts_olhar_nas_sombras'),
+('sasuke_sharingan_nas_sombras'),
+('olhar_estelar')
 on conflict do nothing;
