@@ -2900,6 +2900,76 @@ const produtos = [
     ),
   },
   {
+    id: "olhar_violeta_flor_e_lagrima",
+    referencia: "UNI-180",
+    nome: "Olhar Violeta — Flor e Lágrima",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas olhar violeta flor e lágrima lagrima olho lilás roxo bandagens faixas cabelo melancólico dark alternativo ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/olhar_violeta_flor_e_lagrima/${arquivo}`,
+    ),
+  },
+  {
+    id: "brasil_retrato_dourado",
+    referencia: "UNI-181",
+    nome: "Brasil — Retrato Dourado",
+    tipo: "unitario",
+    categoria: "esportes",
+    palavrasChave:
+      "Lucas brasil retrato dourado futebol camisa amarela seleção brasileira esporte esportes amarelo ouro laranja preto efeito olhos fotografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/brasil_retrato_dourado/${arquivo}`,
+    ),
+  },
+  {
+    id: "toyota_supra_entre_cerejeiras",
+    referencia: "UNI-182",
+    nome: "Toyota Supra — Entre Cerejeiras",
+    tipo: "unitario",
+    categoria: "carros",
+    palavrasChave:
+      "toyota supra mk4 a80 jdm carro carros automóvel japonês japão cerejeiras sakura flores branco rosa traseira aerofólio fotografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/toyota_supra_entre_cerejeiras/${arquivo}`,
+    ),
+  },
+  {
+    id: "orgulho_pan_rosa_amarelo_azul",
+    referencia: "UNI-183",
+    nome: "Orgulho Pan — Rosa, Amarelo e Azul",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "orgulho pan pansexual pansexualidade bandeira rosa amarelo azul lgbt lgbtq lgbtqia pride diversidade retrato fotografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/orgulho_pan_rosa_amarelo_azul/${arquivo}`,
+    ),
+  },
+  {
+    id: "orgulho_pan_beijinho_em_cores",
+    referencia: "UNI-184",
+    nome: "Orgulho Pan — Beijinho em Cores",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "orgulho pan pansexual pansexualidade bandeira rosa amarelo azul lgbt lgbtq lgbtqia pride diversidade beijinho beijo kawaii ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/orgulho_pan_beijinho_em_cores/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
