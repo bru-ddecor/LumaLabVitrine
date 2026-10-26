@@ -258,7 +258,6 @@ const produtos = [
   },
   {
     id: "erika_pra_presidente",
-    destaque: true,
     referencia: "UNI-008",
     nome: "Erika pra Presidente",
     tipo: "unitario",
@@ -583,7 +582,6 @@ const produtos = [
     nome: "Gatinha Comunista — Vitroles",
     tipo: "unitario",
     categoria: "politica",
-    destaque: true,
     palavrasChave:
       "gatinha comunista vitroles música musical banda canção letra trecho spotify playlist indie rock pop brasileiro mpb política comunismo esquerda socialismo vermelho red preto black frase minha gatinha comunista eu preciso te dizer que eu acho que o vermelho fica tão bem em você romance humor",
     tamanhos: [32, 44, 55],
@@ -637,6 +635,7 @@ const produtos = [
   },
   {
     id: "lembranca_aniversario",
+    destaque: true,
     referencia: "PER-002",
     nome: "Lembrança de Aniversário",
     precoCentavos: 800,
@@ -1069,6 +1068,7 @@ const produtos = [
   },
   {
     id: "voce_no_seu_anime",
+    destaque: true,
     referencia: "PER-005",
     nome: "Você no Seu Anime Favorito",
     tipo: "personalizado",
@@ -2479,6 +2479,77 @@ const produtos = [
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
       (arquivo) => `/imagens/unitarios/jutsu_it_akatsuki/${arquivo}`,
+    ),
+  },
+  {
+    id: "nao_sei_amar_pouco_caramelo",
+    referencia: "UNI-150",
+    nome: "Não Sei Amar Pouco — Caramelo no Bar",
+    tipo: "unitario",
+    categoria: "humor",
+    categoriasAdicionais: ["pets"],
+    palavrasChave:
+      "não sei amar pouco nao sei amar pouco caramelo cachorro cão vira lata pets humor meme bar boteco mesa cadeira vermelha cerveja amarelo laranja romance sofrência ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/nao_sei_amar_pouco_caramelo/${arquivo}`,
+    ),
+  },
+  {
+    id: "brasil_camisa_7",
+    referencia: "UNI-151",
+    nome: "Brasil — Camisa 7",
+    tipo: "unitario",
+    categoria: "esportes",
+    palavrasChave:
+      "brasil camisa 7 sete seleção brasileira futebol jogador comemoração verde amarelo branco azul esporte ilustração minimalista",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/brasil_camisa_7/${arquivo}`,
+    ),
+  },
+  {
+    id: "engradados_de_boteco",
+    referencia: "UNI-152",
+    nome: "Engradados de Boteco",
+    tipo: "unitario",
+    categoria: "estampas-e-cores",
+    palavrasChave:
+      "engradados de boteco caixas cerveja cervejas bar brahma skol heineken devassa ambev garrafas colorido amarelo vermelho laranja verde azul estampa fotografia brasil",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/engradados_de_boteco/${arquivo}`,
+    ),
+  },
+  {
+    id: "futebol_chuteira_e_bola",
+    referencia: "UNI-153",
+    nome: "Futebol — Chuteira e Bola",
+    tipo: "unitario",
+    categoria: "esportes",
+    palavrasChave:
+      "futebol chuteira bola esporte esportes jogador campo gramado preto branco monocromático desenho traço ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/futebol_chuteira_e_bola/${arquivo}`,
+    ),
+  },
+  {
+    id: "futebol_bola_na_rede",
+    referencia: "UNI-154",
+    nome: "Futebol — Bola na Rede",
+    tipo: "unitario",
+    categoria: "esportes",
+    palavrasChave:
+      "futebol bola na rede gol golo chute esporte esportes preto branco vermelho ilustração velocidade",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/futebol_bola_na_rede/${arquivo}`,
     ),
   },
   {

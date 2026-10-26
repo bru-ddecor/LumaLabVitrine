@@ -231,5 +231,10 @@ insert into public.catalogo_favoritos(produto) values
 ('house_tour_sabrina_carpenter'),
 ('rei_dos_piratas_one_piece'),
 ('itachi_uchiha_entre_corvos'),
-('jutsu_it_akatsuki')
+('jutsu_it_akatsuki'),
+('nao_sei_amar_pouco_caramelo'),
+('brasil_camisa_7'),
+('engradados_de_boteco'),
+('futebol_chuteira_e_bola'),
+('futebol_bola_na_rede')
 on conflict do nothing;
