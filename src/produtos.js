@@ -2761,6 +2761,77 @@ const produtos = [
     ),
   },
   {
+    id: "videogame_retro_mais_uma_fase",
+    referencia: "UNI-170",
+    nome: "Videogame Retrô — Mais uma Fase",
+    tipo: "unitario",
+    categoria: "games",
+    palavrasChave:
+      "Lucas videogame retrô retro mais uma fase games gamer jogos console controle televisão tv tubo mario super mario pixel art nostalgia roxo laranja ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/videogame_retro_mais_uma_fase/${arquivo}`,
+    ),
+  },
+  {
+    id: "vamo_um_dia_de_cada_vez",
+    referencia: "UNI-171",
+    nome: "Vamo um dia de cada vez",
+    tipo: "unitario",
+    categoria: "frases",
+    categoriasAdicionais: ["motivacional"],
+    palavrasChave:
+      "vamo vamos um dia de cada vez frase motivacional calma paciência incentivo autocuidado esperança amarelo laranja preto tipografia letras",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/vamo_um_dia_de_cada_vez/${arquivo}`,
+    ),
+  },
+  {
+    id: "cubo_magico_entre_formulas",
+    referencia: "UNI-172",
+    nome: "Cubo Mágico — Entre Fórmulas",
+    tipo: "unitario",
+    categoria: "nerd",
+    palavrasChave:
+      "cubo mágico magico rubik rubiks cube entre fórmulas matemática equações geometria lógica raciocínio quebra cabeça geek nerd vermelho azul amarelo preto branco ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/cubo_magico_entre_formulas/${arquivo}`,
+    ),
+  },
+  {
+    id: "gatinho_jardim_sombrio",
+    referencia: "UNI-173",
+    nome: "Gatinho — Jardim Sombrio",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas gatinho gato preto jardim sombrio flores olhos grandes dark gótico melancólico alternativo preto branco monocromático respingos ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gatinho_jardim_sombrio/${arquivo}`,
+    ),
+  },
+  {
+    id: "menina_entre_monstros_e_sombras",
+    referencia: "UNI-174",
+    nome: "Menina — Entre Monstros e Sombras",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas menina entre monstros e sombras olhos grandes vestido vermelho criaturas lua laranja verde preto dark gótico melancólico fantasia sombria ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/menina_entre_monstros_e_sombras/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
