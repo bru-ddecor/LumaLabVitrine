@@ -772,9 +772,9 @@ const produtos = [
     referencia: "UNI-036",
     nome: "Semente do Amor",
     tipo: "unitario",
-    categoria: "estampas-e-cores",
+    categoria: "musica",
     palavrasChave:
-      "semente amor quem cultiva a semente do amor segue em frente e não se apavora frase música musical letra canção mpb brasil brasileiro esperança motivação carinho rosa pink vinho bordô marsala vermelho estrela estrelas pipa rosto sorriso ilustração tipografia",
+      "grupo revelação revelacao tá escrito ta escrito samba pagode semente amor quem cultiva a semente do amor segue em frente e não se apavora frase música musical letra canção mpb brasil brasileiro esperança motivação carinho rosa pink vinho bordô marsala vermelho estrela estrelas pipa rosto sorriso ilustração tipografia",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -898,7 +898,7 @@ const produtos = [
     referencia: "UNI-045",
     nome: "Espelho — Tudo a Seu Favor",
     tipo: "unitario",
-    categoria: "estampas-e-cores",
+    categoria: "ubuntu",
     palavrasChave:
       "everything is working out for you tudo a seu favor frase inglês autoestima amor próprio autocuidado confiança motivação afirmação positiva esperança espelho dourado gold rosa pink salmão preto black marrom mulher negra cabelo cacheado crespo mãos ilustração aesthetic",
     tamanhos: [32, 44, 55],
@@ -2248,7 +2248,7 @@ const produtos = [
     referencia: "UNI-133",
     nome: "Baddie — Rosa e Atitude",
     tipo: "unitario",
-    categoria: "estampas-e-cores",
+    categoria: "ubuntu",
     palavrasChave:
       "baddie rosa e atitude poderosa estilosa confiança pink preto boca lábios labios beijo tipografia pixel pixelado textura estampa estética aesthetic",
     tamanhos: [32, 44, 55],
@@ -2409,6 +2409,76 @@ const produtos = [
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg"].map(
       (arquivo) => `/imagens/unitarios/te_falta_odio_naruto/${arquivo}`,
+    ),
+  },
+  {
+    id: "obito_uchiha_akatsuki",
+    referencia: "UNI-145",
+    nome: "Obito Uchiha — Akatsuki",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "obito uchiha tobi akatsuki naruto shippuden sharingan máscara espiral ninja anime mangá manga vermelho preto cinza ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/obito_uchiha_akatsuki/${arquivo}`,
+    ),
+  },
+  {
+    id: "house_tour_sabrina_carpenter",
+    referencia: "UNI-146",
+    nome: "House Tour — Sabrina Carpenter",
+    tipo: "unitario",
+    categoria: "musica",
+    palavrasChave:
+      "house tour sabrina carpenter i'm just so proud of my design im just so proud of my design música pop cantora letra canção spotify rosa pink branco",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/house_tour_sabrina_carpenter/${arquivo}`,
+    ),
+  },
+  {
+    id: "rei_dos_piratas_one_piece",
+    referencia: "UNI-147",
+    nome: "Rei dos Piratas — One Piece",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "rei dos piratas the pirate king one piece monkey d luffy chapéu de palha chapeu anime mangá manga amarelo vermelho preto minimalista tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/rei_dos_piratas_one_piece/${arquivo}`,
+    ),
+  },
+  {
+    id: "itachi_uchiha_entre_corvos",
+    referencia: "UNI-148",
+    nome: "Itachi Uchiha — Entre Corvos",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "itachi uchiha entre corvos naruto shippuden akatsuki sharingan ninja aldeia da folha konoha anime mangá manga vermelho preto azul corvo ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/itachi_uchiha_entre_corvos/${arquivo}`,
+    ),
+  },
+  {
+    id: "jutsu_it_akatsuki",
+    referencia: "UNI-149",
+    nome: "Jutsu It. — Akatsuki",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "jutsu it just do it akatsuki naruto shippuden ninja selos de mão mãos nuvem vermelha anime mangá manga preto vermelho branco paródia tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/jutsu_it_akatsuki/${arquivo}`,
     ),
   },
   {

@@ -57,7 +57,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-033 | Lendas em Batalha | Botton individual | lendas_em_batalha |
 | UNI-034 | Cavaleiro — Juramento Rubro | Botton individual | cavaleiro_juramento_rubro |
 | UNI-035 | Amar? Nesta Economia? | Botton individual | amar_nesta_economia |
-| UNI-036 | Semente do Amor | Botton individual | semente_do_amor |
+| UNI-036 | Semente do Amor | Botton individual / Música — Grupo Revelação, Tá Escrito | semente_do_amor |
 | UNI-037 | Fala Comigo Não, Eu Namoro | Botton individual | fala_comigo_nao_eu_namoro |
 | UNI-038 | Sanji — Passo em Chamas | Botton individual | sanji_passo_em_chamas |
 | UNI-039 | Me Ame ao Som de ANAVITÓRIA | Botton individual | me_ame_anavitoria |
@@ -66,7 +66,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-042 | Sou Feliz e Agradeço | Botton individual | sou_feliz_e_agradeco |
 | UNI-043 | Nerd — Universo Particular | Botton individual | nerd_universo_particular |
 | UNI-044 | Cachorrinho — Charme de Bandana | Botton individual | cachorrinho_charme_de_bandana |
-| UNI-045 | Espelho — Tudo a Seu Favor | Botton individual | espelho_tudo_a_seu_favor |
+| UNI-045 | Espelho — Tudo a Seu Favor | Botton individual / Ubuntu — Raízes Negras | espelho_tudo_a_seu_favor |
 | UNI-046 | Sorriso Sombrio | Botton individual | sorriso_sombrio |
 | UNI-047 | Grito das Teias | Botton individual | grito_das_teias |
 | UNI-048 | Abraço Eterno | Botton individual | abraco_eterno |
@@ -154,7 +154,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-130 | Tokyo — Olhares e Dragão | Botton individual / Anime | tokyo_olhares_e_dragao |
 | UNI-131 | Anya e Bond — Spy × Family | Botton individual / Anime | anya_e_bond_spy_family |
 | UNI-132 | Ghostface — Ligação de Arrepiar | Botton individual / Filmes e Séries | ghostface_ligacao_de_arrepiar |
-| UNI-133 | Baddie — Rosa e Atitude | Botton individual / Estampas e Cores | baddie_rosa_e_atitude |
+| UNI-133 | Baddie — Rosa e Atitude | Botton individual / Ubuntu — Raízes Negras | baddie_rosa_e_atitude |
 | UNI-134 | Marin Kitagawa — Sorriso em Rosa | Botton individual / Anime | marin_kitagawa_sorriso_em_rosa |
 | UNI-135 | Olhares em Rosa — Garota e Gatinho | Botton individual / Anime e Pets | olhares_em_rosa_garota_e_gatinho |
 | UNI-136 | Ghost — Vermelho Sombrio | Botton individual / Dark | ghost_vermelho_sombrio |
@@ -166,6 +166,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-142 | Fogo em Seus Olhos — Apocalipse 2:18 | Botton individual / Cristãos | fogo_em_seus_olhos |
 | UNI-143 | 7MZ — Vermelho e Branco | Botton individual / Música | 7mz_vermelho_e_branco |
 | UNI-144 | Te Falta Ódio — Naruto | Botton individual / Anime | te_falta_odio_naruto |
+| UNI-145 | Obito Uchiha — Akatsuki | Botton individual / Anime | obito_uchiha_akatsuki |
+| UNI-146 | House Tour — Sabrina Carpenter | Botton individual / Música | house_tour_sabrina_carpenter |
+| UNI-147 | Rei dos Piratas — One Piece | Botton individual / Anime | rei_dos_piratas_one_piece |
+| UNI-148 | Itachi Uchiha — Entre Corvos | Botton individual / Anime | itachi_uchiha_entre_corvos |
+| UNI-149 | Jutsu It. — Akatsuki | Botton individual / Anime | jutsu_it_akatsuki |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

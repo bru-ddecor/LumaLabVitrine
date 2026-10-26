@@ -226,5 +226,10 @@ insert into public.catalogo_favoritos(produto) values
 ('jesus_o_mesmo_ontem_hoje_e_sempre'),
 ('fogo_em_seus_olhos'),
 ('7mz_vermelho_e_branco'),
-('te_falta_odio_naruto')
+('te_falta_odio_naruto'),
+('obito_uchiha_akatsuki'),
+('house_tour_sabrina_carpenter'),
+('rei_dos_piratas_one_piece'),
+('itachi_uchiha_entre_corvos'),
+('jutsu_it_akatsuki')
 on conflict do nothing;
