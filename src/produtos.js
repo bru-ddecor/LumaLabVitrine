@@ -331,7 +331,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "bruxa bruxinha bruxaria magia místico witch witchy aesthetic fantasia halloween chapéu mulher silhueta gato preto gatinho cobra serpente lua crescente estrelas folhas folhagem natureza bege creme vinho bordô vermelho laranja verde preto frase eu não vim ao mundo pra ser conveniente atitude personalidade",
+      "Lucas bruxa bruxinha bruxaria magia místico witch witchy aesthetic fantasia halloween chapéu mulher silhueta gato preto gatinho cobra serpente lua crescente estrelas folhas folhagem natureza bege creme vinho bordô vermelho laranja verde preto frase eu não vim ao mundo pra ser conveniente atitude personalidade",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -359,7 +359,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "anime",
     palavrasChave:
-      "ryuk ryuuk death note deathnote shinigami anime mangá manga otaku geek roxo purple violeta preto black lua cheia lunar noite noturno sombra silhueta asas penas fios postes céu dark gótico goth sombrio mistério sobrenatural aesthetic",
+      "Lucas ryuk ryuuk death note deathnote shinigami anime mangá manga otaku geek roxo purple violeta preto black lua cheia lunar noite noturno sombra silhueta asas penas fios postes céu dark gótico goth sombrio mistério sobrenatural aesthetic",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -373,7 +373,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "terror horror assustador sombrio sombra sombras dark gótico goth gothic alternativo aesthetic halloween sobrenatural mistério criatura monstro sorriso dentes olhos brilhantes rosto mãos cabeça cabelo longo preto black branco white bege creme monocromático ilustração hachuras",
+      "Lucas terror horror assustador sombrio sombra sombras dark gótico goth gothic alternativo aesthetic halloween sobrenatural mistério criatura monstro sorriso dentes olhos brilhantes rosto mãos cabeça cabelo longo preto black branco white bege creme monocromático ilustração hachuras",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -387,7 +387,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "mão mãos dedos toque encontro conexão luz sombra contraste preto black branco white bege sépia marrom dark aesthetic arte criação de adão michelangelo releitura renascimento clássico mão escura mão clara minimalista dramático",
+      "Lucas mão mãos dedos toque encontro conexão luz sombra contraste preto black branco white bege sépia marrom dark aesthetic arte criação de adão michelangelo releitura renascimento clássico mão escura mão clara minimalista dramático",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -746,7 +746,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "cavaleiro guerreiro knight armadura elmo capacete espada lâmina medieval fantasia dark fantasy rpg batalha juramento gótico goth sombrio preto black vermelho red branco white cinza prata metal ilustração",
+      "Lucas cavaleiro guerreiro knight armadura elmo capacete espada lâmina medieval fantasia dark fantasy rpg batalha juramento gótico goth sombrio preto black vermelho red branco white cinza prata metal ilustração",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagemCesta: "/imagens/unitarios/cavaleiro_juramento_rubro/02.jpg",
@@ -913,7 +913,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "rosto sorriso sombrio dentes maquiagem correntes retrato terror horror gótico goth dark preto black branco white cinza alternativo",
+      "Lucas rosto sorriso sombrio dentes maquiagem correntes retrato terror horror gótico goth dark preto black branco white cinza alternativo",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["/imagens/unitarios/sorriso_sombrio/01.jpg"],
@@ -925,7 +925,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "caveira crânio esqueleto cérebro olho olhos grito boca dentes teia teias aranha terror horror gótico goth dark preto black branco white ilustração",
+      "Lucas caveira crânio esqueleto cérebro olho olhos grito boca dentes teia teias aranha terror horror gótico goth dark preto black branco white ilustração",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["/imagens/unitarios/grito_das_teias/01.jpg"],
@@ -937,7 +937,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "esqueleto esqueletos caveira crânio ossos abraço casal amor eterno romance serpente ouroboros círculo sigilo símbolo místico gótico goth dark terror preto black branco white ilustração",
+      "Lucas esqueleto esqueletos caveira crânio ossos abraço casal amor eterno romance serpente ouroboros círculo sigilo símbolo místico gótico goth dark terror preto black branco white ilustração",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["/imagens/unitarios/abraco_eterno/01.jpg"],
@@ -1016,7 +1016,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "caveira crânio esqueleto dentes sorriso rosto máscara ciborgue cyborg cyberpunk robô robótico mecânico tecnologia colagem xadrez quadriculado preto black branco white cinza monocromático dark gótico goth industrial alternativo grunge terror horror aesthetic",
+      "Lucas caveira crânio esqueleto dentes sorriso rosto máscara ciborgue cyborg cyberpunk robô robótico mecânico tecnologia colagem xadrez quadriculado preto black branco white cinza monocromático dark gótico goth industrial alternativo grunge terror horror aesthetic",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -1030,7 +1030,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "floresta bosque árvores galhos cabana casa refúgio caminho paisagem natureza pássaros preto black branco white cinza monocromático desenho ilustração hachuras gravura dark sombrio gótico goth mistério terror horror outono inverno aesthetic",
+      "Lucas floresta bosque árvores galhos cabana casa refúgio caminho paisagem natureza pássaros preto black branco white cinza monocromático desenho ilustração hachuras gravura dark sombrio gótico goth mistério terror horror outono inverno aesthetic",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -1044,7 +1044,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "caveira caveiras crânio crânios esqueleto esqueletos ossos dentes olhos grito bocas teia textura terror horror dark gótico goth macabro sombrio metal alternativo preto black branco white monocromático ilustração desenho",
+      "Lucas caveira caveiras crânio crânios esqueleto esqueletos ossos dentes olhos grito bocas teia textura terror horror dark gótico goth macabro sombrio metal alternativo preto black branco white monocromático ilustração desenho",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -1058,7 +1058,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "gato gatinho felino cat terceiro olho olhos místico surreal fantasia dark gótico goth terror horror preto black branco white cinza monocromático ilustração desenho ornamentos joia bigodes rosto retrato alternativo aesthetic",
+      "Lucas gato gatinho felino cat terceiro olho olhos místico surreal fantasia dark gótico goth terror horror preto black branco white cinza monocromático ilustração desenho ornamentos joia bigodes rosto retrato alternativo aesthetic",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagemCesta: "/imagens/unitarios/gato_terceiro_olhar/01.jpg",
@@ -2152,7 +2152,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "esqueleto em chamas caveira crânio ossos fogo vermelho branco preto dark gótico alternativo tattoo tatuagem ilustração cigarro fumaça isqueiro",
+      "Lucas esqueleto em chamas caveira crânio ossos fogo vermelho branco preto dark gótico alternativo tattoo tatuagem ilustração cigarro fumaça isqueiro",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -2166,7 +2166,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "what a time to be alive que época para estar vivo caveira esqueleto morte ceifador foice capuz dark gótico alternativo vintage retrô preto vermelho creme ilustração frase inglês",
+      "Lucas what a time to be alive que época para estar vivo caveira esqueleto morte ceifador foice capuz dark gótico alternativo vintage retrô preto vermelho creme ilustração frase inglês",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -2293,7 +2293,7 @@ const produtos = [
     tipo: "unitario",
     categoria: "dark",
     palavrasChave:
-      "ghost vermelho sombrio fantasma dark gótico alternativo preto vermelho tipografia letras pontiagudas textura desgastada estampa",
+      "Lucas ghost vermelho sombrio fantasma dark gótico alternativo preto vermelho tipografia letras pontiagudas textura desgastada estampa",
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
@@ -2619,6 +2619,76 @@ const produtos = [
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["/imagens/unitarios/brasil_camisa_19_em_campo/01.jpg"],
+  },
+  {
+    id: "ace_entre_chamas",
+    referencia: "UNI-160",
+    nome: "Portgas D. Ace — Entre Chamas",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "Lucas portgas d ace one piece entre chamas punhos de fogo mera mera no mi pirata anime mangá manga colar contas preto cinza laranja perfil ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/ace_entre_chamas/${arquivo}`,
+    ),
+  },
+  {
+    id: "luffy_sob_o_chapeu_de_palha",
+    referencia: "UNI-161",
+    nome: "Luffy — Sob o Chapéu de Palha",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "Lucas monkey d luffy one piece sob o chapéu de palha chapeu pirata rei dos piratas anime mangá manga vermelho preto capa ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/luffy_sob_o_chapeu_de_palha/${arquivo}`,
+    ),
+  },
+  {
+    id: "sem_paciencia_garoto_anime",
+    referencia: "UNI-162",
+    nome: "Sem Ânimo",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "Lucas sem ânimo desânimo exausto exaustão cansaço sem energia abatido melancólico depressivo anime mangá manga menino cabelo claro bagunçado bege cinza ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sem_paciencia_garoto_anime/${arquivo}`,
+    ),
+  },
+  {
+    id: "obito_sharingan_e_rinnegan",
+    referencia: "UNI-163",
+    nome: "Obito Uchiha — Sharingan e Rinnegan",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "Lucas obito uchiha tobi sharingan rinnegan naruto shippuden akatsuki ninja anime mangá manga preto branco cinza vermelho roxo olhos cicatrizes ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/obito_sharingan_e_rinnegan/${arquivo}`,
+    ),
+  },
+  {
+    id: "luffy_sorriso_de_wano",
+    referencia: "UNI-164",
+    nome: "Luffy — Sorriso de Wano",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "Lucas monkey d luffy one piece sorriso de wano luffytaro quimono vermelho chapéu de palha chapeu pirata anime mangá manga azul ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/luffy_sorriso_de_wano/${arquivo}`,
+    ),
   },
   {
     id: "personalizado_musical",

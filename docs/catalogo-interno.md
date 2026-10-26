@@ -181,6 +181,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-157 | Amor pelo Futebol | Botton individual / Esportes | amor_pelo_futebol |
 | UNI-158 | Neymar — Camisa 10 do Brasil | Botton individual / Esportes | neymar_camisa_10_brasil |
 | UNI-159 | Brasil — Camisa 19 em Campo | Botton individual / Esportes | brasil_camisa_19_em_campo |
+| UNI-160 | Portgas D. Ace — Entre Chamas | Botton individual / Anime | ace_entre_chamas |
+| UNI-161 | Luffy — Sob o Chapéu de Palha | Botton individual / Anime | luffy_sob_o_chapeu_de_palha |
+| UNI-162 | Sem Ânimo | Botton individual / Anime | sem_paciencia_garoto_anime |
+| UNI-163 | Obito Uchiha — Sharingan e Rinnegan | Botton individual / Anime | obito_sharingan_e_rinnegan |
+| UNI-164 | Luffy — Sorriso de Wano | Botton individual / Anime | luffy_sorriso_de_wano |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
