@@ -3391,6 +3391,75 @@ const produtos = [
     ),
   },
   {
+    id: "patrulha_da_noite_foi_mal_mocas",
+    referencia: "UNI-215",
+    nome: "Patrulha da Noite — Foi Mal, Moças",
+    tipo: "unitario",
+    categoria: "filmes-e-series",
+    palavrasChave:
+      "sorry ladies i'm in the night's watch patrulha da noite foi mal moças desculpem senhoritas game of thrones got jon snow muralha corvo espada preto branco série fantasia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/patrulha_da_noite_foi_mal_mocas/${arquivo}`,
+    ),
+  },
+  {
+    id: "meio_fit_meio_fat",
+    referencia: "UNI-216",
+    nome: "Meio Fit, Meio Fat",
+    tipo: "unitario",
+    categoria: "academia",
+    categoriasAdicionais: ["humor"],
+    palavrasChave:
+      "meio fit meio fat medio fit medio fat academia humor pizza anilha peso musculação treino fitness gym comida equilíbrio equilibrio yin yang preto amarelo ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/meio_fit_meio_fat/${arquivo}`,
+    ),
+  },
+  {
+    id: "umbrella_corporation_resident_evil",
+    referencia: "UNI-217",
+    nome: "Umbrella Corporation — Resident Evil",
+    tipo: "unitario",
+    categoria: "games",
+    palavrasChave:
+      "umbrella corporation resident evil biohazard capcom games jogo videogame survival horror terror zumbis raccoon city corporação guarda chuva logotipo símbolo vermelho branco preto",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/umbrella_corporation_resident_evil/${arquivo}`,
+    ),
+  },
+  {
+    id: "chase_atlantic_friends",
+    referencia: "UNI-218",
+    nome: "Chase Atlantic — Friends",
+    tipo: "unitario",
+    categoria: "musica",
+    palavrasChave:
+      "chase atlantic friends and what the hell were we tell me we weren't just friends this doesn't make much sense música banda letra trecho inglês amigos bege vintage tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/chase_atlantic_friends/${arquivo}`,
+    ),
+  },
+  {
+    id: "coringa_colagem_do_caos",
+    referencia: "UNI-219",
+    nome: "Coringa — Colagem do Caos",
+    tipo: "unitario",
+    categoria: "filmes-e-series",
+    palavrasChave:
+      "coringa joker batman dc comics cavaleiro das trevas gotham vilão caos colagem recortes jornal preto branco vermelho cinema filme",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/coringa_colagem_do_caos/01.jpg"],
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

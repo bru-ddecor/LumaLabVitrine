@@ -236,6 +236,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-212 | Start — Comece | Botton individual / Motivacional | start_comece |
 | UNI-213 | Overthinking — Pensando Demais | Botton individual / Humor + Dark | overthinking_pensando_demais |
 | UNI-214 | Patinho — Hoje Escolhi a Violência | Botton individual / Humor | patinho_hoje_escolhi_a_violencia |
+| UNI-215 | Patrulha da Noite — Foi Mal, Moças | Botton individual / Filmes e Séries | patrulha_da_noite_foi_mal_mocas |
+| UNI-216 | Meio Fit, Meio Fat | Botton individual / Academia + Humor | meio_fit_meio_fat |
+| UNI-217 | Umbrella Corporation — Resident Evil | Botton individual / Games | umbrella_corporation_resident_evil |
+| UNI-218 | Chase Atlantic — Friends | Botton individual / Música | chase_atlantic_friends |
+| UNI-219 | Coringa — Colagem do Caos | Botton individual / Filmes e Séries | coringa_colagem_do_caos |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

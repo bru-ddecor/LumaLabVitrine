@@ -296,5 +296,10 @@ insert into public.catalogo_favoritos(produto) values
 ('so_os_loucos_sabem'),
 ('start_comece'),
 ('overthinking_pensando_demais'),
-('patinho_hoje_escolhi_a_violencia')
+('patinho_hoje_escolhi_a_violencia'),
+('patrulha_da_noite_foi_mal_mocas'),
+('meio_fit_meio_fat'),
+('umbrella_corporation_resident_evil'),
+('chase_atlantic_friends'),
+('coringa_colagem_do_caos')
 on conflict do nothing;
