@@ -311,5 +311,10 @@ insert into public.catalogo_favoritos(produto) values
 ('arctic_monkeys_am'),
 ('arctic_monkeys_logo'),
 ('paramore_brand_new_eyes'),
-('lisa_rosa_estrelado')
+('lisa_rosa_estrelado'),
+('hello_kitty_de_olho_em_voce'),
+('rosa_e_atitude'),
+('hello_kitty_laco_de_caveira'),
+('evanescence_fallen'),
+('lisa_azul_cosmico')
 on conflict do nothing;

@@ -3599,6 +3599,77 @@ const produtos = [
     ),
   },
   {
+    id: "hello_kitty_de_olho_em_voce",
+    referencia: "UNI-230",
+    nome: "Hello Kitty — De Olho em Você",
+    tipo: "unitario",
+    categoria: "desenhos",
+    palavrasChave:
+      "hello kitty sanrio de olho em você óculos oculos escuros olhar desconfiado laço vermelho roupa azul rosa branco kawaii desenho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg", "04.jpg"].map(
+      (arquivo) => `/imagens/unitarios/hello_kitty_de_olho_em_voce/${arquivo}`,
+    ),
+  },
+  {
+    id: "rosa_e_atitude",
+    referencia: "TRI-003",
+    nome: "Rosa e Atitude",
+    tipo: "trio",
+    categoria: "estampas-e-cores",
+    palavrasChave:
+      "trio três 3 bottons rosa pink preto olho delineado maquiagem gato preto gatinho i like who i'm becoming a lot gosto de quem estou me tornando atitude autoestima aesthetic",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 1500, 44: 2000, 55: 2400 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/trios/rosa_e_atitude/${arquivo}`,
+    ),
+  },
+  {
+    id: "hello_kitty_laco_de_caveira",
+    referencia: "UNI-231",
+    nome: "Hello Kitty — Laço de Caveira",
+    tipo: "unitario",
+    categoria: "desenhos",
+    categoriasAdicionais: ["dark"],
+    palavrasChave:
+      "hello kitty sanrio laço laco caveira ossos preto roxo violeta branco gótico gotico dark alternativo kawaii desenho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/hello_kitty_laco_de_caveira/${arquivo}`,
+    ),
+  },
+  {
+    id: "evanescence_fallen",
+    referencia: "UNI-232",
+    nome: "Evanescence — Fallen",
+    tipo: "unitario",
+    categoria: "musica",
+    palavrasChave:
+      "evanescence fallen álbum album banda rock alternativo metal gótico gotico música capa azul preto branco",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/evanescence_fallen/${arquivo}`,
+    ),
+  },
+  {
+    id: "lisa_azul_cosmico",
+    referencia: "UNI-233",
+    nome: "LISA — Azul Cósmico",
+    tipo: "unitario",
+    categoria: "idols",
+    palavrasChave:
+      "lisa lalisa blackpink blink kpop k-pop música cantora idol idols azul ciano cósmico cosmos planeta estrelas coração colagem preto branco amarelo",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/lisa_azul_cosmico/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
