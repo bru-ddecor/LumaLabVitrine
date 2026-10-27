@@ -291,5 +291,10 @@ insert into public.catalogo_favoritos(produto) values
 ('cavaleiro_sombrio_armadura_negra'),
 ('coroa_de_espinhos_violeta_sombrio'),
 ('visao_cosmica_explosao_de_luz'),
-('toyota_supra_encontro_noturno')
+('toyota_supra_encontro_noturno'),
+('nerd_prefiro_intelectual_durao'),
+('so_os_loucos_sabem'),
+('start_comece'),
+('overthinking_pensando_demais'),
+('patinho_hoje_escolhi_a_violencia')
 on conflict do nothing;

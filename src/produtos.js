@@ -3320,6 +3320,77 @@ const produtos = [
     ),
   },
   {
+    id: "nerd_prefiro_intelectual_durao",
+    referencia: "UNI-210",
+    nome: "Nerd?",
+    tipo: "unitario",
+    categoria: "nerd",
+    palavrasChave:
+      "nerd geek i prefer the term intellectual badass prefiro o termo intelectual durão inteligente inteligência frase inglês preto vermelho letras tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/nerd_prefiro_intelectual_durao/${arquivo}`,
+    ),
+  },
+  {
+    id: "so_os_loucos_sabem",
+    referencia: "UNI-211",
+    nome: "Só os Loucos Sabem",
+    tipo: "unitario",
+    categoria: "musica",
+    palavrasChave:
+      "só os loucos sabem charlie brown jr chorão chorao cbjr rock nacional brasileiro música banda preto branco letras tipografia frase",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/so_os_loucos_sabem/${arquivo}`,
+    ),
+  },
+  {
+    id: "start_comece",
+    referencia: "UNI-212",
+    nome: "Start — Comece",
+    tipo: "unitario",
+    categoria: "motivacional",
+    palavrasChave:
+      "start comece começar inicio início atitude ação motivação motivacional stop placa pare arte art grafite vermelho branco preto letras tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/start_comece/${arquivo}`,
+    ),
+  },
+  {
+    id: "overthinking_pensando_demais",
+    referencia: "UNI-213",
+    nome: "Overthinking — Pensando Demais",
+    tipo: "unitario",
+    categoria: "humor",
+    categoriasAdicionais: ["dark"],
+    palavrasChave:
+      "overthinking pensando demais pensar muito pensamentos caveira crânio cranio esqueleto humor ironia dark preto branco ilustração letras",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/overthinking_pensando_demais/${arquivo}`,
+    ),
+  },
+  {
+    id: "patinho_hoje_escolhi_a_violencia",
+    referencia: "UNI-214",
+    nome: "Patinho — Hoje Escolhi a Violência",
+    tipo: "unitario",
+    categoria: "humor",
+    palavrasChave:
+      "i choose violence hoje escolhi a violência eu escolho violencia patinho pato faca caveiras humor meme ironia fofo preto branco ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/patinho_hoje_escolhi_a_violencia/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
