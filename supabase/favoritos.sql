@@ -281,5 +281,10 @@ insert into public.catalogo_favoritos(produto) values
 ('feliz_dia_do_orgulho_arco_iris_e_coracao'),
 ('o_amor_vence_love_wins'),
 ('orgulho_de_ser_quem_sou'),
-('pride_orgulho_em_seis_cores')
+('pride_orgulho_em_seis_cores'),
+('lgbtq_cores_do_orgulho'),
+('shhh_ninguem_sabe_que_sou_gay'),
+('o_amor_sempre_vence_love_always_wins'),
+('yes_i_am_coracao_do_orgulho'),
+('um_otimo_dia_para_amar')
 on conflict do nothing;

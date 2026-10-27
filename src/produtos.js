@@ -3179,6 +3179,77 @@ const produtos = [
     ),
   },
   {
+    id: "lgbtq_cores_do_orgulho",
+    referencia: "UNI-200",
+    nome: "LGBTQ+ — Cores do Orgulho",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "lgbtq+ lgbt lgbtq lgbtqia orgulho pride cores arco íris arco iris diversidade igualdade respeito bandeira faixas diagonais vermelho laranja amarelo verde azul roxo letras branco colorido",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/lgbtq_cores_do_orgulho/${arquivo}`,
+    ),
+  },
+  {
+    id: "shhh_ninguem_sabe_que_sou_gay",
+    referencia: "UNI-201",
+    nome: "Shhh… Ninguém Sabe que Sou Gay",
+    tipo: "unitario",
+    categoria: "orgulho",
+    categoriasAdicionais: ["humor"],
+    palavrasChave:
+      "shhh nobody knows i'm gay im gay ninguém sabe que sou gay segredo humor ironia orgulho pride lgbt lgbtq lgbtqia arco íris arco iris coração coracao branco bandeira colorido",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/shhh_ninguem_sabe_que_sou_gay/${arquivo}`,
+    ),
+  },
+  {
+    id: "o_amor_sempre_vence_love_always_wins",
+    referencia: "UNI-202",
+    nome: "O Amor Sempre Vence — Love Always Wins",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "love always wins o amor sempre vence orgulho pride lgbt lgbtq lgbtqia arco íris arco iris diversidade igualdade respeito bandeira círculo circulo borda colorida branco letras preto",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/o_amor_sempre_vence_love_always_wins/${arquivo}`,
+    ),
+  },
+  {
+    id: "yes_i_am_coracao_do_orgulho",
+    referencia: "UNI-203",
+    nome: "Yes I Am — Coração do Orgulho",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "yes i am sim eu sou coração coracao preto orgulho pride lgbt lgbtq lgbtqia arco íris arco iris diversidade identidade igualdade respeito bandeira faixas verticais letras branco colorido",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/yes_i_am_coracao_do_orgulho/${arquivo}`,
+    ),
+  },
+  {
+    id: "um_otimo_dia_para_amar",
+    referencia: "UNI-204",
+    nome: "Um Ótimo Dia para Amar",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "this is a great day to love um ótimo dia para amar amor orgulho pride lgbt lgbtq lgbtqia arco íris arco iris diversidade igualdade respeito corações coracoes preto vermelho amarelo branco estrelas",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/um_otimo_dia_para_amar/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
