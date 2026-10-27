@@ -3250,6 +3250,76 @@ const produtos = [
     ),
   },
   {
+    id: "satoru_gojo_preto_e_branco",
+    referencia: "UNI-205",
+    nome: "Satoru Gojo — Preto e Branco",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "Lucas satoru gojo jujutsu kaisen feiticeiro venda olhos cabelo branco preto e branco mangá manga anime ilustração monocromático",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/satoru_gojo_preto_e_branco/${arquivo}`,
+    ),
+  },
+  {
+    id: "cavaleiro_sombrio_armadura_negra",
+    referencia: "UNI-206",
+    nome: "Cavaleiro Sombrio — Armadura Negra",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas cavaleiro sombrio armadura negra elmo capacete cruz capa vermelha medieval fantasia sombria dark gótico gotico guerreiro preto ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/cavaleiro_sombrio_armadura_negra/${arquivo}`,
+    ),
+  },
+  {
+    id: "coroa_de_espinhos_violeta_sombrio",
+    referencia: "UNI-207",
+    nome: "Coroa de Espinhos — Violeta Sombrio",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas coroa de espinhos violeta sombrio roxo figura encapuzada capuz rosto oculto fantasia sombria dark gótico gotico preto ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/coroa_de_espinhos_violeta_sombrio/${arquivo}`,
+    ),
+  },
+  {
+    id: "visao_cosmica_explosao_de_luz",
+    referencia: "UNI-208",
+    nome: "Visão Cósmica — Explosão de Luz",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "Lucas visão cósmica explosão de luz olhar luminoso mão mao estrelas universo espaço cosmos brilho prisma cabelo branco surreal fantasia dark azul ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/visao_cosmica_explosao_de_luz/${arquivo}`,
+    ),
+  },
+  {
+    id: "toyota_supra_encontro_noturno",
+    referencia: "UNI-209",
+    nome: "Toyota Supra — Encontro Noturno",
+    tipo: "unitario",
+    categoria: "carros",
+    palavrasChave:
+      "Lucas toyota supra mk4 a80 jdm carros esportivos japoneses encontro noturno noite rua faróis farois azul preto branco automóvel automovel fotografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/toyota_supra_encontro_noturno/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

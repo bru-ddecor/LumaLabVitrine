@@ -286,5 +286,10 @@ insert into public.catalogo_favoritos(produto) values
 ('shhh_ninguem_sabe_que_sou_gay'),
 ('o_amor_sempre_vence_love_always_wins'),
 ('yes_i_am_coracao_do_orgulho'),
-('um_otimo_dia_para_amar')
+('um_otimo_dia_para_amar'),
+('satoru_gojo_preto_e_branco'),
+('cavaleiro_sombrio_armadura_negra'),
+('coroa_de_espinhos_violeta_sombrio'),
+('visao_cosmica_explosao_de_luz'),
+('toyota_supra_encontro_noturno')
 on conflict do nothing;
