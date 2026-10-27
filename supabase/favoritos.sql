@@ -316,5 +316,10 @@ insert into public.catalogo_favoritos(produto) values
 ('rosa_e_atitude'),
 ('hello_kitty_laco_de_caveira'),
 ('evanescence_fallen'),
-('lisa_azul_cosmico')
+('lisa_azul_cosmico'),
+('garotas_bonitas_leem_livros'),
+('sql_select_finger'),
+('marin_kitagawa_pausa_para_o_lanche'),
+('marin_kitagawa_estilo_itasha'),
+('gatinho_gamer_counter_strike')
 on conflict do nothing;

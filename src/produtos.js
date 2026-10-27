@@ -3670,6 +3670,78 @@ const produtos = [
     ),
   },
   {
+    id: "garotas_bonitas_leem_livros",
+    referencia: "UNI-234",
+    nome: "Garotas Bonitas Leem Livros",
+    tipo: "unitario",
+    categoria: "frases",
+    palavrasChave:
+      "pretty girls read books garotas bonitas leem livros leitura leitora leitor leitores literatura livro aberto booklover booktok rosa vermelho estrelas frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg"].map(
+      (arquivo) => `/imagens/unitarios/garotas_bonitas_leem_livros/${arquivo}`,
+    ),
+  },
+  {
+    id: "sql_select_finger",
+    referencia: "UNI-235",
+    nome: "SQL — SELECT finger",
+    tipo: "unitario",
+    categoria: "programacao",
+    palavrasChave:
+      "sql select finger from hand where id 3 programação programador programadora código banco de dados query consulta dedo do meio humor dev preto azul branco vermelho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg", "04.jpg"].map(
+      (arquivo) => `/imagens/unitarios/sql_select_finger/${arquivo}`,
+    ),
+  },
+  {
+    id: "marin_kitagawa_pausa_para_o_lanche",
+    referencia: "UNI-236",
+    nome: "Marin Kitagawa — Pausa para o Lanche",
+    tipo: "unitario",
+    categoria: "anime",
+    palavrasChave:
+      "marin kitagawa my dress up darling sono bisque doll anime mangá manga lanche burger king batata frita hambúrguer praça de alimentação loira olhos rosa",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg", "04.jpg"].map(
+      (arquivo) => `/imagens/unitarios/marin_kitagawa_pausa_para_o_lanche/${arquivo}`,
+    ),
+  },
+  {
+    id: "marin_kitagawa_estilo_itasha",
+    referencia: "UNI-237",
+    nome: "Marin Kitagawa — Estilo Itasha",
+    tipo: "unitario",
+    categoria: "anime",
+    categoriasAdicionais: ["carros"],
+    palavrasChave:
+      "marin kitagawa my dress up darling sono bisque doll anime mangá manga itasha carro esportivo tuning jdm envelopamento loira olhos rosa marrom amarelo cinza",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg", "04.jpg"].map(
+      (arquivo) => `/imagens/unitarios/marin_kitagawa_estilo_itasha/${arquivo}`,
+    ),
+  },
+  {
+    id: "gatinho_gamer_counter_strike",
+    referencia: "UNI-238",
+    nome: "Gatinho Gamer — Counter-Strike",
+    tipo: "unitario",
+    categoria: "games",
+    categoriasAdicionais: ["pets"],
+    palavrasChave:
+      "Lucas gatinho gamer counter strike counter-strike cs csgo cs2 gato headset fone microfone computador teclado jogo fps bandana preto marrom pets",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg", "04.jpg"].map(
+      (arquivo) => `/imagens/unitarios/gatinho_gamer_counter_strike/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
