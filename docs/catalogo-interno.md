@@ -211,6 +211,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-187 | Solo de Caveira | Botton individual / Humor e Música | solo_de_caveira |
 | UNI-188 | Habilidade: Quebrar Códigos | Botton individual / Programação | habilidade_quebrar_codigos |
 | UNI-189 | Coração Arco-Íris | Botton individual / Orgulho LGBTQIA+ | coracao_arco_iris |
+| UNI-190 | Paz e Orgulho — Arco-Íris | Botton individual / Orgulho LGBTQIA+ | paz_e_orgulho_arco_iris |
+| UNI-191 | Amor é Amor — Coração Arco-Íris | Botton individual / Orgulho LGBTQIA+ | amor_e_amor_coracao_arco_iris |
+| UNI-192 | Feliz Dia do Orgulho | Botton individual / Orgulho LGBTQIA+ | feliz_dia_do_orgulho |
+| UNI-193 | Born This Way — Cores do Orgulho | Botton individual / Orgulho LGBTQIA+ | born_this_way_cores_do_orgulho |
+| UNI-194 | Amor é Amor — Mãos em Coração | Botton individual / Orgulho LGBTQIA+ | amor_e_amor_maos_em_coracao |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

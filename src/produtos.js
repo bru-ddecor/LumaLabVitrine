@@ -3039,6 +3039,76 @@ const produtos = [
     ),
   },
   {
+    id: "paz_e_orgulho_arco_iris",
+    referencia: "UNI-190",
+    nome: "Paz e Orgulho — Arco-Íris",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "paz e orgulho arco íris arco iris mão mao sinal paz vitória lgbt lgbtq lgbtqia pride diversidade bandeira vermelho laranja amarelo verde azul roxo branco ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/paz_e_orgulho_arco_iris/${arquivo}`,
+    ),
+  },
+  {
+    id: "amor_e_amor_coracao_arco_iris",
+    referencia: "UNI-191",
+    nome: "Amor é Amor — Coração Arco-Íris",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "love is love amor é amor coração coracao arco íris arco iris orgulho lgbt lgbtq lgbtqia pride diversidade bandeira preto branco colorido estrelas frase",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/amor_e_amor_coracao_arco_iris/${arquivo}`,
+    ),
+  },
+  {
+    id: "feliz_dia_do_orgulho",
+    referencia: "UNI-192",
+    nome: "Feliz Dia do Orgulho",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "happy pride day feliz dia do orgulho lgbt lgbtq lgbtqia diversidade arco íris arco iris bandeira preto branco corações rosa frase inglês",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/feliz_dia_do_orgulho/${arquivo}`,
+    ),
+  },
+  {
+    id: "born_this_way_cores_do_orgulho",
+    referencia: "UNI-193",
+    nome: "Born This Way — Cores do Orgulho",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "born this way nasci assim cores do orgulho lgbt lgbtq lgbtqia pride diversidade arco íris arco iris bandeira rolo pintura tinta branco frase",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/born_this_way_cores_do_orgulho/${arquivo}`,
+    ),
+  },
+  {
+    id: "amor_e_amor_maos_em_coracao",
+    referencia: "UNI-194",
+    nome: "Amor é Amor — Mãos em Coração",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "love is love amor é amor mãos maos coração coracao arco íris arco iris orgulho lgbt lgbtq lgbtqia pride diversidade bandeira branco colorido ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/amor_e_amor_maos_em_coracao/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
