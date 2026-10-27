@@ -3109,6 +3109,76 @@ const produtos = [
     ),
   },
   {
+    id: "punho_do_orgulho_arco_iris",
+    referencia: "UNI-195",
+    nome: "Punho do Orgulho — Arco-Íris",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "punho do orgulho mão mao levantada resistência igualdade arco íris arco iris lgbt lgbtq lgbtqia pride diversidade bandeira preto colorido estrelas ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/punho_do_orgulho_arco_iris/${arquivo}`,
+    ),
+  },
+  {
+    id: "feliz_dia_do_orgulho_arco_iris_e_coracao",
+    referencia: "UNI-196",
+    nome: "Feliz Dia do Orgulho — Arco-Íris e Coração",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "happy pride day feliz dia do orgulho arco íris arco iris coração coracao nuvens estrelas lgbt lgbtq lgbtqia diversidade igualdade amor bandeira preto vermelho colorido",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/feliz_dia_do_orgulho_arco_iris_e_coracao/${arquivo}`,
+    ),
+  },
+  {
+    id: "o_amor_vence_love_wins",
+    referencia: "UNI-197",
+    nome: "O Amor Vence — Love Wins",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "love wins o amor vence orgulho coração coracao arco íris arco iris lgbt lgbtq lgbtqia pride diversidade igualdade respeito bandeira branco preto colorido",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/o_amor_vence_love_wins/${arquivo}`,
+    ),
+  },
+  {
+    id: "orgulho_de_ser_quem_sou",
+    referencia: "UNI-198",
+    nome: "Orgulho de Ser Quem Sou",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "proud of who i am orgulho de ser quem sou arco íris arco iris lgbt lgbtq lgbtqia pride diversidade igualdade identidade respeito bandeira punho mão mao colorido",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/orgulho_de_ser_quem_sou/${arquivo}`,
+    ),
+  },
+  {
+    id: "pride_orgulho_em_seis_cores",
+    referencia: "UNI-199",
+    nome: "Pride — Orgulho em Seis Cores",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "pride orgulho em seis cores arco íris arco iris lgbt lgbtq lgbtqia diversidade igualdade respeito bandeira preto vermelho laranja amarelo verde azul roxo tipografia letras colorido",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/pride_orgulho_em_seis_cores/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

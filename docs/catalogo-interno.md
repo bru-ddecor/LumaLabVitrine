@@ -216,6 +216,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-192 | Feliz Dia do Orgulho | Botton individual / Orgulho LGBTQIA+ | feliz_dia_do_orgulho |
 | UNI-193 | Born This Way — Cores do Orgulho | Botton individual / Orgulho LGBTQIA+ | born_this_way_cores_do_orgulho |
 | UNI-194 | Amor é Amor — Mãos em Coração | Botton individual / Orgulho LGBTQIA+ | amor_e_amor_maos_em_coracao |
+| UNI-195 | Punho do Orgulho — Arco-Íris | Botton individual / Orgulho LGBTQIA+ | punho_do_orgulho_arco_iris |
+| UNI-196 | Feliz Dia do Orgulho — Arco-Íris e Coração | Botton individual / Orgulho LGBTQIA+ | feliz_dia_do_orgulho_arco_iris_e_coracao |
+| UNI-197 | O Amor Vence — Love Wins | Botton individual / Orgulho LGBTQIA+ | o_amor_vence_love_wins |
+| UNI-198 | Orgulho de Ser Quem Sou | Botton individual / Orgulho LGBTQIA+ | orgulho_de_ser_quem_sou |
+| UNI-199 | Pride — Orgulho em Seis Cores | Botton individual / Orgulho LGBTQIA+ | pride_orgulho_em_seis_cores |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
