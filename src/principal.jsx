@@ -697,7 +697,7 @@ function Aplicacao() {
               subtitulo="Arraste para os lados e encontre seus favoritos."
               produtosDaColecao={[
                 ...filtrados.filter((produto) => produto.destaque),
-                ...kitsFiltrados.filter((produto) => !produto.destaque),
+                ...kitsFiltrados.filter((produto) => produto.destaque !== false && !produto.destaque),
               ]}
             />
             {kitsFiltrados.length > 0 && (

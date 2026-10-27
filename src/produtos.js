@@ -56,13 +56,17 @@ const produtos = [
       (arquivo) => `/imagens/kits/kit_rock_rubro/${arquivo}`,
     ),
   },
-  kit(
+  {
+    ...kit(
     "kit_blackpink",
     "BLACKPINK — Pink Venom",
     "KIT-001",
     ["kit_blckpnk_deco", "blckpnk2", "blckpnk3"],
     "blackpink black pink preto rosa k-pop kpop pop música coreano girl group jennie jisoo lisa rosé rose blink",
-  ),
+    ),
+    categoria: "idols",
+    destaque: false,
+  },
   {
     id: "kit_one_piece_chapeu_de_palha",
     referencia: "KIT-015",
@@ -853,7 +857,7 @@ const produtos = [
     referencia: "UNI-042",
     nome: "Sou Feliz e Agradeço",
     tipo: "unitario",
-    categoria: "musica",
+    categoria: "cristaos",
     palavrasChave:
       "sou feliz e agradeço por tudo que deus me deu frase fé gratidão agradecimento felicidade deus cristão cristã cristianismo religioso gospel esperança rosa pink magenta branco white creme xadrez quadriculado damier letras cursivas tipografia",
     tamanhos: [32, 44, 55],
@@ -1966,7 +1970,7 @@ const produtos = [
     referencia: "UNI-115",
     nome: "“Preciso de cafeína”",
     tipo: "unitario",
-    categoria: "frases",
+    categoria: "estampas-e-cores",
     palavrasChave:
       "need caffeine addict preciso de cafeína café coffee cafeinado cafeteria bebida frase inglês vermelho branco tipografia letras cursivas retrô vintage",
     tamanhos: [32, 44, 55],
@@ -3458,6 +3462,71 @@ const produtos = [
     tamanhos: [32, 44, 55],
     precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
     imagens: ["/imagens/unitarios/coringa_colagem_do_caos/01.jpg"],
+  },
+  {
+    id: "arirang_retratos_em_vermelho_e_preto",
+    referencia: "UNI-220",
+    nome: "Arirang — Retratos em Vermelho e Preto",
+    tipo: "unitario",
+    categoria: "musica",
+    palavrasChave: "arirang música retratos grupo estrelas vermelho preto branco colagem",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/arirang_retratos_em_vermelho_e_preto/01.jpg"],
+  },
+  {
+    id: "por_que_tanta_obsessao_por_mim",
+    referencia: "UNI-221",
+    nome: "Por que Tanta Obsessão por Mim?",
+    tipo: "unitario",
+    categoria: "frases",
+    palavrasChave: "why are you so obsessed with me meninas malvadas mean girls regina george por que tanta obsessão por mim rosa beijos bocas recortes letras filme",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/por_que_tanta_obsessao_por_mim/01.jpg", "/imagens/unitarios/por_que_tanta_obsessao_por_mim/02.jpg", "/imagens/unitarios/por_que_tanta_obsessao_por_mim/03.jpg"],
+  },
+  {
+    id: "stay_positive_caveira_positiva",
+    referencia: "UNI-222",
+    nome: "Stay Positive — Caveira Positiva",
+    tipo: "unitario",
+    categoria: "dark",
+    palavrasChave:
+      "stay positive caveira positiva mantenha se positivo positividade esqueleto capuz joinha polegares humor ironia dark ceifador bege creme preto japonês ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/stay_positive_caveira_positiva/${arquivo}`,
+    ),
+  },
+  {
+    id: "converse_all_star_chuck_taylor",
+    referencia: "UNI-223",
+    nome: "Converse All Star — Chuck Taylor",
+    tipo: "unitario",
+    categoria: "estampas-e-cores",
+    palavrasChave:
+      "converse all star chuck taylor estrela logotipo tênis tenis moda clássico retro vintage branco creme azul marinho vermelho emblema costura",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/converse_all_star_chuck_taylor/${arquivo}`,
+    ),
+  },
+  {
+    id: "hello_kitty_sem_paciencia",
+    referencia: "UNI-224",
+    nome: "Hello Kitty — Sem Paciência",
+    tipo: "unitario",
+    categoria: "desenhos",
+    categoriasAdicionais: ["humor"],
+    palavrasChave:
+      "hello kitty sanrio sem paciência dedo do meio humor irreverente deboche laço vermelho roupa roxa branco preto desenho kawaii",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/hello_kitty_sem_paciencia/${arquivo}`,
+    ),
   },
   {
     id: "personalizado_musical",

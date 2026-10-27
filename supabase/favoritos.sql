@@ -301,5 +301,10 @@ insert into public.catalogo_favoritos(produto) values
 ('meio_fit_meio_fat'),
 ('umbrella_corporation_resident_evil'),
 ('chase_atlantic_friends'),
-('coringa_colagem_do_caos')
+('coringa_colagem_do_caos'),
+('arirang_retratos_em_vermelho_e_preto'),
+('por_que_tanta_obsessao_por_mim'),
+('stay_positive_caveira_positiva'),
+('converse_all_star_chuck_taylor'),
+('hello_kitty_sem_paciencia')
 on conflict do nothing;

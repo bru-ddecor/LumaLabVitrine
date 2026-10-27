@@ -4,7 +4,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 
 | Referência | Nome | Categoria | Identificador / pasta |
 | --- | --- | --- | --- |
-| KIT-001 | BLACKPINK — Pink Venom | Kit com 4 bottons | kit_blackpink |
+| KIT-001 | BLACKPINK — Pink Venom | Kit com 4 bottons / Idols | kit_blackpink |
 | KIT-002 | Maré Lunar | Kit com 4 bottons | kit_blue |
 | KIT-003 | Jardim de Afetos | Kit com 4 bottons | kit_coquette |
 | KIT-004 | Entre Sombras | Kit com 4 bottons | kit_dark |
@@ -63,7 +63,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-039 | Me Ame ao Som de ANAVITÓRIA | Botton individual | me_ame_anavitoria |
 | UNI-040 | Mikey — Tons de Calmaria | Botton individual | mikey_tons_de_calmaria |
 | UNI-041 | Em Algum Lugar pra Relaxar | Botton individual | em_algum_lugar_pra_relaxar |
-| UNI-042 | Sou Feliz e Agradeço | Botton individual | sou_feliz_e_agradeco |
+| UNI-042 | Sou Feliz e Agradeço | Botton individual / Cristãos | sou_feliz_e_agradeco |
 | UNI-043 | Nerd — Universo Particular | Botton individual | nerd_universo_particular |
 | UNI-044 | Cachorrinho — Charme de Bandana | Botton individual | cachorrinho_charme_de_bandana |
 | UNI-045 | Espelho — Tudo a Seu Favor | Botton individual / Ubuntu — Raízes Negras | espelho_tudo_a_seu_favor |
@@ -136,7 +136,7 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-112 | Soul Sister — “Irmã de alma” | Botton individual / Ubuntu — Raízes Negras | soul_sister |
 | UNI-113 | Sabotage — Vim pra Sabotar seu Raciocínio | Botton individual / Música e Ubuntu — Raízes Negras | sabotage_vim_pra_sabotar |
 | UNI-114 | Sabotage — Quem Não Fez, Faz | Botton individual / Música e Ubuntu — Raízes Negras | sabotage_quem_nao_fez_faz |
-| UNI-115 | “Preciso de cafeína” | Botton individual / Frases | preciso_de_cafeina |
+| UNI-115 | “Preciso de cafeína” | Botton individual / Estampas e Cores | preciso_de_cafeina |
 | UNI-116 | Spotify — Orgulho Bi | Botton individual / Orgulho LGBTQIA+ | spotify_orgulho_bi |
 | UNI-117 | Gatinho — Astigmiautismo | Botton individual / Humor, Pets e Destaques | gatinho_astigmiautismo |
 | UNI-118 | Gatinho Pensador | Botton individual / Pets e Humor | gatinho_pensador |
@@ -241,6 +241,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-217 | Umbrella Corporation — Resident Evil | Botton individual / Games | umbrella_corporation_resident_evil |
 | UNI-218 | Chase Atlantic — Friends | Botton individual / Música | chase_atlantic_friends |
 | UNI-219 | Coringa — Colagem do Caos | Botton individual / Filmes e Séries | coringa_colagem_do_caos |
+| UNI-220 | Arirang — Retratos em Vermelho e Preto | Botton individual / Música | arirang_retratos_em_vermelho_e_preto |
+| UNI-221 | Por que Tanta Obsessão por Mim? | Botton individual / Frases | por_que_tanta_obsessao_por_mim |
+| UNI-222 | Stay Positive — Caveira Positiva | Botton individual / Dark | stay_positive_caveira_positiva |
+| UNI-223 | Converse All Star — Chuck Taylor | Botton individual / Estampas e Cores | converse_all_star_chuck_taylor |
+| UNI-224 | Hello Kitty — Sem Paciência | Botton individual / Desenhos + Humor | hello_kitty_sem_paciencia |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |
