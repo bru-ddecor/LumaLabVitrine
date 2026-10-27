@@ -3529,6 +3529,76 @@ const produtos = [
     ),
   },
   {
+    id: "marmelada_de_fresa",
+    referencia: "UNI-225",
+    nome: "Marmelada de Fresa",
+    tipo: "unitario",
+    categoria: "estampas-e-cores",
+    palavrasChave:
+      "marmelada de fresa mermelada morango morangos geleia rosa pink vermelho verde fruta doce ilustração tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/marmelada_de_fresa/${arquivo}`,
+    ),
+  },
+  {
+    id: "arctic_monkeys_am",
+    referencia: "UNI-226",
+    nome: "Arctic Monkeys — AM",
+    tipo: "unitario",
+    categoria: "musica",
+    palavrasChave:
+      "arctic monkeys am álbum album banda rock indie alternativo música ondas sonoras frequência frequencia preto branco minimalista",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/arctic_monkeys_am/${arquivo}`,
+    ),
+  },
+  {
+    id: "arctic_monkeys_logo",
+    referencia: "UNI-227",
+    nome: "Arctic Monkeys — Logo",
+    tipo: "unitario",
+    categoria: "musica",
+    palavrasChave:
+      "arctic monkeys logo logotipo banda rock indie alternativo música preto branco letras tipografia",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/arctic_monkeys_logo/${arquivo}`,
+    ),
+  },
+  {
+    id: "paramore_brand_new_eyes",
+    referencia: "UNI-228",
+    nome: "Paramore — Brand New Eyes",
+    tipo: "unitario",
+    categoria: "musica",
+    palavrasChave:
+      "paramore brand new eyes álbum album banda rock alternativo pop punk música borboleta asas amarelo preto creme bege branco",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg", "04.jpg"].map(
+      (arquivo) => `/imagens/unitarios/paramore_brand_new_eyes/${arquivo}`,
+    ),
+  },
+  {
+    id: "lisa_rosa_estrelado",
+    referencia: "UNI-229",
+    nome: "LISA — Rosa Estrelado",
+    tipo: "unitario",
+    categoria: "idols",
+    palavrasChave:
+      "lisa lalisa blackpink blink kpop k-pop música cantora idol idols rosa pink magenta estrelas corações coroa colagem xoxo you are so special",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg", "04.jpg"].map(
+      (arquivo) => `/imagens/unitarios/lisa_rosa_estrelado/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",

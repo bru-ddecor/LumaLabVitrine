@@ -306,5 +306,10 @@ insert into public.catalogo_favoritos(produto) values
 ('por_que_tanta_obsessao_por_mim'),
 ('stay_positive_caveira_positiva'),
 ('converse_all_star_chuck_taylor'),
-('hello_kitty_sem_paciencia')
+('hello_kitty_sem_paciencia'),
+('marmelada_de_fresa'),
+('arctic_monkeys_am'),
+('arctic_monkeys_logo'),
+('paramore_brand_new_eyes'),
+('lisa_rosa_estrelado')
 on conflict do nothing;
