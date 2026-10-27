@@ -206,6 +206,11 @@ Referências permanentes para organização interna. Renomear ou reordenar produ
 | UNI-182 | Toyota Supra — Entre Cerejeiras | Botton individual / Carros | toyota_supra_entre_cerejeiras |
 | UNI-183 | Orgulho Pan — Rosa, Amarelo e Azul | Botton individual / Orgulho LGBTQIA+ | orgulho_pan_rosa_amarelo_azul |
 | UNI-184 | Orgulho Pan — Beijinho em Cores | Botton individual / Orgulho LGBTQIA+ | orgulho_pan_beijinho_em_cores |
+| UNI-185 | Estoica o Estoiloca? | Botton individual / Humor | estoica_o_estoiloca |
+| UNI-186 | Patrick — Só Mais um Capítulo | Botton individual / Humor | patrick_so_mais_um_capitulo |
+| UNI-187 | Solo de Caveira | Botton individual / Humor e Música | solo_de_caveira |
+| UNI-188 | Habilidade: Quebrar Códigos | Botton individual / Programação | habilidade_quebrar_codigos |
+| UNI-189 | Coração Arco-Íris | Botton individual / Orgulho LGBTQIA+ | coracao_arco_iris |
 | PAR-001 | Gumball e Darwin — Dupla Inseparável | Parzinho | gumball_darwin |
 | PAR-002 | Marceline e Jujuba — Doce Sintonia | Parzinho | marceline_jujuba_doce_sintonia |
 | PAR-003 | Mutano e Ravena — Sintonia Titã | Parzinho | mutano_ravena_sintonia_tita |

@@ -266,5 +266,10 @@ insert into public.catalogo_favoritos(produto) values
 ('brasil_retrato_dourado'),
 ('toyota_supra_entre_cerejeiras'),
 ('orgulho_pan_rosa_amarelo_azul'),
-('orgulho_pan_beijinho_em_cores')
+('orgulho_pan_beijinho_em_cores'),
+('estoica_o_estoiloca'),
+('patrick_so_mais_um_capitulo'),
+('solo_de_caveira'),
+('habilidade_quebrar_codigos'),
+('coracao_arco_iris')
 on conflict do nothing;

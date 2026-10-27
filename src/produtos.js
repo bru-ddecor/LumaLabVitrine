@@ -2970,6 +2970,75 @@ const produtos = [
     ),
   },
   {
+    id: "estoica_o_estoiloca",
+    referencia: "UNI-185",
+    nome: "Estoica o Estoiloca?",
+    tipo: "unitario",
+    categoria: "humor",
+    palavrasChave:
+      "estoica o estoiloca estoicismo meme humor gato preto torneira água lingua língua fotografia frase trocadilho",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/estoica_o_estoiloca/${arquivo}`,
+    ),
+  },
+  {
+    id: "patrick_so_mais_um_capitulo",
+    referencia: "UNI-186",
+    nome: "Patrick — Só Mais um Capítulo",
+    tipo: "unitario",
+    categoria: "humor",
+    palavrasChave:
+      "patrick estrela bob esponja só mais um capítulo leitura leitor leitora leitores leitoras livros livro kindle ebook e-reader lendo cama cobertor meme humor rosa azul",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["/imagens/unitarios/patrick_so_mais_um_capitulo/01.jpg"],
+  },
+  {
+    id: "solo_de_caveira",
+    referencia: "UNI-187",
+    nome: "Solo de Caveira",
+    tipo: "unitario",
+    categoria: "humor",
+    categoriasAdicionais: ["musica"],
+    palavrasChave:
+      "solo de caveira esqueleto guitarra guitarrista rock metal heavy metal música meme humor peueueueueum peunpeumpwum som riff preto cinza vermelho ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/solo_de_caveira/${arquivo}`,
+    ),
+  },
+  {
+    id: "habilidade_quebrar_codigos",
+    referencia: "UNI-188",
+    nome: "Habilidade: Quebrar Códigos",
+    tipo: "unitario",
+    categoria: "programacao",
+    palavrasChave:
+      "habilidade quebrar códigos codigos nome felipe programação programador programadora desenvolvedor desenvolvedora dev computador notebook verde meme tecnologia informática",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/habilidade_quebrar_codigos/${arquivo}`,
+    ),
+  },
+  {
+    id: "coracao_arco_iris",
+    referencia: "UNI-189",
+    nome: "Coração Arco-Íris",
+    tipo: "unitario",
+    categoria: "orgulho",
+    palavrasChave:
+      "coração coracao arco íris arco iris orgulho lgbt lgbtq lgbtqia pride diversidade amor bandeira vermelho laranja amarelo verde azul roxo branco ilustração",
+    tamanhos: [32, 44, 55],
+    precosPorTamanho: { 32: 550, 44: 750, 55: 900 },
+    imagens: ["01.jpg", "02.jpg", "03.jpg"].map(
+      (arquivo) => `/imagens/unitarios/coracao_arco_iris/${arquivo}`,
+    ),
+  },
+  {
     id: "personalizado_musical",
     referencia: "PER-001",
     nome: "Seu artista, sua música",
